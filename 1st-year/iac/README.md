@@ -2,8 +2,7 @@
 
 ## Language: Assembly P3 (developed by a teacher at IST)
 
-## Project
--Gorillas
+## Project - Gorillas
 -Grade: 17/20
 
 ## Done by:
