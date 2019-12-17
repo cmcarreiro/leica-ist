@@ -139,11 +139,7 @@ h2{
   color: #57A399;
 }
 
-.class p{
-}
-
 .class b{
-  
   color: #BD6729;
 }
 
@@ -158,15 +154,16 @@ footer{
   color: white;
   text-align: center;
   font-size: 3vh;
-  height: 6vh;
+  height: auto;
   width: 100vw;
   font-family: monospace;
   padding: 4vh;
 }
 
-/*#blue{
-  background-color: lightgray;
-}*/
+footer a{
+  color: #BD6729;
+}
+
 
 @media only screen and (max-width: 600px) {
   #first-semester{
