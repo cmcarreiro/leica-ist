@@ -157,7 +157,8 @@ footer{
   height: auto;
   width: 100vw;
   font-family: monospace;
-  padding: 4vh;
+  padding-top: 2vh;
+  padding-bottom: 2vh;
 }
 
 footer a{
