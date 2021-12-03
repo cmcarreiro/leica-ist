@@ -11,6 +11,6 @@
 
 
 ### Part 2 - Contact Manager System
-- Goal: make an efficient contact management system
+- Goal: Make an efficient contact management system
 - [Project Statement](/proj2/project-statement.md)
 - [Solution](/proj2)
