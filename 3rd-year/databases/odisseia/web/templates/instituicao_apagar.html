@@ -1,0 +1,9 @@
+<html>
+    <body>
+        <h3>Queres apagar a instituicao com nome {{ params.get("nome") }}?</h3>
+        <form action="instituicao_apagar_ok" method="post">
+            <p><input type="hidden" name="nome" value="{{ params.get('nome') }}"/></p>
+            <p><input type="submit" value="Sim"/></p>
+        </form>
+    </body>
+</html>

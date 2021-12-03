@@ -1,0 +1,302 @@
+;Teoria da Computacao 2019/20
+;Grupo 47
+;Catarina Carreiro
+;Cristiano Clemente
+;Vasco Rocha
+
+;INICIALIZACAO
+
+inicio $_____ $_____ r**r** naoHaTrans
+inicio Q_____ Q__Q__ r**r** contaKs
+inicio ****** ****** ****** halt-reject
+
+;$ ou $rep(w)
+
+naoHaTrans _***** _***** ****** abortar
+naoHaTrans A***** A***** r***** contaTsVazio
+
+contaTsVazio 0***** 0*T*** r*r*** contaTsVazio
+contaTsVazio 1***** 1*T*** r*r*** contaTsVazio
+contaTsVazio 2***** 2*T*** r*r*** contaTsVazio
+contaTsVazio 3***** 3*T*** r*r*** contaTsVazio
+contaTsVazio 4***** 4*T*** r*r*** contaTsVazio
+contaTsVazio 5***** 5*T*** r*r*** contaTsVazio
+contaTsVazio 6***** 6*T*** r*r*** contaTsVazio
+contaTsVazio 7***** 7*T*** r*r*** contaTsVazio
+contaTsVazio 8***** 8*T*** r*r*** contaTsVazio
+contaTsVazio 9***** 9*T*** r*r*** contaTsVazio
+contaTsVazio A***** A***** r*l*** rebTsVazio
+contaTsVazio _***** _***** r***** abortar
+contaTsVazio ****** ****** ****** halt-reject
+
+rebTsVazio **T*** **T*** **l*** rebTsVazio
+rebTsVazio **_*** **_*** **r*** leTnumsVazio
+
+leTnumsVazio 0*T*** 0*T*** r*r*** leTnumsVazio
+leTnumsVazio 1*T*** 1*T*** r*r*** leTnumsVazio
+leTnumsVazio 2*T*** 2*T*** r*r*** leTnumsVazio
+leTnumsVazio 3*T*** 3*T*** r*r*** leTnumsVazio
+leTnumsVazio 4*T*** 4*T*** r*r*** leTnumsVazio
+leTnumsVazio 5*T*** 5*T*** r*r*** leTnumsVazio
+leTnumsVazio 6*T*** 6*T*** r*r*** leTnumsVazio
+leTnumsVazio 7*T*** 7*T*** r*r*** leTnumsVazio
+leTnumsVazio 8*T*** 8*T*** r*r*** leTnumsVazio
+leTnumsVazio 9*T*** 9*T*** r*r*** leTnumsVazio
+leTnumsVazio A*_*** A*_*** r*l*** rebTsVazio
+leTnumsVazio _*_*** _*_*** ****** abortar
+leTnumsVazio ****** ****** ****** halt-reject
+
+
+;trans$ ou trans1;...$ ou trans$rep(w) ou trans1;...$rep(w)
+
+contaKs 0_____ 0K_0__ rl*r** contaKs
+contaKs 1_____ 1K_1__ rl*r** contaKs
+contaKs 2_____ 2K_2__ rl*r** contaKs
+contaKs 3_____ 3K_3__ rl*r** contaKs
+contaKs 4_____ 4K_4__ rl*r** contaKs
+contaKs 5_____ 5K_5__ rl*r** contaKs
+contaKs 6_____ 6K_6__ rl*r** contaKs
+contaKs 7_____ 7K_7__ rl*r** contaKs
+contaKs 8_____ 8K_8__ rl*r** contaKs
+contaKs 9_____ 9K_9__ rl*r** contaKs
+contaKs A_____ A__A__ rr*r** contaTs
+contaKs ****** ****** ****** halt-reject
+
+contaTs 0K____ 0KT0__ r*lr** contaTs
+contaTs 1K____ 1KT1__ r*lr** contaTs
+contaTs 2K____ 2KT2__ r*lr** contaTs
+contaTs 3K____ 3KT3__ r*lr** contaTs
+contaTs 4K____ 4KT4__ r*lr** contaTs
+contaTs 5K____ 5KT5__ r*lr** contaTs
+contaTs 6K____ 6KT6__ r*lr** contaTs
+contaTs 7K____ 7KT7__ r*lr** contaTs
+contaTs 8K____ 8KT8__ r*lr** contaTs
+contaTs 9K____ 9KT9__ r*lr** contaTs
+contaTs QK____ QK_Q__ r*rr** leKnumsDir
+contaTs YK____ YK_Y__ r*rr** leKYs
+contaTs NK____ NK_N__ r*rr** leKNs
+contaTs ****** ****** ****** halt-reject
+
+leKnumsDir 0KT___ 0KT0__ rr*r** leKnumsDir
+leKnumsDir 1KT___ 1KT1__ rr*r** leKnumsDir
+leKnumsDir 2KT___ 2KT2__ rr*r** leKnumsDir
+leKnumsDir 3KT___ 3KT3__ rr*r** leKnumsDir
+leKnumsDir 4KT___ 4KT4__ rr*r** leKnumsDir
+leKnumsDir 5KT___ 5KT5__ rr*r** leKnumsDir
+leKnumsDir 6KT___ 6KT6__ rr*r** leKnumsDir
+leKnumsDir 7KT___ 7KT7__ rr*r** leKnumsDir
+leKnumsDir 8KT___ 8KT8__ rr*r** leKnumsDir
+leKnumsDir 9KT___ 9KT9__ rr*r** leKnumsDir
+leKnumsDir A_T___ A_TA__ rl*r** leTnumsDir
+leKnumsDir ****** ****** ****** halt-reject
+
+leKYs YKT___ YKTY__ rr*r** leKYs
+leKYs A_T___ A_TA__ rl*r** leTnumsDir
+leKYs ****** ****** ****** halt-reject
+
+leKNs NKT___ NKTN__ rr*r** leKNs
+leKNs A_T___ A_TA__ rl*r** leTnumsDir
+leKNs ****** ****** ****** halt-reject
+
+leTnumsDir 0KT___ 0KT0__ r*rr** leTnumsDir
+leTnumsDir 1KT___ 1KT1__ r*rr** leTnumsDir
+leTnumsDir 2KT___ 2KT2__ r*rr** leTnumsDir
+leTnumsDir 3KT___ 3KT3__ r*rr** leTnumsDir
+leTnumsDir 4KT___ 4KT4__ r*rr** leTnumsDir
+leTnumsDir 5KT___ 5KT5__ r*rr** leTnumsDir
+leTnumsDir 6KT___ 6KT6__ r*rr** leTnumsDir
+leTnumsDir 7KT___ 7KT7__ r*rr** leTnumsDir
+leTnumsDir 8KT___ 8KT8__ r*rr** leTnumsDir
+leTnumsDir 9KT___ 9KT9__ r*rr** leTnumsDir
+leTnumsDir LK____ LK_L__ r*lr** limbo
+leTnumsDir RK____ RK_R__ r*lr** limbo
+leTnumsDir SK____ SK_S__ r*lr** limbo
+leTnumsDir ****** ****** ****** halt-reject
+
+limbo ;KT___ ;KT;__ r**r** novaPlvr
+limbo $KT___ $KT___ r***** leSimboloInput
+limbo ****** ****** ****** halt-reject
+
+novaPlvr QKT___ QKTQ__ r**r** leKnumsEsq
+novaPlvr ****** ****** ****** halt-reject
+
+leKnumsEsq 0KT___ 0KT0__ rl*r** leKnumsEsq
+leKnumsEsq 1KT___ 1KT1__ rl*r** leKnumsEsq
+leKnumsEsq 2KT___ 2KT2__ rl*r** leKnumsEsq
+leKnumsEsq 3KT___ 3KT3__ rl*r** leKnumsEsq
+leKnumsEsq 4KT___ 4KT4__ rl*r** leKnumsEsq
+leKnumsEsq 5KT___ 5KT5__ rl*r** leKnumsEsq
+leKnumsEsq 6KT___ 6KT6__ rl*r** leKnumsEsq
+leKnumsEsq 7KT___ 7KT7__ rl*r** leKnumsEsq
+leKnumsEsq 8KT___ 8KT8__ rl*r** leKnumsEsq
+leKnumsEsq 9KT___ 9KT9__ rl*r** leKnumsEsq
+leKnumsEsq A_T___ A_TA__ rr*r** leTnumsEsq
+leKnumsEsq ****** ****** ****** halt-reject
+
+leTnumsEsq 0KT___ 0KT0__ r*lr** leTnumsEsq
+leTnumsEsq 1KT___ 1KT1__ r*lr** leTnumsEsq
+leTnumsEsq 2KT___ 2KT2__ r*lr** leTnumsEsq
+leTnumsEsq 3KT___ 3KT3__ r*lr** leTnumsEsq
+leTnumsEsq 4KT___ 4KT4__ r*lr** leTnumsEsq
+leTnumsEsq 5KT___ 5KT5__ r*lr** leTnumsEsq
+leTnumsEsq 6KT___ 6KT6__ r*lr** leTnumsEsq
+leTnumsEsq 7KT___ 7KT7__ r*lr** leTnumsEsq
+leTnumsEsq 8KT___ 8KT8__ r*lr** leTnumsEsq
+leTnumsEsq 9KT___ 9KT9__ r*lr** leTnumsEsq
+leTnumsEsq QK____ QK_Q__ r*rr** leKnumsDir
+leTnumsEsq YK____ YK_Y__ r*rr** leKYs
+leTnumsEsq NK____ NK_N__ r*rr** leKNs
+leTnumsEsq ****** ****** ****** halt-reject
+
+leSimboloInput _***** _***** ****** escrQ0
+leSimboloInput AKT___ AKT_A_ r***r* leTnums
+leSimboloInput ****** ****** ****** halt-reject
+
+leTnums 0KT___ 0KT_0_ r*l*r* leTnums
+leTnums 1KT___ 1KT_1_ r*l*r* leTnums
+leTnums 2KT___ 2KT_2_ r*l*r* leTnums
+leTnums 3KT___ 3KT_3_ r*l*r* leTnums
+leTnums 4KT___ 4KT_4_ r*l*r* leTnums
+leTnums 5KT___ 5KT_5_ r*l*r* leTnums
+leTnums 6KT___ 6KT_6_ r*l*r* leTnums
+leTnums 7KT___ 7KT_7_ r*l*r* leTnums
+leTnums 8KT___ 8KT_8_ r*l*r* leTnums
+leTnums 9KT___ 9KT_9_ r*l*r* leTnums
+leTnums _K____ _K____ **r*l* escrQ0
+leTnums *K____ *K____ **r*** rebT
+leTnums ****** ****** ****** halt-reject
+
+rebT **T*** **T*** **r*** rebT
+rebT **_*** **_*** **l*** leSimboloInput
+rebT ****** ****** ****** halt-reject
+
+escrQ0 ****** *****Q *****r escrK0s
+
+escrK0s *K***_ *K***0 *l***r escrK0s
+escrK0s *_***_ *_***_ ***l*l 5estaVazio?
+
+5estaVazio? ****** ****** ****** reb5inicio
+5estaVazio? ****_* ****A* ****r* escrT0na5
+
+escrT0na5 **T*** **T*0* **l*r* escrT0na5
+escrT0na5 **_*** **_*** **r*l* reb5inicio
+
+reb5inicio ****_* ****_* ****r* novoPassoSimul
+reb5inicio ****** ****** ****l* reb5inicio
+
+
+
+;SIMULACAO
+
+novoPassoSimul ****** ****** ****** novoPassoSimul4
+
+novoPassoSimul4 ***_** ***_** ***r** novoPassoSimul5
+novoPassoSimul4 ****** ****** ***l** novoPassoSimul4
+
+novoPassoSimul5 ****A* ****A* ****** novoPassoSimul6
+novoPassoSimul5 ****** ****** ****l* novoPassoSimul5
+
+novoPassoSimul6 *****_ *****_ *****r lerQatual
+novoPassoSimul6 ****** ****** *****l novoPassoSimul6
+
+lerQatual *****Y *****Y ****** halt-accept
+lerQatual *****N *****N ****** halt-reject
+lerQatual *****Q *****Q ****** procTrans
+
+procTrans ***Q*Q ***Q*Q ***r*r procTrans
+procTrans ***0*0 ***0*0 ***r*r procTrans
+procTrans ***1*1 ***1*1 ***r*r procTrans
+procTrans ***2*2 ***2*2 ***r*r procTrans
+procTrans ***3*3 ***3*3 ***r*r procTrans
+procTrans ***4*4 ***4*4 ***r*r procTrans
+procTrans ***5*5 ***5*5 ***r*r procTrans
+procTrans ***6*6 ***6*6 ***r*r procTrans
+procTrans ***7*7 ***7*7 ***r*r procTrans
+procTrans ***8*8 ***8*8 ***r*r procTrans
+procTrans ***9*9 ***9*9 ***r*r procTrans
+procTrans ***AA_ ***AA_ ***rrl procSimb
+procTrans ****** ****** ***r** avancTrans
+
+avancTrans ***;** ****** ***r** rebQatual
+avancTrans ***_** ****** ****** abortar ;estado nao existe
+avancTrans ****** ****** ***r** avancTrans
+
+rebQatual *****Q *****Q ****** rebSatual
+rebQatual ****** ****** *****l rebQatual
+
+rebSatual ****A* ****A* ****** procTrans
+rebSatual ****** ****** ****l* rebSatual
+
+procSimb ***00* ***00* ***rr* procSimb
+procSimb ***11* ***11* ***rr* procSimb
+procSimb ***22* ***22* ***rr* procSimb
+procSimb ***33* ***33* ***rr* procSimb
+procSimb ***44* ***44* ***rr* procSimb
+procSimb ***55* ***55* ***rr* procSimb
+procSimb ***66* ***66* ***rr* procSimb
+procSimb ***77* ***77* ***rr* procSimb
+procSimb ***88* ***88* ***rr* procSimb
+procSimb ***99* ***99* ***rr* procSimb
+procSimb ***Y** ***Y** ****l* prepQ
+procSimb ***N** ***N** ****l* prepQ
+procSimb ***Q** ***Q** ****l* prepQ
+procSimb ****** ****** ***r** avancTrans
+
+prepQ *****Q *****Q ****** escrQ
+prepQ ****** ****** *****l prepQ
+
+escrQ ***Y** ***Y*Y ***r*r escrQ
+escrQ ***N** ***N*N ***r*r escrQ
+escrQ ***Q** ***Q*Q ***r*r escrQ
+escrQ ***0** ***0*0 ***r*r escrQ
+escrQ ***1** ***1*1 ***r*r escrQ
+escrQ ***2** ***2*2 ***r*r escrQ
+escrQ ***3** ***3*3 ***r*r escrQ
+escrQ ***4** ***4*4 ***r*r escrQ
+escrQ ***5** ***5*5 ***r*r escrQ
+escrQ ***6** ***6*6 ***r*r escrQ
+escrQ ***7** ***7*7 ***r*r escrQ
+escrQ ***8** ***8*8 ***r*r escrQ
+escrQ ***9** ***9*9 ***r*r escrQ
+escrQ ***A** ***A** *****l prepA
+
+prepA ****A* ****A* ****** escrA
+prepA ****** ****** ****l* prepA
+
+escrA ***AA* ***AA* ***rr* escrA
+escrA ***0** ***00* ***rr* escrA
+escrA ***1** ***11* ***rr* escrA
+escrA ***2** ***22* ***rr* escrA
+escrA ***3** ***33* ***rr* escrA
+escrA ***4** ***44* ***rr* escrA
+escrA ***5** ***55* ***rr* escrA
+escrA ***6** ***66* ***rr* escrA
+escrA ***7** ***77* ***rr* escrA
+escrA ***8** ***88* ***rr* escrA
+escrA ***9** ***99* ***rr* escrA
+escrA ****** ****** ****l* rebA ;L/R/S
+
+rebA ****A* ****A* ****** fazMov
+rebA ****** ****** ****l* rebA
+
+fazMov ***S** ***S** ****** novoPassoSimul
+fazMov ***L** ***L** ****l* movEsq
+fazMov ***R** ***R** ****r* movDir
+
+movEsq **T*_* **T*0* **r*l* movEsq
+movEsq **T*** **T*** **r*l* movEsq
+movEsq **_*** **_*** **l*** substA
+
+substA ****** ****A* ****** rebTs
+
+movDir **T*** **T*** **r*r* movDir
+movDir **_*** **_*** **l*** estaVazio?
+
+estaVazio? ****A* ****** ****** rebTs
+estaVazio? ****_* ****A* ****r* escrT0s
+
+rebTs **T*** **T*** **l*** rebTs
+rebTs **_*** **_*** **r*** novoPassoSimul
+
+escrT0s **T*_* **T*0* **l*r* escrT0s
+escrT0s **_*** **_*** **r*l* novoPassoSimul

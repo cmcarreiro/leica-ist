@@ -1,0 +1,95 @@
+\doxysection{cdk\+::yy\+\_\+factory$<$ Lexer\+Type $>$ Class Template Reference}
+\label{classcdk_1_1yy__factory}\index{cdk::yy\_factory$<$ LexerType $>$@{cdk::yy\_factory$<$ LexerType $>$}}
+
+
+{\ttfamily \#include $<$yy\+\_\+factory.\+h$>$}
+
+
+
+Inheritance diagram for cdk\+::yy\+\_\+factory$<$ Lexer\+Type $>$\+:
+% FIG 0
+
+
+Collaboration diagram for cdk\+::yy\+\_\+factory$<$ Lexer\+Type $>$\+:
+% FIG 1
+\doxysubsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\label{classcdk_1_1yy__factory_acd730771562f9848e404c9c3d0020702}} 
+{\bfseries yy\+\_\+factory} (const std\+::string \&language)
+\item 
+std\+::shared\+\_\+ptr$<$ \textbf{ basic\+\_\+parser} $>$ \textbf{ create\+\_\+parser} ()
+\item 
+std\+::shared\+\_\+ptr$<$ \textbf{ basic\+\_\+scanner} $>$ \textbf{ create\+\_\+scanner} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{Additional Inherited Members}
+
+
+\doxysubsection{Detailed Description}
+\subsubsection*{template$<$typename Lexer\+Type$>$\newline
+class cdk\+::yy\+\_\+factory$<$ Lexer\+Type $>$}
+
+This class implements the compiler factory for the byacc/flex compilers. 
+
+Definition at line 14 of file yy\+\_\+factory.\+h.
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\label{classcdk_1_1yy__factory_a9a051ba49001a7dbb9822b64c45135e9}} 
+\index{cdk::yy\_factory$<$ LexerType $>$@{cdk::yy\_factory$<$ LexerType $>$}!create\_parser@{create\_parser}}
+\index{create\_parser@{create\_parser}!cdk::yy\_factory$<$ LexerType $>$@{cdk::yy\_factory$<$ LexerType $>$}}
+\doxysubsubsection{create\_parser()}
+{\footnotesize\ttfamily template$<$typename Lexer\+Type $>$ \\
+std\+::shared\+\_\+ptr$<$\textbf{ basic\+\_\+parser}$>$ \textbf{ cdk\+::yy\+\_\+factory}$<$ Lexer\+Type $>$\+::create\+\_\+parser (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [protected]}, {\ttfamily [virtual]}}
+
+
+\begin{DoxyParams}{Parameters}
+{\em name} & name of the input file (for debug only) \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+parser object pointer 
+\end{DoxyReturn}
+\begin{DoxySeeAlso}{See also}
+create\+Compiler 
+\end{DoxySeeAlso}
+
+
+Implements \textbf{ cdk\+::basic\+\_\+factory} \doxyref{}{p.}{classcdk_1_1basic__factory_afc8f88801455bf131cc4039271e6b741}.
+
+
+
+Definition at line 27 of file yy\+\_\+factory.\+h.
+
+\mbox{\label{classcdk_1_1yy__factory_a6132d875a397d6207727b070ed4155de}} 
+\index{cdk::yy\_factory$<$ LexerType $>$@{cdk::yy\_factory$<$ LexerType $>$}!create\_scanner@{create\_scanner}}
+\index{create\_scanner@{create\_scanner}!cdk::yy\_factory$<$ LexerType $>$@{cdk::yy\_factory$<$ LexerType $>$}}
+\doxysubsubsection{create\_scanner()}
+{\footnotesize\ttfamily template$<$typename Lexer\+Type $>$ \\
+std\+::shared\+\_\+ptr$<$\textbf{ basic\+\_\+scanner}$>$ \textbf{ cdk\+::yy\+\_\+factory}$<$ Lexer\+Type $>$\+::create\+\_\+scanner (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [protected]}, {\ttfamily [virtual]}}
+
+Create a scanner object for the Compact language. 
+\begin{DoxyParams}{Parameters}
+{\em name} & name of the input file (for debug only) \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+scanner object pointer 
+\end{DoxyReturn}
+\begin{DoxySeeAlso}{See also}
+create\+Compiler 
+\end{DoxySeeAlso}
+
+
+Implements \textbf{ cdk\+::basic\+\_\+factory} \doxyref{}{p.}{classcdk_1_1basic__factory_a25f3a81be472baccf2ab5ffb2f363608}.
+
+
+
+Definition at line 37 of file yy\+\_\+factory.\+h.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+cdk/yy\+\_\+factory.\+h\end{DoxyCompactItemize}

@@ -1,0 +1,78 @@
+\doxysection{basic\+\_\+ast\+\_\+visitor Class Reference}
+\label{classbasic__ast__visitor}\index{basic\_ast\_visitor@{basic\_ast\_visitor}}
+
+
+{\ttfamily \#include $<$basic\+\_\+ast\+\_\+visitor.\+h$>$}
+
+
+
+Collaboration diagram for basic\+\_\+ast\+\_\+visitor\+:
+% FIG 0
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+virtual \textbf{ $\sim$basic\+\_\+ast\+\_\+visitor} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\textbf{ basic\+\_\+ast\+\_\+visitor} (std\+::ostream \&\textbf{ os}=std\+::cout, bool debug=false)
+\item 
+std\+::ostream \& \textbf{ os} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\label{classbasic__ast__visitor_a00d9f815e553a3313b33a952e03702f4}} 
+bool \textbf{ \+\_\+debug}
+\begin{DoxyCompactList}\small\item\em Debug flag. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+This class is only for compiling the package\+: it will not be installed. Specific compilers are supposed to define their own, with the S\+A\+ME N\+A\+ME, but defining A\+LL processing functions corresponding to their specific problem. 
+
+Definition at line 17 of file basic\+\_\+ast\+\_\+visitor.\+h.
+
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\label{classbasic__ast__visitor_a194d2f7cced321e384b68782d8e33a47}} 
+\index{basic\_ast\_visitor@{basic\_ast\_visitor}!basic\_ast\_visitor@{basic\_ast\_visitor}}
+\index{basic\_ast\_visitor@{basic\_ast\_visitor}!basic\_ast\_visitor@{basic\_ast\_visitor}}
+\doxysubsubsection{basic\_ast\_visitor()}
+{\footnotesize\ttfamily basic\+\_\+ast\+\_\+visitor\+::basic\+\_\+ast\+\_\+visitor (\begin{DoxyParamCaption}\item[{std\+::ostream \&}]{os = {\ttfamily std\+:\+:cout},  }\item[{bool}]{debug = {\ttfamily false} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+Initialization of a semantic processor.
+
+
+\begin{DoxyParams}{Parameters}
+{\em os} & is the output stream to be used by the semantic processor. \\
+\hline
+\end{DoxyParams}
+\mbox{\label{classbasic__ast__visitor_a110508f9dd86fc1472ffee3d2b3bd0f5}} 
+\index{basic\_ast\_visitor@{basic\_ast\_visitor}!````~basic\_ast\_visitor@{$\sim$basic\_ast\_visitor}}
+\index{````~basic\_ast\_visitor@{$\sim$basic\_ast\_visitor}!basic\_ast\_visitor@{basic\_ast\_visitor}}
+\doxysubsubsection{$\sim$basic\_ast\_visitor()}
+{\footnotesize\ttfamily virtual basic\+\_\+ast\+\_\+visitor\+::$\sim$basic\+\_\+ast\+\_\+visitor (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+How to destroy a semantic processor. 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\label{classbasic__ast__visitor_ab81ab147fe687470c3e8f9ebfd2ca6f9}} 
+\index{basic\_ast\_visitor@{basic\_ast\_visitor}!os@{os}}
+\index{os@{os}!basic\_ast\_visitor@{basic\_ast\_visitor}}
+\doxysubsubsection{os()}
+{\footnotesize\ttfamily std\+::ostream\& basic\+\_\+ast\+\_\+visitor\+::os (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [protected]}}
+
+Return the current output stream. \begin{DoxyReturn}{Returns}
+an output stream. 
+\end{DoxyReturn}
+
+
+Definition at line 38 of file basic\+\_\+ast\+\_\+visitor.\+h.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+cdk/targets/basic\+\_\+ast\+\_\+visitor.\+h\end{DoxyCompactItemize}

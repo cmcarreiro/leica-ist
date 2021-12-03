@@ -1,0 +1,149 @@
+\doxysection{cdk\+::basic\+\_\+factory Class Reference}
+\label{classcdk_1_1basic__factory}\index{cdk::basic\_factory@{cdk::basic\_factory}}
+
+
+{\ttfamily \#include $<$basic\+\_\+factory.\+h$>$}
+
+
+
+Inheritance diagram for cdk\+::basic\+\_\+factory\+:
+% FIG 0
+
+
+Collaboration diagram for cdk\+::basic\+\_\+factory\+:
+% FIG 1
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+virtual \textbf{ $\sim$basic\+\_\+factory} ()
+\item 
+virtual std\+::shared\+\_\+ptr$<$ \textbf{ compiler} $>$ \textbf{ create\+\_\+compiler} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\label{classcdk_1_1basic__factory_a535fded0c301dc7d002f17fe631d5fa9}} 
+static \textbf{ basic\+\_\+factory} $\ast$ {\bfseries get\+\_\+implementation} (const std\+::string \&language)
+\end{DoxyCompactItemize}
+\doxysubsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\label{classcdk_1_1basic__factory_ad6019ad813cd6a082284cd4265d2ea5a}} 
+{\bfseries basic\+\_\+factory} (const std\+::string \&language)
+\item 
+virtual std\+::shared\+\_\+ptr$<$ \textbf{ basic\+\_\+scanner} $>$ \textbf{ create\+\_\+scanner} ()=0
+\item 
+virtual std\+::shared\+\_\+ptr$<$ \textbf{ basic\+\_\+parser} $>$ \textbf{ create\+\_\+parser} ()=0
+\end{DoxyCompactItemize}
+\doxysubsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\label{classcdk_1_1basic__factory_a8c4a1162265812837a9a001973cc9a3a}} 
+const std\+::string {\bfseries \+\_\+language} = \char`\"{}\char`\"{}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+This is the main factory abstract class\+: it provides methods for creating the lexical analyser and the compiler itself. Instances of concrete subclasses will be created by the \char`\"{}main\char`\"{} function to provide instances of the scanner and compiler objects for a concrete language.
+\begin{DoxyItemize}
+\item keys are language names
+\item values are compiler factories 
+\end{DoxyItemize}
+
+Definition at line 24 of file basic\+\_\+factory.\+h.
+
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\label{classcdk_1_1basic__factory_a9cb78539bfef6fef3429337c42b78554}} 
+\index{cdk::basic\_factory@{cdk::basic\_factory}!````~basic\_factory@{$\sim$basic\_factory}}
+\index{````~basic\_factory@{$\sim$basic\_factory}!cdk::basic\_factory@{cdk::basic\_factory}}
+\doxysubsubsection{$\sim$basic\_factory()}
+{\footnotesize\ttfamily virtual cdk\+::basic\+\_\+factory\+::$\sim$basic\+\_\+factory (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+The superclass destructor does not do anything. Probably, it would be a good idea to clean up the factories map. 
+
+Definition at line 51 of file basic\+\_\+factory.\+h.
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\label{classcdk_1_1basic__factory_a883cf0f3e52b5a53b316914c74535de7}} 
+\index{cdk::basic\_factory@{cdk::basic\_factory}!create\_compiler@{create\_compiler}}
+\index{create\_compiler@{create\_compiler}!cdk::basic\_factory@{cdk::basic\_factory}}
+\doxysubsubsection{create\_compiler()}
+{\footnotesize\ttfamily virtual std\+::shared\+\_\+ptr$<$\textbf{ compiler}$>$ cdk\+::basic\+\_\+factory\+::create\+\_\+compiler (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+Create a compiler object for a given language. 
+\begin{DoxyParams}{Parameters}
+{\em name} & name of the language handled by the compiler \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+compiler object pointer 
+\end{DoxyReturn}
+
+
+Definition at line 77 of file basic\+\_\+factory.\+h.
+
+
+
+References create\+\_\+parser(), and create\+\_\+scanner().
+
+Here is the call graph for this function\+:
+% FIG 2
+\mbox{\label{classcdk_1_1basic__factory_afc8f88801455bf131cc4039271e6b741}} 
+\index{cdk::basic\_factory@{cdk::basic\_factory}!create\_parser@{create\_parser}}
+\index{create\_parser@{create\_parser}!cdk::basic\_factory@{cdk::basic\_factory}}
+\doxysubsubsection{create\_parser()}
+{\footnotesize\ttfamily virtual std\+::shared\+\_\+ptr$<$\textbf{ basic\+\_\+parser}$>$ cdk\+::basic\+\_\+factory\+::create\+\_\+parser (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}, {\ttfamily [pure virtual]}}
+
+Create a parser object for a given language. 
+\begin{DoxyParams}{Parameters}
+{\em name} & name of the input file (for debug only) \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+parser object pointer 
+\end{DoxyReturn}
+\begin{DoxySeeAlso}{See also}
+create\+Compiler 
+\end{DoxySeeAlso}
+
+
+Implemented in \textbf{ cdk\+::yy\+\_\+factory$<$ Lexer\+Type $>$} \doxyref{}{p.}{classcdk_1_1yy__factory_a9a051ba49001a7dbb9822b64c45135e9}.
+
+
+
+Referenced by create\+\_\+compiler().
+
+\mbox{\label{classcdk_1_1basic__factory_a25f3a81be472baccf2ab5ffb2f363608}} 
+\index{cdk::basic\_factory@{cdk::basic\_factory}!create\_scanner@{create\_scanner}}
+\index{create\_scanner@{create\_scanner}!cdk::basic\_factory@{cdk::basic\_factory}}
+\doxysubsubsection{create\_scanner()}
+{\footnotesize\ttfamily virtual std\+::shared\+\_\+ptr$<$\textbf{ basic\+\_\+scanner}$>$ cdk\+::basic\+\_\+factory\+::create\+\_\+scanner (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}, {\ttfamily [pure virtual]}}
+
+Create a scanner object for a given language. 
+\begin{DoxyParams}{Parameters}
+{\em name} & name of the input file (for debug only) \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+scanner object pointer 
+\end{DoxyReturn}
+\begin{DoxySeeAlso}{See also}
+create\+Compiler 
+\end{DoxySeeAlso}
+
+
+Implemented in \textbf{ cdk\+::yy\+\_\+factory$<$ Lexer\+Type $>$} \doxyref{}{p.}{classcdk_1_1yy__factory_a6132d875a397d6207727b070ed4155de}.
+
+
+
+Referenced by create\+\_\+compiler().
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+cdk/basic\+\_\+factory.\+h\end{DoxyCompactItemize}

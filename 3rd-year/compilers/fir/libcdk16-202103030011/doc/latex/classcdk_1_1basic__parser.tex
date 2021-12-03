@@ -1,0 +1,81 @@
+\doxysection{cdk\+::basic\+\_\+parser Class Reference}
+\label{classcdk_1_1basic__parser}\index{cdk::basic\_parser@{cdk::basic\_parser}}
+
+
+Inheritance diagram for cdk\+::basic\+\_\+parser\+:
+% FIG 0
+
+
+Collaboration diagram for cdk\+::basic\+\_\+parser\+:
+% FIG 1
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\label{classcdk_1_1basic__parser_a536c2274f7b00c0e17858b0ee1a400d6}} 
+std\+::shared\+\_\+ptr$<$ \textbf{ compiler} $>$ {\bfseries owner} ()
+\item 
+\mbox{\label{classcdk_1_1basic__parser_a68543c111a7fef48ebe70c47b02ead09}} 
+std\+::shared\+\_\+ptr$<$ \textbf{ basic\+\_\+scanner} $>$ {\bfseries scanner} ()
+\item 
+\mbox{\label{classcdk_1_1basic__parser_acc2215d959879e6fbac2f3e505c6bc03}} 
+void {\bfseries scanner} (std\+::shared\+\_\+ptr$<$ \textbf{ basic\+\_\+scanner} $>$ scanner)
+\item 
+virtual int \textbf{ parse} ()=0
+\end{DoxyCompactItemize}
+\doxysubsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\label{classcdk_1_1basic__parser_a11506116556681fc7fbfe4a974ec0b34}} 
+{\bfseries basic\+\_\+parser} (const std\+::string \&language, std\+::shared\+\_\+ptr$<$ \textbf{ basic\+\_\+scanner} $>$ scanner)
+\end{DoxyCompactItemize}
+\doxysubsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\label{classcdk_1_1basic__parser_a1c97f24997ae2bceeae4822e32a449e4}} 
+const std\+::string {\bfseries \+\_\+language} = \char`\"{}\char`\"{}
+\item 
+\mbox{\label{classcdk_1_1basic__parser_a1071aa82583cd806add631b8453fbfb1}} 
+std\+::shared\+\_\+ptr$<$ \textbf{ compiler} $>$ {\bfseries \+\_\+compiler} = nullptr
+\item 
+\mbox{\label{classcdk_1_1basic__parser_aa88b520cd9bc71be71c9ad9dedbd9895}} 
+std\+::shared\+\_\+ptr$<$ \textbf{ basic\+\_\+scanner} $>$ {\bfseries \+\_\+scanner} = nullptr
+\end{DoxyCompactItemize}
+\doxysubsection*{Friends}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\label{classcdk_1_1basic__parser_a6450bc9182feebc4fe52fbf86fa0ba40}} 
+class {\bfseries compiler}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+
+
+Definition at line 12 of file basic\+\_\+parser.\+h.
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\label{classcdk_1_1basic__parser_a974c94ef048509a80bd042ee9c783513}} 
+\index{cdk::basic\_parser@{cdk::basic\_parser}!parse@{parse}}
+\index{parse@{parse}!cdk::basic\_parser@{cdk::basic\_parser}}
+\doxysubsubsection{parse()}
+{\footnotesize\ttfamily virtual int cdk\+::basic\+\_\+parser\+::parse (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+Parse algorithm\+: the compiler object stores the result. 
+\begin{DoxyParams}{Parameters}
+{\em compiler} & the compiler object this parser belongs to. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true if the operation is successful 
+\end{DoxyReturn}
+
+
+Implemented in \textbf{ cdk\+::yy\+\_\+parser$<$ Lexer\+Type $>$} \doxyref{}{p.}{classcdk_1_1yy__parser_a998a98a7b38a6772fb24ae0eeb87ef17}.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+cdk/basic\+\_\+parser.\+h\end{DoxyCompactItemize}

@@ -1,0 +1,204 @@
+\doxysection{cdk\+::symbol\+\_\+table$<$ Symbol $>$ Class Template Reference}
+\label{classcdk_1_1symbol__table}\index{cdk::symbol\_table$<$ Symbol $>$@{cdk::symbol\_table$<$ Symbol $>$}}
+
+
+Collaboration diagram for cdk\+::symbol\+\_\+table$<$ Symbol $>$\+:
+% FIG 0
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+virtual \textbf{ $\sim$symbol\+\_\+table} ()
+\item 
+void \textbf{ push} ()
+\item 
+void \textbf{ pop} ()
+\item 
+bool \textbf{ insert} (const std\+::string \&name, std\+::shared\+\_\+ptr$<$ Symbol $>$ symbol)
+\item 
+bool \textbf{ replace\+\_\+local} (const std\+::string \&name, std\+::shared\+\_\+ptr$<$ Symbol $>$ symbol)
+\item 
+bool \textbf{ replace} (const std\+::string \&name, std\+::shared\+\_\+ptr$<$ Symbol $>$ symbol)
+\item 
+std\+::shared\+\_\+ptr$<$ Symbol $>$ \textbf{ find\+\_\+local} (const std\+::string \&name)
+\item 
+std\+::shared\+\_\+ptr$<$ Symbol $>$ \textbf{ find} (const std\+::string \&name, size\+\_\+t from=0) const
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\subsubsection*{template$<$typename Symbol$>$\newline
+class cdk\+::symbol\+\_\+table$<$ Symbol $>$}
+
+
+
+Definition at line 13 of file symbol\+\_\+table.\+h.
+
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\label{classcdk_1_1symbol__table_af25f5665467f9bb061b83ca997fd13e6}} 
+\index{cdk::symbol\_table$<$ Symbol $>$@{cdk::symbol\_table$<$ Symbol $>$}!````~symbol\_table@{$\sim$symbol\_table}}
+\index{````~symbol\_table@{$\sim$symbol\_table}!cdk::symbol\_table$<$ Symbol $>$@{cdk::symbol\_table$<$ Symbol $>$}}
+\doxysubsubsection{$\sim$symbol\_table()}
+{\footnotesize\ttfamily template$<$typename Symbol $>$ \\
+virtual \textbf{ cdk\+::symbol\+\_\+table}$<$ Symbol $>$\+::$\sim$\textbf{ symbol\+\_\+table} (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+Destroy the symbol table and all symbol pointers it contains. 
+
+Definition at line 38 of file symbol\+\_\+table.\+h.
+
+
+
+References cdk\+::symbol\+\_\+table$<$ Symbol $>$\+::pop().
+
+Here is the call graph for this function\+:
+% FIG 1
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\label{classcdk_1_1symbol__table_a0ba53541f7eefdad36bfc88097eb30f4}} 
+\index{cdk::symbol\_table$<$ Symbol $>$@{cdk::symbol\_table$<$ Symbol $>$}!find@{find}}
+\index{find@{find}!cdk::symbol\_table$<$ Symbol $>$@{cdk::symbol\_table$<$ Symbol $>$}}
+\doxysubsubsection{find()}
+{\footnotesize\ttfamily template$<$typename Symbol $>$ \\
+std\+::shared\+\_\+ptr$<$Symbol$>$ \textbf{ cdk\+::symbol\+\_\+table}$<$ Symbol $>$\+::find (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{name,  }\item[{size\+\_\+t}]{from = {\ttfamily 0} }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+Search for a symbol in the avaible contexts, starting with the first one and proceeding until reaching the outermost context.
+
+
+\begin{DoxyParams}{Parameters}
+{\em name} & the symbol\textquotesingle{}s name. \\
+\hline
+{\em from} & how many contexts up from the current one (zero). \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+{\ttfamily nullptr} if the symbol cannot be found in any of the contexts; or the symbol and corresponding attributes. 
+\end{DoxyReturn}
+
+
+Definition at line 167 of file symbol\+\_\+table.\+h.
+
+\mbox{\label{classcdk_1_1symbol__table_a7b5a83e2dfef11c7c3ffef952267b012}} 
+\index{cdk::symbol\_table$<$ Symbol $>$@{cdk::symbol\_table$<$ Symbol $>$}!find\_local@{find\_local}}
+\index{find\_local@{find\_local}!cdk::symbol\_table$<$ Symbol $>$@{cdk::symbol\_table$<$ Symbol $>$}}
+\doxysubsubsection{find\_local()}
+{\footnotesize\ttfamily template$<$typename Symbol $>$ \\
+std\+::shared\+\_\+ptr$<$Symbol$>$ \textbf{ cdk\+::symbol\+\_\+table}$<$ Symbol $>$\+::find\+\_\+local (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{name }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Search for a symbol in the local (current) context.
+
+
+\begin{DoxyParams}{Parameters}
+{\em name} & the symbol\textquotesingle{}s name. \\
+\hline
+{\em symbol} & the symbol. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+{\ttfamily true} if the symbol exists; {\ttfamily false} if the symbol does not exist in the current context. 
+\end{DoxyReturn}
+
+
+Definition at line 150 of file symbol\+\_\+table.\+h.
+
+\mbox{\label{classcdk_1_1symbol__table_ab0d7ace7cea6530192dc426b0d02dca5}} 
+\index{cdk::symbol\_table$<$ Symbol $>$@{cdk::symbol\_table$<$ Symbol $>$}!insert@{insert}}
+\index{insert@{insert}!cdk::symbol\_table$<$ Symbol $>$@{cdk::symbol\_table$<$ Symbol $>$}}
+\doxysubsubsection{insert()}
+{\footnotesize\ttfamily template$<$typename Symbol $>$ \\
+bool \textbf{ cdk\+::symbol\+\_\+table}$<$ Symbol $>$\+::insert (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{name,  }\item[{std\+::shared\+\_\+ptr$<$ Symbol $>$}]{symbol }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Define a new identifier in the local (current) context.
+
+
+\begin{DoxyParams}{Parameters}
+{\em name} & the symbol\textquotesingle{}s name. \\
+\hline
+{\em symbol} & the symbol. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+{\ttfamily true} if new identifier (may be defined in an upper context); {\ttfamily false} if identifier already exists in the current context. 
+\end{DoxyReturn}
+
+
+Definition at line 90 of file symbol\+\_\+table.\+h.
+
+\mbox{\label{classcdk_1_1symbol__table_a950073cad906b2f40046f386b70d5a84}} 
+\index{cdk::symbol\_table$<$ Symbol $>$@{cdk::symbol\_table$<$ Symbol $>$}!pop@{pop}}
+\index{pop@{pop}!cdk::symbol\_table$<$ Symbol $>$@{cdk::symbol\_table$<$ Symbol $>$}}
+\doxysubsubsection{pop()}
+{\footnotesize\ttfamily template$<$typename Symbol $>$ \\
+void \textbf{ cdk\+::symbol\+\_\+table}$<$ Symbol $>$\+::pop (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Destroy the current context\+: the previous context becomes the current one. If the first context is reached, no operation is performed. 
+
+Definition at line 71 of file symbol\+\_\+table.\+h.
+
+
+
+Referenced by cdk\+::symbol\+\_\+table$<$ Symbol $>$\+::$\sim$symbol\+\_\+table().
+
+\mbox{\label{classcdk_1_1symbol__table_a7fb69759db941faf1c57631110263988}} 
+\index{cdk::symbol\_table$<$ Symbol $>$@{cdk::symbol\_table$<$ Symbol $>$}!push@{push}}
+\index{push@{push}!cdk::symbol\_table$<$ Symbol $>$@{cdk::symbol\_table$<$ Symbol $>$}}
+\doxysubsubsection{push()}
+{\footnotesize\ttfamily template$<$typename Symbol $>$ \\
+void \textbf{ cdk\+::symbol\+\_\+table}$<$ Symbol $>$\+::push (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Create a new context and make it current. 
+
+Definition at line 61 of file symbol\+\_\+table.\+h.
+
+\mbox{\label{classcdk_1_1symbol__table_a887f0b22fc52c38db603edc2204c578e}} 
+\index{cdk::symbol\_table$<$ Symbol $>$@{cdk::symbol\_table$<$ Symbol $>$}!replace@{replace}}
+\index{replace@{replace}!cdk::symbol\_table$<$ Symbol $>$@{cdk::symbol\_table$<$ Symbol $>$}}
+\doxysubsubsection{replace()}
+{\footnotesize\ttfamily template$<$typename Symbol $>$ \\
+bool \textbf{ cdk\+::symbol\+\_\+table}$<$ Symbol $>$\+::replace (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{name,  }\item[{std\+::shared\+\_\+ptr$<$ Symbol $>$}]{symbol }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Replace the data corresponding to a symbol (look for the symbol in all available contexts, starting with the innermost one).
+
+
+\begin{DoxyParams}{Parameters}
+{\em name} & the symbol\textquotesingle{}s name. \\
+\hline
+{\em symbol} & the symbol. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+{\ttfamily true} if the symbol exists; {\ttfamily false} if the symbol does not exist in any of the contexts. 
+\end{DoxyReturn}
+
+
+Definition at line 128 of file symbol\+\_\+table.\+h.
+
+\mbox{\label{classcdk_1_1symbol__table_af15e8e2e900c8661a94f72a71978f16e}} 
+\index{cdk::symbol\_table$<$ Symbol $>$@{cdk::symbol\_table$<$ Symbol $>$}!replace\_local@{replace\_local}}
+\index{replace\_local@{replace\_local}!cdk::symbol\_table$<$ Symbol $>$@{cdk::symbol\_table$<$ Symbol $>$}}
+\doxysubsubsection{replace\_local()}
+{\footnotesize\ttfamily template$<$typename Symbol $>$ \\
+bool \textbf{ cdk\+::symbol\+\_\+table}$<$ Symbol $>$\+::replace\+\_\+local (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{name,  }\item[{std\+::shared\+\_\+ptr$<$ Symbol $>$}]{symbol }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Replace the data corresponding to a symbol in the current context.
+
+
+\begin{DoxyParams}{Parameters}
+{\em name} & the symbol\textquotesingle{}s name. \\
+\hline
+{\em symbol} & the symbol. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+{\ttfamily true} if the symbol exists; {\ttfamily false} if the symbol does not exist in any of the contexts. 
+\end{DoxyReturn}
+
+
+Definition at line 108 of file symbol\+\_\+table.\+h.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+cdk/symbol\+\_\+table.\+h\end{DoxyCompactItemize}

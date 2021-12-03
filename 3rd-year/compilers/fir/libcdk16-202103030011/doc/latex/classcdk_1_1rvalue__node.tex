@@ -1,0 +1,64 @@
+\doxysection{cdk\+::rvalue\+\_\+node Class Reference}
+\label{classcdk_1_1rvalue__node}\index{cdk::rvalue\_node@{cdk::rvalue\_node}}
+
+
+{\ttfamily \#include $<$rvalue\+\_\+node.\+h$>$}
+
+
+
+Inheritance diagram for cdk\+::rvalue\+\_\+node\+:
+% FIG 0
+
+
+Collaboration diagram for cdk\+::rvalue\+\_\+node\+:
+% FIG 1
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\label{classcdk_1_1rvalue__node_acedaa5b5e08c2d7df6464c283fccd63a}} 
+{\bfseries rvalue\+\_\+node} (int \textbf{ lineno}, \textbf{ lvalue\+\_\+node} $\ast$lvalue)
+\item 
+\mbox{\label{classcdk_1_1rvalue__node_ad7a9d32fe4b9e44edceacbb2d43655c5}} 
+\textbf{ cdk\+::lvalue\+\_\+node} $\ast$ {\bfseries lvalue} ()
+\item 
+void \textbf{ accept} (\textbf{ basic\+\_\+ast\+\_\+visitor} $\ast$av, int level)
+\end{DoxyCompactItemize}
+\doxysubsection*{Additional Inherited Members}
+
+
+\doxysubsection{Detailed Description}
+Class for describing left-\/values used as expressions (i.\+e., right-\/values). 
+
+Definition at line 12 of file rvalue\+\_\+node.\+h.
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\label{classcdk_1_1rvalue__node_af72e48d809752b169369298ec394e2d2}} 
+\index{cdk::rvalue\_node@{cdk::rvalue\_node}!accept@{accept}}
+\index{accept@{accept}!cdk::rvalue\_node@{cdk::rvalue\_node}}
+\doxysubsubsection{accept()}
+{\footnotesize\ttfamily void cdk\+::rvalue\+\_\+node\+::accept (\begin{DoxyParamCaption}\item[{\textbf{ basic\+\_\+ast\+\_\+visitor} $\ast$}]{av,  }\item[{int}]{level }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+Every node must provide this method.
+
+
+\begin{DoxyParams}{Parameters}
+{\em av} & basic A\+ST visitor \\
+\hline
+{\em level} & syntactic tree level \\
+\hline
+\end{DoxyParams}
+
+
+Implements \textbf{ cdk\+::basic\+\_\+node} \doxyref{}{p.}{classcdk_1_1basic__node_a9cc7c19d913b7b86eb420e8c1e1b221d}.
+
+
+
+Definition at line 25 of file rvalue\+\_\+node.\+h.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+cdk/ast/rvalue\+\_\+node.\+h\end{DoxyCompactItemize}

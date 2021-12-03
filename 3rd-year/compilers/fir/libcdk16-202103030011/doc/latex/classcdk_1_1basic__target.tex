@@ -1,0 +1,80 @@
+\doxysection{cdk\+::basic\+\_\+target Class Reference}
+\label{classcdk_1_1basic__target}\index{cdk::basic\_target@{cdk::basic\_target}}
+
+
+Collaboration diagram for cdk\+::basic\+\_\+target\+:
+% FIG 0
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\label{classcdk_1_1basic__target_aaa74cb39cf10b2735b1abc15680898fa}} 
+virtual \textbf{ $\sim$basic\+\_\+target} ()
+\begin{DoxyCompactList}\small\item\em How to destroy an evaluator. \end{DoxyCompactList}\item 
+virtual bool \textbf{ evaluate} (std\+::shared\+\_\+ptr$<$ \textbf{ compiler} $>$)=0
+\end{DoxyCompactItemize}
+\doxysubsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static \textbf{ basic\+\_\+target} $\ast$ \textbf{ get\+\_\+target\+\_\+for} (const std\+::string \&target)
+\end{DoxyCompactItemize}
+\doxysubsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\label{classcdk_1_1basic__target_a789431eed534e3827eb2686ed00f30b8}} 
+{\bfseries basic\+\_\+target} (const char $\ast$target)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+
+
+Definition at line 12 of file basic\+\_\+target.\+h.
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\label{classcdk_1_1basic__target_a0db773c9c4f84a36df0949187aab9adb}} 
+\index{cdk::basic\_target@{cdk::basic\_target}!evaluate@{evaluate}}
+\index{evaluate@{evaluate}!cdk::basic\_target@{cdk::basic\_target}}
+\doxysubsubsection{evaluate()}
+{\footnotesize\ttfamily virtual bool cdk\+::basic\+\_\+target\+::evaluate (\begin{DoxyParamCaption}\item[{std\+::shared\+\_\+ptr$<$ \textbf{ compiler} $>$}]{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+Evaluation algorithm for a syntax tree\+: processes the tree and sends the result to the output stream. 
+\begin{DoxyParams}{Parameters}
+{\em compiler} & object representing the compiler as a whole \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true if the operation is successful 
+\end{DoxyReturn}
+
+
+Referenced by cdk\+::compiler\+::evaluate().
+
+\mbox{\label{classcdk_1_1basic__target_a50126c8601a5b82dcce46e43d4258064}} 
+\index{cdk::basic\_target@{cdk::basic\_target}!get\_target\_for@{get\_target\_for}}
+\index{get\_target\_for@{get\_target\_for}!cdk::basic\_target@{cdk::basic\_target}}
+\doxysubsubsection{get\_target\_for()}
+{\footnotesize\ttfamily static \textbf{ basic\+\_\+target}$\ast$ cdk\+::basic\+\_\+target\+::get\+\_\+target\+\_\+for (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{target }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}
+
+How to get an evaluator for a given target. 
+\begin{DoxyParams}{Parameters}
+{\em target} & the target name\+: \char`\"{}asm\char`\"{}, \char`\"{}c\char`\"{}, \char`\"{}xml\char`\"{}, etc. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+a pointer to the evaluator object 
+\end{DoxyReturn}
+
+
+Definition at line 29 of file basic\+\_\+target.\+h.
+
+
+
+Referenced by cdk\+::compiler\+::evaluate().
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+cdk/targets/basic\+\_\+target.\+h\end{DoxyCompactItemize}

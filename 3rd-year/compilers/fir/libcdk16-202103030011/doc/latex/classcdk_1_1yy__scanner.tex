@@ -1,0 +1,96 @@
+\doxysection{cdk\+::yy\+\_\+scanner$<$ Lexer\+Type $>$ Class Template Reference}
+\label{classcdk_1_1yy__scanner}\index{cdk::yy\_scanner$<$ LexerType $>$@{cdk::yy\_scanner$<$ LexerType $>$}}
+
+
+{\ttfamily \#include $<$yy\+\_\+scanner.\+h$>$}
+
+
+
+Inheritance diagram for cdk\+::yy\+\_\+scanner$<$ Lexer\+Type $>$\+:
+% FIG 0
+
+
+Collaboration diagram for cdk\+::yy\+\_\+scanner$<$ Lexer\+Type $>$\+:
+% FIG 1
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\label{classcdk_1_1yy__scanner_ae5a8b6bae1ae9c82bd676f58ba76ca9f}} 
+{\bfseries yy\+\_\+scanner} (const std\+::string \&language)
+\item 
+\mbox{\label{classcdk_1_1yy__scanner_af233c30070ae174214fa3795c456e2dd}} 
+Lexer\+Type $\ast$ {\bfseries lexer} ()
+\item 
+\mbox{\label{classcdk_1_1yy__scanner_a6223af202ec351a9753396b3664a5e72}} 
+void {\bfseries lexer} (Lexer\+Type $\ast$lexer)
+\item 
+void \textbf{ switch\+\_\+streams} ()
+\item 
+int \textbf{ scan} ()
+\item 
+int \textbf{ lineno} () const
+\end{DoxyCompactItemize}
+\doxysubsection*{Additional Inherited Members}
+
+
+\doxysubsection{Detailed Description}
+\subsubsection*{template$<$typename Lexer\+Type$>$\newline
+class cdk\+::yy\+\_\+scanner$<$ Lexer\+Type $>$}
+
+This class corresponds to the scanner as implemented by Flex. 
+
+Definition at line 12 of file yy\+\_\+scanner.\+h.
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\label{classcdk_1_1yy__scanner_a7dad207713b63d89bc6b0d4f88313bf3}} 
+\index{cdk::yy\_scanner$<$ LexerType $>$@{cdk::yy\_scanner$<$ LexerType $>$}!lineno@{lineno}}
+\index{lineno@{lineno}!cdk::yy\_scanner$<$ LexerType $>$@{cdk::yy\_scanner$<$ LexerType $>$}}
+\doxysubsubsection{lineno()}
+{\footnotesize\ttfamily template$<$typename Lexer\+Type $>$ \\
+int \textbf{ cdk\+::yy\+\_\+scanner}$<$ Lexer\+Type $>$\+::lineno (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+Return the current source line. 
+
+Implements \textbf{ cdk\+::basic\+\_\+scanner} \doxyref{}{p.}{classcdk_1_1basic__scanner_a958d6207e97b29606410fba4204a60db}.
+
+
+
+Definition at line 50 of file yy\+\_\+scanner.\+h.
+
+\mbox{\label{classcdk_1_1yy__scanner_af3a3f2fc181718ef27ea44870474e3ec}} 
+\index{cdk::yy\_scanner$<$ LexerType $>$@{cdk::yy\_scanner$<$ LexerType $>$}!scan@{scan}}
+\index{scan@{scan}!cdk::yy\_scanner$<$ LexerType $>$@{cdk::yy\_scanner$<$ LexerType $>$}}
+\doxysubsubsection{scan()}
+{\footnotesize\ttfamily template$<$typename Lexer\+Type $>$ \\
+int \textbf{ cdk\+::yy\+\_\+scanner}$<$ Lexer\+Type $>$\+::scan (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+Scan the input. 
+
+Implements \textbf{ cdk\+::basic\+\_\+scanner} \doxyref{}{p.}{classcdk_1_1basic__scanner_aad8bc66ab0e2247392a91057b1bd55cf}.
+
+
+
+Definition at line 43 of file yy\+\_\+scanner.\+h.
+
+\mbox{\label{classcdk_1_1yy__scanner_a523200ba3ded52143ecf27750f5a8288}} 
+\index{cdk::yy\_scanner$<$ LexerType $>$@{cdk::yy\_scanner$<$ LexerType $>$}!switch\_streams@{switch\_streams}}
+\index{switch\_streams@{switch\_streams}!cdk::yy\_scanner$<$ LexerType $>$@{cdk::yy\_scanner$<$ LexerType $>$}}
+\doxysubsubsection{switch\_streams()}
+{\footnotesize\ttfamily template$<$typename Lexer\+Type $>$ \\
+void \textbf{ cdk\+::yy\+\_\+scanner}$<$ Lexer\+Type $>$\+::switch\+\_\+streams (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+Update the scanner\textquotesingle{}s input and output streams. F\+I\+X\+ME\+: \&$\ast$ is awful and probably bug-\/prone! 
+
+Implements \textbf{ cdk\+::basic\+\_\+scanner} \doxyref{}{p.}{classcdk_1_1basic__scanner}.
+
+
+
+Definition at line 33 of file yy\+\_\+scanner.\+h.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+cdk/yy\+\_\+scanner.\+h\end{DoxyCompactItemize}

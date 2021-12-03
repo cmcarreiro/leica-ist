@@ -1,0 +1,35 @@
+<doctype html>
+    <title>List Prescricao - Flask</title>
+    <body style="padding:20px">
+      {% if cursor %}
+        <table border="2px">
+          <thead>
+            <tr>
+              <th>num_cedula</th>
+              <th>num_doente</th>
+              <th>data</th>
+              <th>substancia</th>
+              <th>quant</th>
+            </tr>
+          </thead>
+          <tbody>      
+            {% for record in cursor %}
+              <tr>
+                <td>{{ record[0] }}</td>
+                <td>{{ record[1] }}</td>
+                <td>{{ record[2] }}</td>
+                <td>{{ record[3] }}</td>
+                <td>{{ record[4] }}</td>
+                <td><a href="prescricao_editar?num_cedula={{ record[0] }}&num_doente={{ record[1] }}&data={{ record[2] }}&substancia={{ record[3] }}">Editar</a></td>
+                <td><a href="prescricao_apagar?num_cedula={{ record[0] }}&num_doente={{ record[1] }}&data={{ record[2] }}&substancia={{ record[3] }}">Apagar</a></td>
+              </tr>
+            {% endfor %}
+          </tbody>
+        </table>
+        <a href="prescricao_inserir">Inserir</a>
+      {% else %}
+        <p> Error: failed to retreive data from database!</p>
+      {% endif %}
+    </body>
+    </doctype>
+    

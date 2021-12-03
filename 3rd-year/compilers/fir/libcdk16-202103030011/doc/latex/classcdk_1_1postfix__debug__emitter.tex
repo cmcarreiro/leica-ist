@@ -1,0 +1,1770 @@
+\doxysection{cdk\+::postfix\+\_\+debug\+\_\+emitter Class Reference}
+\label{classcdk_1_1postfix__debug__emitter}\index{cdk::postfix\_debug\_emitter@{cdk::postfix\_debug\_emitter}}
+
+
+{\ttfamily \#include $<$postfix\+\_\+debug\+\_\+emitter.\+h$>$}
+
+
+
+Inheritance diagram for cdk\+::postfix\+\_\+debug\+\_\+emitter\+:
+% FIG 0
+
+
+Collaboration diagram for cdk\+::postfix\+\_\+debug\+\_\+emitter\+:
+% FIG 1
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\label{classcdk_1_1postfix__debug__emitter_ac144735dc1f967bd20d744ffc0006173}} 
+{\bfseries postfix\+\_\+debug\+\_\+emitter} (std\+::shared\+\_\+ptr$<$ \textbf{ compiler} $>$ \&\textbf{ compiler})
+\item 
+void \textbf{ B\+SS} () override
+\item 
+void \textbf{ D\+A\+TA} () override
+\item 
+void \textbf{ R\+O\+D\+A\+TA} () override
+\item 
+void \textbf{ T\+E\+XT} () override
+\item 
+void \textbf{ S\+B\+Y\+TE} (char value) override
+\item 
+void \textbf{ S\+S\+H\+O\+RT} (short value) override
+\item 
+void \textbf{ S\+I\+NT} (int value) override
+\item 
+void \textbf{ S\+F\+L\+O\+AT} (float value) override
+\item 
+void \textbf{ S\+D\+O\+U\+B\+LE} (double value) override
+\item 
+void \textbf{ S\+S\+T\+R\+I\+NG} (std\+::string value) override
+\item 
+void \textbf{ S\+A\+L\+L\+OC} (int value) override
+\item 
+void \textbf{ S\+A\+D\+DR} (std\+::string label) override
+\item 
+void \textbf{ A\+L\+I\+GN} () override
+\item 
+void \textbf{ L\+A\+B\+EL} (std\+::string label) override
+\item 
+void \textbf{ E\+X\+T\+E\+RN} (std\+::string label) override
+\item 
+void \textbf{ G\+L\+O\+B\+AL} (const char $\ast$label, std\+::string type) override
+\item 
+void \textbf{ G\+L\+O\+B\+AL} (std\+::string label, std\+::string type) override
+\item 
+void \textbf{ A\+D\+DR} (std\+::string label) override
+\item 
+void \textbf{ A\+D\+D\+RA} (std\+::string label) override
+\item 
+void \textbf{ A\+D\+D\+RV} (std\+::string label) override
+\item 
+void \textbf{ L\+O\+C\+AL} (int offset) override
+\item 
+void \textbf{ L\+O\+CA} (int offset) override
+\item 
+void \textbf{ L\+O\+CV} (int offset) override
+\item 
+void \textbf{ L\+D\+B\+Y\+TE} () override
+\item 
+void \textbf{ L\+D\+S\+H\+O\+RT} () override
+\item 
+void \textbf{ L\+D\+I\+NT} () override
+\item 
+void \textbf{ L\+D\+F\+L\+O\+AT} () override
+\item 
+void \textbf{ L\+D\+D\+O\+U\+B\+LE} () override
+\item 
+void \textbf{ S\+T\+B\+Y\+TE} () override
+\item 
+void \textbf{ S\+T\+S\+H\+O\+RT} () override
+\item 
+void \textbf{ S\+T\+I\+NT} () override
+\item 
+void \textbf{ S\+T\+F\+L\+O\+AT} () override
+\item 
+void \textbf{ S\+T\+D\+O\+U\+B\+LE} () override
+\item 
+void \textbf{ SP} () override
+\item 
+void \textbf{ A\+L\+L\+OC} () override
+\item 
+void \textbf{ D\+U\+P32} () override
+\item 
+void \textbf{ D\+U\+P64} () override
+\item 
+void \textbf{ S\+W\+A\+P32} () override
+\item 
+void \textbf{ S\+W\+A\+P64} () override
+\item 
+void \textbf{ I\+NT} (int value) override
+\item 
+void \textbf{ F\+L\+O\+AT} (float value) override
+\item 
+void \textbf{ D\+O\+U\+B\+LE} (double value) override
+\item 
+void \textbf{ N\+EG} () override
+\item 
+void \textbf{ A\+DD} () override
+\item 
+void \textbf{ S\+UB} () override
+\item 
+void \textbf{ M\+UL} () override
+\item 
+void \textbf{ D\+IV} () override
+\item 
+void \textbf{ U\+D\+IV} () override
+\item 
+void \textbf{ M\+OD} () override
+\item 
+void \textbf{ U\+M\+OD} () override
+\item 
+void \textbf{ D\+N\+EG} () override
+\item 
+void \textbf{ D\+A\+DD} () override
+\item 
+void \textbf{ D\+S\+UB} () override
+\item 
+void \textbf{ D\+M\+UL} () override
+\item 
+void \textbf{ D\+D\+IV} () override
+\item 
+void \textbf{ I\+N\+CR} (int value) override
+\item 
+void \textbf{ D\+E\+CR} (int value) override
+\item 
+void \textbf{ D2F} () override
+\item 
+void \textbf{ F2D} () override
+\item 
+void \textbf{ D2I} () override
+\item 
+void \textbf{ I2D} () override
+\item 
+void \textbf{ EQ} () override
+\item 
+void \textbf{ NE} () override
+\item 
+void \textbf{ GT} () override
+\item 
+void \textbf{ GE} () override
+\item 
+void \textbf{ LE} () override
+\item 
+void \textbf{ LT} () override
+\item 
+void \textbf{ U\+GT} () override
+\item 
+void \textbf{ U\+GE} () override
+\item 
+void \textbf{ U\+LE} () override
+\item 
+void \textbf{ U\+LT} () override
+\item 
+void \textbf{ D\+C\+MP} () override
+\item 
+void \textbf{ N\+OT} () override
+\item 
+void \textbf{ A\+ND} () override
+\item 
+void \textbf{ OR} () override
+\item 
+void \textbf{ X\+OR} () override
+\item 
+void \textbf{ R\+O\+TL} () override
+\item 
+void \textbf{ R\+O\+TR} () override
+\item 
+void \textbf{ S\+H\+TL} () override
+\item 
+void \textbf{ S\+H\+T\+RU} () override
+\item 
+void \textbf{ S\+H\+T\+RS} () override
+\item 
+void \textbf{ E\+N\+T\+ER} (size\+\_\+t bytes) override
+\item 
+void \textbf{ S\+T\+A\+RT} () override
+\item 
+void \textbf{ S\+T\+F\+V\+A\+L32} () override
+\item 
+void \textbf{ S\+T\+F\+V\+A\+L64} () override
+\item 
+void \textbf{ L\+E\+A\+VE} () override
+\item 
+void \textbf{ R\+ET} () override
+\item 
+void \textbf{ R\+E\+TN} (int bytes) override
+\item 
+void \textbf{ C\+A\+LL} (std\+::string label) override
+\item 
+void \textbf{ T\+R\+A\+SH} (int bytes) override
+\item 
+void \textbf{ L\+D\+F\+V\+A\+L32} () override
+\item 
+void \textbf{ L\+D\+F\+V\+A\+L64} () override
+\item 
+\mbox{\label{classcdk_1_1postfix__debug__emitter_a815efec7bec18e9427ff1d7937839ae8}} 
+void {\bfseries J\+MP} (std\+::string label) override
+\item 
+\mbox{\label{classcdk_1_1postfix__debug__emitter_a3a10f8e7f678e2361422e356d132d76b}} 
+void {\bfseries L\+E\+AP} () override
+\item 
+\mbox{\label{classcdk_1_1postfix__debug__emitter_a3681e55be4c1ef619d49d0101c9cb909}} 
+void {\bfseries B\+R\+A\+N\+CH} () override
+\item 
+\mbox{\label{classcdk_1_1postfix__debug__emitter_ad2ee2b34b387270b8e263d836135459c}} 
+void {\bfseries JZ} (std\+::string label) override
+\item 
+\mbox{\label{classcdk_1_1postfix__debug__emitter_af51b4364f13dd4bd80a68859935aa70c}} 
+void {\bfseries J\+NZ} (std\+::string label) override
+\item 
+\mbox{\label{classcdk_1_1postfix__debug__emitter_acf2fdd77d6cb93b0d94dc62888591483}} 
+void {\bfseries J\+EQ} (std\+::string label) override
+\item 
+\mbox{\label{classcdk_1_1postfix__debug__emitter_a451f7a9de998df62af8e047d5f8fdfc5}} 
+void {\bfseries J\+NE} (std\+::string label) override
+\item 
+\mbox{\label{classcdk_1_1postfix__debug__emitter_acf9afba3a9870f153d19540fdafc129f}} 
+void {\bfseries J\+GT} (std\+::string label) override
+\item 
+\mbox{\label{classcdk_1_1postfix__debug__emitter_a0526b7fbfc1abf469c48fe5a6da95384}} 
+void {\bfseries J\+GE} (std\+::string label) override
+\item 
+\mbox{\label{classcdk_1_1postfix__debug__emitter_a5f8c93e48ca1c3f6bbfa1a0d004f9fe9}} 
+void {\bfseries J\+LE} (std\+::string label) override
+\item 
+\mbox{\label{classcdk_1_1postfix__debug__emitter_a4b5070d37f082d1ec6ec06132ceb91bd}} 
+void {\bfseries J\+LT} (std\+::string label) override
+\item 
+\mbox{\label{classcdk_1_1postfix__debug__emitter_acca39da3c3fbd0efc21901dfa89a75e2}} 
+void {\bfseries J\+U\+GT} (std\+::string label) override
+\item 
+\mbox{\label{classcdk_1_1postfix__debug__emitter_af96d1eeac24172c8d9da9886c0ac26b2}} 
+void {\bfseries J\+U\+GE} (std\+::string label) override
+\item 
+\mbox{\label{classcdk_1_1postfix__debug__emitter_a0b8a6138d1693446052b52fd87fcac6f}} 
+void {\bfseries J\+U\+LE} (std\+::string label) override
+\item 
+\mbox{\label{classcdk_1_1postfix__debug__emitter_a156fdefffa114222da4963c6919d73a2}} 
+void {\bfseries J\+U\+LT} (std\+::string label) override
+\item 
+\mbox{\label{classcdk_1_1postfix__debug__emitter_ac06ee4238fe6f205b65dd083acbb788e}} 
+void {\bfseries N\+IL} () override
+\item 
+\mbox{\label{classcdk_1_1postfix__debug__emitter_a306b8e99dbd8fa001e9f6161465f8469}} 
+void {\bfseries N\+OP} () override
+\end{DoxyCompactItemize}
+\doxysubsection*{Additional Inherited Members}
+
+
+\doxysubsection{Detailed Description}
+Class \doxyref{postfix\+\_\+debug\+\_\+emitter}{p.}{classcdk_1_1postfix__debug__emitter}\+: generate PF assembly (debug only). \begin{DoxySeeAlso}{See also}
+\doxyref{basic\+\_\+postfix\+\_\+emitter}{p.}{classcdk_1_1basic__postfix__emitter} 
+\end{DoxySeeAlso}
+
+
+Definition at line 12 of file postfix\+\_\+debug\+\_\+emitter.\+h.
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\label{classcdk_1_1postfix__debug__emitter_ad89ea3f47c8f5608662620122f1e72e7}} 
+\index{cdk::postfix\_debug\_emitter@{cdk::postfix\_debug\_emitter}!ADD@{ADD}}
+\index{ADD@{ADD}!cdk::postfix\_debug\_emitter@{cdk::postfix\_debug\_emitter}}
+\doxysubsubsection{ADD()}
+{\footnotesize\ttfamily void cdk\+::postfix\+\_\+debug\+\_\+emitter\+::\+A\+DD (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [override]}, {\ttfamily [virtual]}}
+
+Arithmetic instruction\+: integer sum of two integer values. 
+
+Implements \textbf{ cdk\+::basic\+\_\+postfix\+\_\+emitter} \doxyref{}{p.}{classcdk_1_1basic__postfix__emitter_a166a0afe31c5b1249b45c8f909bad6a1}.
+
+
+
+Definition at line 156 of file postfix\+\_\+debug\+\_\+emitter.\+h.
+
+\mbox{\label{classcdk_1_1postfix__debug__emitter_abffe1cc27420bea02cf55ed347f422d9}} 
+\index{cdk::postfix\_debug\_emitter@{cdk::postfix\_debug\_emitter}!ADDR@{ADDR}}
+\index{ADDR@{ADDR}!cdk::postfix\_debug\_emitter@{cdk::postfix\_debug\_emitter}}
+\doxysubsubsection{ADDR()}
+{\footnotesize\ttfamily void cdk\+::postfix\+\_\+debug\+\_\+emitter\+::\+A\+D\+DR (\begin{DoxyParamCaption}\item[{std\+::string}]{label }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [override]}, {\ttfamily [virtual]}}
+
+Absolute addressing instruction\+: puts the address of the name passed as argument at the top of the stack.
+
+Absolute addressing {\ttfamily A\+D\+DR}) is performed using labels. Relative addressing ({\ttfamily L\+O\+C\+AL}) requires a frame pointer to work\+: the frame pointer defines an addressing reference.
+
+
+\begin{DoxyParams}{Parameters}
+{\em label} & is the name of the memory position. \\
+\hline
+\end{DoxyParams}
+\begin{DoxySeeAlso}{See also}
+\doxyref{L\+O\+C\+AL}{p.}{classcdk_1_1postfix__debug__emitter_a4ae0097eb8ecd958f891040d21a4e0f3} 
+\end{DoxySeeAlso}
+
+
+Implements \textbf{ cdk\+::basic\+\_\+postfix\+\_\+emitter} \doxyref{}{p.}{classcdk_1_1basic__postfix__emitter_a7ba49b8d813f8a01b97f19b0296a9f73}.
+
+
+
+Definition at line 74 of file postfix\+\_\+debug\+\_\+emitter.\+h.
+
+\mbox{\label{classcdk_1_1postfix__debug__emitter_a8df30d48a16f94510c65eae9cfd72e16}} 
+\index{cdk::postfix\_debug\_emitter@{cdk::postfix\_debug\_emitter}!ADDRA@{ADDRA}}
+\index{ADDRA@{ADDRA}!cdk::postfix\_debug\_emitter@{cdk::postfix\_debug\_emitter}}
+\doxysubsubsection{ADDRA()}
+{\footnotesize\ttfamily void cdk\+::postfix\+\_\+debug\+\_\+emitter\+::\+A\+D\+D\+RA (\begin{DoxyParamCaption}\item[{std\+::string}]{label }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [override]}, {\ttfamily [virtual]}}
+
+Absolute addressing instruction\+: quick opcode\+: the same as the sequence A\+D\+D\+R(name); \doxyref{S\+T\+I\+N\+T()}{p.}{classcdk_1_1postfix__debug__emitter_a563179b02ebc5bb755c50cc4273f7ae3};
+
+
+\begin{DoxyParams}{Parameters}
+{\em label} & is the name of the memory position. \\
+\hline
+\end{DoxyParams}
+
+
+Implements \textbf{ cdk\+::basic\+\_\+postfix\+\_\+emitter} \doxyref{}{p.}{classcdk_1_1basic__postfix__emitter_aff6880030f5ffb52129f17b9ad21ce39}.
+
+
+
+Definition at line 77 of file postfix\+\_\+debug\+\_\+emitter.\+h.
+
+\mbox{\label{classcdk_1_1postfix__debug__emitter_a76999bb6af72be3d4c13e18e159f16a3}} 
+\index{cdk::postfix\_debug\_emitter@{cdk::postfix\_debug\_emitter}!ADDRV@{ADDRV}}
+\index{ADDRV@{ADDRV}!cdk::postfix\_debug\_emitter@{cdk::postfix\_debug\_emitter}}
+\doxysubsubsection{ADDRV()}
+{\footnotesize\ttfamily void cdk\+::postfix\+\_\+debug\+\_\+emitter\+::\+A\+D\+D\+RV (\begin{DoxyParamCaption}\item[{std\+::string}]{label }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [override]}, {\ttfamily [virtual]}}
+
+Absolute addressing instruction\+: quick opcode\+: the same as the sequence A\+D\+D\+R(name); \doxyref{L\+D\+I\+N\+T()}{p.}{classcdk_1_1postfix__debug__emitter_a6ae2543d98c06db35731290d4e7b76fa};
+
+
+\begin{DoxyParams}{Parameters}
+{\em label} & is the name of the memory position. \\
+\hline
+\end{DoxyParams}
+
+
+Implements \textbf{ cdk\+::basic\+\_\+postfix\+\_\+emitter} \doxyref{}{p.}{classcdk_1_1basic__postfix__emitter_a42f63442b1aece94dfb8e94f18500955}.
+
+
+
+Definition at line 80 of file postfix\+\_\+debug\+\_\+emitter.\+h.
+
+\mbox{\label{classcdk_1_1postfix__debug__emitter_ad4b58886979f969a269c5a075bf872f3}} 
+\index{cdk::postfix\_debug\_emitter@{cdk::postfix\_debug\_emitter}!ALIGN@{ALIGN}}
+\index{ALIGN@{ALIGN}!cdk::postfix\_debug\_emitter@{cdk::postfix\_debug\_emitter}}
+\doxysubsubsection{ALIGN()}
+{\footnotesize\ttfamily void cdk\+::postfix\+\_\+debug\+\_\+emitter\+::\+A\+L\+I\+GN (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [override]}, {\ttfamily [virtual]}}
+
+Forces the alignment of code or data. 
+
+Implements \textbf{ cdk\+::basic\+\_\+postfix\+\_\+emitter} \doxyref{}{p.}{classcdk_1_1basic__postfix__emitter_ac7faf0f5a5484fffa32a80b37659919a}.
+
+
+
+Definition at line 58 of file postfix\+\_\+debug\+\_\+emitter.\+h.
+
+\mbox{\label{classcdk_1_1postfix__debug__emitter_a8f2c0e253f3cdc1f4550eb47d29f8e57}} 
+\index{cdk::postfix\_debug\_emitter@{cdk::postfix\_debug\_emitter}!ALLOC@{ALLOC}}
+\index{ALLOC@{ALLOC}!cdk::postfix\_debug\_emitter@{cdk::postfix\_debug\_emitter}}
+\doxysubsubsection{ALLOC()}
+{\footnotesize\ttfamily void cdk\+::postfix\+\_\+debug\+\_\+emitter\+::\+A\+L\+L\+OC (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [override]}, {\ttfamily [virtual]}}
+
+Allocates in the stack as many bytes as indicated by the value at the top of the stack.
+
+Dynamic memory allocation in the stack, equivalent to a call to the C language {\ttfamily alloca} function, changes the offsets of temporary variables that may exist in the stack when the allocation is performed. Thus, it should only be used when no temporary variables exist, or when the full import of its actions is fully understood. 
+
+Implements \textbf{ cdk\+::basic\+\_\+postfix\+\_\+emitter} \doxyref{}{p.}{classcdk_1_1basic__postfix__emitter_ac9e4b7d03edd2bd1d5f2ca3c54c271a0}.
+
+
+
+Definition at line 128 of file postfix\+\_\+debug\+\_\+emitter.\+h.
+
+\mbox{\label{classcdk_1_1postfix__debug__emitter_a340bb1d73ae964fa289f49269d35c6d4}} 
+\index{cdk::postfix\_debug\_emitter@{cdk::postfix\_debug\_emitter}!AND@{AND}}
+\index{AND@{AND}!cdk::postfix\_debug\_emitter@{cdk::postfix\_debug\_emitter}}
+\doxysubsubsection{AND()}
+{\footnotesize\ttfamily void cdk\+::postfix\+\_\+debug\+\_\+emitter\+::\+A\+ND (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [override]}, {\ttfamily [virtual]}}
+
+Logical instructions\+: logical (bitwise) A\+ND operation. 
+
+Implements \textbf{ cdk\+::basic\+\_\+postfix\+\_\+emitter} \doxyref{}{p.}{classcdk_1_1basic__postfix__emitter_a0e1eed9bc80ca1ace031793aeca088d2}.
+
+
+
+Definition at line 254 of file postfix\+\_\+debug\+\_\+emitter.\+h.
+
+\mbox{\label{classcdk_1_1postfix__debug__emitter_acd25ad2a4a5d04aba43fe9bc4332c83c}} 
+\index{cdk::postfix\_debug\_emitter@{cdk::postfix\_debug\_emitter}!BSS@{BSS}}
+\index{BSS@{BSS}!cdk::postfix\_debug\_emitter@{cdk::postfix\_debug\_emitter}}
+\doxysubsubsection{BSS()}
+{\footnotesize\ttfamily void cdk\+::postfix\+\_\+debug\+\_\+emitter\+::\+B\+SS (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [override]}, {\ttfamily [virtual]}}
+
+Starts the data segment for uninitialized values. 
+
+Implements \textbf{ cdk\+::basic\+\_\+postfix\+\_\+emitter} \doxyref{}{p.}{classcdk_1_1basic__postfix__emitter_a42393ab0f62dc8737f30e6a9330a5392}.
+
+
+
+Definition at line 20 of file postfix\+\_\+debug\+\_\+emitter.\+h.
+
+\mbox{\label{classcdk_1_1postfix__debug__emitter_a4236259d4784fe60158477fe6fe2f48b}} 
+\index{cdk::postfix\_debug\_emitter@{cdk::postfix\_debug\_emitter}!CALL@{CALL}}
+\index{CALL@{CALL}!cdk::postfix\_debug\_emitter@{cdk::postfix\_debug\_emitter}}
+\doxysubsubsection{CALL()}
+{\footnotesize\ttfamily void cdk\+::postfix\+\_\+debug\+\_\+emitter\+::\+C\+A\+LL (\begin{DoxyParamCaption}\item[{std\+::string}]{label }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [override]}, {\ttfamily [virtual]}}
+
+Calls the named function. Stores the return address in the stack.
+
+
+\begin{DoxyParams}{Parameters}
+{\em label} & is the called function\textquotesingle{}s name. \\
+\hline
+\end{DoxyParams}
+
+
+Implements \textbf{ cdk\+::basic\+\_\+postfix\+\_\+emitter} \doxyref{}{p.}{classcdk_1_1basic__postfix__emitter_a14660f946d6b4a3042611ae4345083e3}.
+
+
+
+Definition at line 301 of file postfix\+\_\+debug\+\_\+emitter.\+h.
+
+\mbox{\label{classcdk_1_1postfix__debug__emitter_a085d1c721f6f12d595b80b17c52ade53}} 
+\index{cdk::postfix\_debug\_emitter@{cdk::postfix\_debug\_emitter}!D2F@{D2F}}
+\index{D2F@{D2F}!cdk::postfix\_debug\_emitter@{cdk::postfix\_debug\_emitter}}
+\doxysubsubsection{D2F()}
+{\footnotesize\ttfamily void cdk\+::postfix\+\_\+debug\+\_\+emitter\+::\+D2F (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [override]}, {\ttfamily [virtual]}}
+
+Type conversion instructions\+: converts from double precision floating point to simple precision floating point. 
+
+Implements \textbf{ cdk\+::basic\+\_\+postfix\+\_\+emitter} \doxyref{}{p.}{classcdk_1_1basic__postfix__emitter_abbeaa516b69a9903db6f09884cd8dbf9}.
+
+
+
+Definition at line 201 of file postfix\+\_\+debug\+\_\+emitter.\+h.
+
+\mbox{\label{classcdk_1_1postfix__debug__emitter_a29ebf3c99df035bc6f00b24b443aa67b}} 
+\index{cdk::postfix\_debug\_emitter@{cdk::postfix\_debug\_emitter}!D2I@{D2I}}
+\index{D2I@{D2I}!cdk::postfix\_debug\_emitter@{cdk::postfix\_debug\_emitter}}
+\doxysubsubsection{D2I()}
+{\footnotesize\ttfamily void cdk\+::postfix\+\_\+debug\+\_\+emitter\+::\+D2I (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [override]}, {\ttfamily [virtual]}}
+
+Type conversion instructions\+: converts from double precision floating point to integer. 
+
+Implements \textbf{ cdk\+::basic\+\_\+postfix\+\_\+emitter} \doxyref{}{p.}{classcdk_1_1basic__postfix__emitter_a8feeef18145e463e5d9b88b1b44f4e0f}.
+
+
+
+Definition at line 207 of file postfix\+\_\+debug\+\_\+emitter.\+h.
+
+\mbox{\label{classcdk_1_1postfix__debug__emitter_a121696d01d3b9707f12f637e901ebe5c}} 
+\index{cdk::postfix\_debug\_emitter@{cdk::postfix\_debug\_emitter}!DADD@{DADD}}
+\index{DADD@{DADD}!cdk::postfix\_debug\_emitter@{cdk::postfix\_debug\_emitter}}
+\doxysubsubsection{DADD()}
+{\footnotesize\ttfamily void cdk\+::postfix\+\_\+debug\+\_\+emitter\+::\+D\+A\+DD (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [override]}, {\ttfamily [virtual]}}
+
+Arithmetic instruction\+: floating point sum of two double values. 
+
+Implements \textbf{ cdk\+::basic\+\_\+postfix\+\_\+emitter} \doxyref{}{p.}{classcdk_1_1basic__postfix__emitter_a49807e0402b6945cde85c0990c067e4c}.
+
+
+
+Definition at line 181 of file postfix\+\_\+debug\+\_\+emitter.\+h.
+
+\mbox{\label{classcdk_1_1postfix__debug__emitter_a54efe479ec10eb541047d36c32e13397}} 
+\index{cdk::postfix\_debug\_emitter@{cdk::postfix\_debug\_emitter}!DATA@{DATA}}
+\index{DATA@{DATA}!cdk::postfix\_debug\_emitter@{cdk::postfix\_debug\_emitter}}
+\doxysubsubsection{DATA()}
+{\footnotesize\ttfamily void cdk\+::postfix\+\_\+debug\+\_\+emitter\+::\+D\+A\+TA (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [override]}, {\ttfamily [virtual]}}
+
+Starts the data segment for initialized values. 
+
+Implements \textbf{ cdk\+::basic\+\_\+postfix\+\_\+emitter} \doxyref{}{p.}{classcdk_1_1basic__postfix__emitter_af5ea780b17aad05db0301334d3ead1f8}.
+
+
+
+Definition at line 23 of file postfix\+\_\+debug\+\_\+emitter.\+h.
+
+\mbox{\label{classcdk_1_1postfix__debug__emitter_a4dea58cd7c422d65ea4044ead2f81ea7}} 
+\index{cdk::postfix\_debug\_emitter@{cdk::postfix\_debug\_emitter}!DCMP@{DCMP}}
+\index{DCMP@{DCMP}!cdk::postfix\_debug\_emitter@{cdk::postfix\_debug\_emitter}}
+\doxysubsubsection{DCMP()}
+{\footnotesize\ttfamily void cdk\+::postfix\+\_\+debug\+\_\+emitter\+::\+D\+C\+MP (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [override]}, {\ttfamily [virtual]}}
+
+Compares two double precision floating point values. The result is an integer value\+: less than 0, if the {\ttfamily d1} is less than {\ttfamily d2}; 0, if they are equal; greater than 0, otherwise. 
+
+Implements \textbf{ cdk\+::basic\+\_\+postfix\+\_\+emitter} \doxyref{}{p.}{classcdk_1_1basic__postfix__emitter_a3794734f65940af42fd56145c89e7e79}.
+
+
+
+Definition at line 247 of file postfix\+\_\+debug\+\_\+emitter.\+h.
+
+\mbox{\label{classcdk_1_1postfix__debug__emitter_af78f0f24b2e68a47a7cd045d3ebc5b46}} 
+\index{cdk::postfix\_debug\_emitter@{cdk::postfix\_debug\_emitter}!DDIV@{DDIV}}
+\index{DDIV@{DDIV}!cdk::postfix\_debug\_emitter@{cdk::postfix\_debug\_emitter}}
+\doxysubsubsection{DDIV()}
+{\footnotesize\ttfamily void cdk\+::postfix\+\_\+debug\+\_\+emitter\+::\+D\+D\+IV (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [override]}, {\ttfamily [virtual]}}
+
+Arithmetic instruction\+: floating point division of two double values. 
+
+Implements \textbf{ cdk\+::basic\+\_\+postfix\+\_\+emitter} \doxyref{}{p.}{classcdk_1_1basic__postfix__emitter_a1522df1378ae56eec3742e00dce35cf5}.
+
+
+
+Definition at line 190 of file postfix\+\_\+debug\+\_\+emitter.\+h.
+
+\mbox{\label{classcdk_1_1postfix__debug__emitter_a1109914fb17c1e957a03c4fcac0abd58}} 
+\index{cdk::postfix\_debug\_emitter@{cdk::postfix\_debug\_emitter}!DECR@{DECR}}
+\index{DECR@{DECR}!cdk::postfix\_debug\_emitter@{cdk::postfix\_debug\_emitter}}
+\doxysubsubsection{DECR()}
+{\footnotesize\ttfamily void cdk\+::postfix\+\_\+debug\+\_\+emitter\+::\+D\+E\+CR (\begin{DoxyParamCaption}\item[{int}]{value }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [override]}, {\ttfamily [virtual]}}
+
+Subtracts {\ttfamily value} from the value at the position defined by the address at the top of the stack, i.\+e. {\ttfamily [a]} becomes {\ttfamily [a]-\/value}.
+
+
+\begin{DoxyParams}{Parameters}
+{\em value} & is the value to be subtracted. \\
+\hline
+\end{DoxyParams}
+
+
+Implements \textbf{ cdk\+::basic\+\_\+postfix\+\_\+emitter} \doxyref{}{p.}{classcdk_1_1basic__postfix__emitter_a9f3b9ab7e2bbb91d94f470d1bab63a35}.
+
+
+
+Definition at line 197 of file postfix\+\_\+debug\+\_\+emitter.\+h.
+
+\mbox{\label{classcdk_1_1postfix__debug__emitter_a1b678f5695832d8ca26ea63eaeca5f66}} 
+\index{cdk::postfix\_debug\_emitter@{cdk::postfix\_debug\_emitter}!DIV@{DIV}}
+\index{DIV@{DIV}!cdk::postfix\_debug\_emitter@{cdk::postfix\_debug\_emitter}}
+\doxysubsubsection{DIV()}
+{\footnotesize\ttfamily void cdk\+::postfix\+\_\+debug\+\_\+emitter\+::\+D\+IV (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [override]}, {\ttfamily [virtual]}}
+
+Arithmetic instruction\+: integer division of two integer values. 
+
+Implements \textbf{ cdk\+::basic\+\_\+postfix\+\_\+emitter} \doxyref{}{p.}{classcdk_1_1basic__postfix__emitter_af91bf2f2e22ce0584f7ed2d1ac86784f}.
+
+
+
+Definition at line 165 of file postfix\+\_\+debug\+\_\+emitter.\+h.
+
+\mbox{\label{classcdk_1_1postfix__debug__emitter_ac27388a6a5a2abb6537037df9bafb406}} 
+\index{cdk::postfix\_debug\_emitter@{cdk::postfix\_debug\_emitter}!DMUL@{DMUL}}
+\index{DMUL@{DMUL}!cdk::postfix\_debug\_emitter@{cdk::postfix\_debug\_emitter}}
+\doxysubsubsection{DMUL()}
+{\footnotesize\ttfamily void cdk\+::postfix\+\_\+debug\+\_\+emitter\+::\+D\+M\+UL (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [override]}, {\ttfamily [virtual]}}
+
+Arithmetic instruction\+: floating point multiplication of two double values. 
+
+Implements \textbf{ cdk\+::basic\+\_\+postfix\+\_\+emitter} \doxyref{}{p.}{classcdk_1_1basic__postfix__emitter_a78fd34ad9b5d29a7bf81a083822c60d3}.
+
+
+
+Definition at line 187 of file postfix\+\_\+debug\+\_\+emitter.\+h.
+
+\mbox{\label{classcdk_1_1postfix__debug__emitter_a0d1ccc00e51170bd8502a450912fb1e3}} 
+\index{cdk::postfix\_debug\_emitter@{cdk::postfix\_debug\_emitter}!DNEG@{DNEG}}
+\index{DNEG@{DNEG}!cdk::postfix\_debug\_emitter@{cdk::postfix\_debug\_emitter}}
+\doxysubsubsection{DNEG()}
+{\footnotesize\ttfamily void cdk\+::postfix\+\_\+debug\+\_\+emitter\+::\+D\+N\+EG (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [override]}, {\ttfamily [virtual]}}
+
+Arithmetic instruction\+: floating point negation of double value (symmetric). 
+
+Implements \textbf{ cdk\+::basic\+\_\+postfix\+\_\+emitter} \doxyref{}{p.}{classcdk_1_1basic__postfix__emitter_a7dd48715b1ca4f2b5ec423a2525f4da8}.
+
+
+
+Definition at line 178 of file postfix\+\_\+debug\+\_\+emitter.\+h.
+
+\mbox{\label{classcdk_1_1postfix__debug__emitter_aa62428e94ab2c79fd69d8776a8f0056f}} 
+\index{cdk::postfix\_debug\_emitter@{cdk::postfix\_debug\_emitter}!DOUBLE@{DOUBLE}}
+\index{DOUBLE@{DOUBLE}!cdk::postfix\_debug\_emitter@{cdk::postfix\_debug\_emitter}}
+\doxysubsubsection{DOUBLE()}
+{\footnotesize\ttfamily void cdk\+::postfix\+\_\+debug\+\_\+emitter\+::\+D\+O\+U\+B\+LE (\begin{DoxyParamCaption}\item[{double}]{value }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [override]}, {\ttfamily [virtual]}}
+
+Pushes a double precision floating point value to the stack top.
+
+
+\begin{DoxyParams}{Parameters}
+{\em value} & is the value to be put in the stack. \\
+\hline
+\end{DoxyParams}
+
+
+Implements \textbf{ cdk\+::basic\+\_\+postfix\+\_\+emitter} \doxyref{}{p.}{classcdk_1_1basic__postfix__emitter_ac15b7950560bed669d4628c00b740a65}.
+
+
+
+Definition at line 149 of file postfix\+\_\+debug\+\_\+emitter.\+h.
+
+\mbox{\label{classcdk_1_1postfix__debug__emitter_aeac6ba7a645744ecc778cc8237596cbd}} 
+\index{cdk::postfix\_debug\_emitter@{cdk::postfix\_debug\_emitter}!DSUB@{DSUB}}
+\index{DSUB@{DSUB}!cdk::postfix\_debug\_emitter@{cdk::postfix\_debug\_emitter}}
+\doxysubsubsection{DSUB()}
+{\footnotesize\ttfamily void cdk\+::postfix\+\_\+debug\+\_\+emitter\+::\+D\+S\+UB (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [override]}, {\ttfamily [virtual]}}
+
+Arithmetic instruction\+: floating point subtraction of two double values. 
+
+Implements \textbf{ cdk\+::basic\+\_\+postfix\+\_\+emitter} \doxyref{}{p.}{classcdk_1_1basic__postfix__emitter_a2cdcd8add2d04ac7b2a2d2cde89784e4}.
+
+
+
+Definition at line 184 of file postfix\+\_\+debug\+\_\+emitter.\+h.
+
+\mbox{\label{classcdk_1_1postfix__debug__emitter_a9f7eb671616e55e579290071af381003}} 
+\index{cdk::postfix\_debug\_emitter@{cdk::postfix\_debug\_emitter}!DUP32@{DUP32}}
+\index{DUP32@{DUP32}!cdk::postfix\_debug\_emitter@{cdk::postfix\_debug\_emitter}}
+\doxysubsubsection{DUP32()}
+{\footnotesize\ttfamily void cdk\+::postfix\+\_\+debug\+\_\+emitter\+::\+D\+U\+P32 (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [override]}, {\ttfamily [virtual]}}
+
+Duplicates the value at the top of the stack. 
+
+Implements \textbf{ cdk\+::basic\+\_\+postfix\+\_\+emitter} \doxyref{}{p.}{classcdk_1_1basic__postfix__emitter_a6836d232716f2806784b9cf3f8f353b5}.
+
+
+
+Definition at line 131 of file postfix\+\_\+debug\+\_\+emitter.\+h.
+
+\mbox{\label{classcdk_1_1postfix__debug__emitter_ac7b77a7d747b5ba2b5c2857123466afd}} 
+\index{cdk::postfix\_debug\_emitter@{cdk::postfix\_debug\_emitter}!DUP64@{DUP64}}
+\index{DUP64@{DUP64}!cdk::postfix\_debug\_emitter@{cdk::postfix\_debug\_emitter}}
+\doxysubsubsection{DUP64()}
+{\footnotesize\ttfamily void cdk\+::postfix\+\_\+debug\+\_\+emitter\+::\+D\+U\+P64 (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [override]}, {\ttfamily [virtual]}}
+
+Duplicates the double precision value at the top of the stack. 
+
+Implements \textbf{ cdk\+::basic\+\_\+postfix\+\_\+emitter} \doxyref{}{p.}{classcdk_1_1basic__postfix__emitter_a905bf173474ceb3bf66fa3d0f38d52c5}.
+
+
+
+Definition at line 134 of file postfix\+\_\+debug\+\_\+emitter.\+h.
+
+\mbox{\label{classcdk_1_1postfix__debug__emitter_a753de28d0828948fc00e5c286415e661}} 
+\index{cdk::postfix\_debug\_emitter@{cdk::postfix\_debug\_emitter}!ENTER@{ENTER}}
+\index{ENTER@{ENTER}!cdk::postfix\_debug\_emitter@{cdk::postfix\_debug\_emitter}}
+\doxysubsubsection{ENTER()}
+{\footnotesize\ttfamily void cdk\+::postfix\+\_\+debug\+\_\+emitter\+::\+E\+N\+T\+ER (\begin{DoxyParamCaption}\item[{size\+\_\+t}]{bytes }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [override]}, {\ttfamily [virtual]}}
+
+Function definition instructions\+: starts a function\+: push the frame pointer (activation register) to the stack and allocate space for local variables, according to the size given as argument (in bytes).
+
+
+\begin{DoxyParams}{Parameters}
+{\em bytes} & is the space to be allocated for local variables. \\
+\hline
+\end{DoxyParams}
+
+
+Implements \textbf{ cdk\+::basic\+\_\+postfix\+\_\+emitter} \doxyref{}{p.}{classcdk_1_1basic__postfix__emitter_a159cb7c7fea5533f134dac6f78caf344}.
+
+
+
+Definition at line 280 of file postfix\+\_\+debug\+\_\+emitter.\+h.
+
+\mbox{\label{classcdk_1_1postfix__debug__emitter_ac6226631f075fd6ffe81a3aea716fbe2}} 
+\index{cdk::postfix\_debug\_emitter@{cdk::postfix\_debug\_emitter}!EQ@{EQ}}
+\index{EQ@{EQ}!cdk::postfix\_debug\_emitter@{cdk::postfix\_debug\_emitter}}
+\doxysubsubsection{EQ()}
+{\footnotesize\ttfamily void cdk\+::postfix\+\_\+debug\+\_\+emitter\+::\+EQ (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [override]}, {\ttfamily [virtual]}}
+
+Integer comparison instructions\+: {\itshape equal to}. 
+
+Implements \textbf{ cdk\+::basic\+\_\+postfix\+\_\+emitter} \doxyref{}{p.}{classcdk_1_1basic__postfix__emitter_af42872e3e357a8c10f9ddda73a3a7c01}.
+
+
+
+Definition at line 214 of file postfix\+\_\+debug\+\_\+emitter.\+h.
+
+\mbox{\label{classcdk_1_1postfix__debug__emitter_a79e46f8eda8be31fa885e307025d3c65}} 
+\index{cdk::postfix\_debug\_emitter@{cdk::postfix\_debug\_emitter}!EXTERN@{EXTERN}}
+\index{EXTERN@{EXTERN}!cdk::postfix\_debug\_emitter@{cdk::postfix\_debug\_emitter}}
+\doxysubsubsection{EXTERN()}
+{\footnotesize\ttfamily void cdk\+::postfix\+\_\+debug\+\_\+emitter\+::\+E\+X\+T\+E\+RN (\begin{DoxyParamCaption}\item[{std\+::string}]{label }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [override]}, {\ttfamily [virtual]}}
+
+Declares the symbol whose name is passed as argument as being externally defined, i.\+e., defined in another compilation module.
+
+
+\begin{DoxyParams}{Parameters}
+{\em label} & is the symbol\textquotesingle{}s name. \\
+\hline
+\end{DoxyParams}
+
+
+Implements \textbf{ cdk\+::basic\+\_\+postfix\+\_\+emitter} \doxyref{}{p.}{classcdk_1_1basic__postfix__emitter_a9f207cbea12f483f060bd08cfd4a2ebc}.
+
+
+
+Definition at line 64 of file postfix\+\_\+debug\+\_\+emitter.\+h.
+
+\mbox{\label{classcdk_1_1postfix__debug__emitter_a7f69270da35f16646322a0443b375bce}} 
+\index{cdk::postfix\_debug\_emitter@{cdk::postfix\_debug\_emitter}!F2D@{F2D}}
+\index{F2D@{F2D}!cdk::postfix\_debug\_emitter@{cdk::postfix\_debug\_emitter}}
+\doxysubsubsection{F2D()}
+{\footnotesize\ttfamily void cdk\+::postfix\+\_\+debug\+\_\+emitter\+::\+F2D (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [override]}, {\ttfamily [virtual]}}
+
+Type conversion instructions\+: converts from simple precision floating point to double precision floating point. 
+
+Implements \textbf{ cdk\+::basic\+\_\+postfix\+\_\+emitter} \doxyref{}{p.}{classcdk_1_1basic__postfix__emitter_a470ed24829b371235928c6260ba27a6b}.
+
+
+
+Definition at line 204 of file postfix\+\_\+debug\+\_\+emitter.\+h.
+
+\mbox{\label{classcdk_1_1postfix__debug__emitter_a10a875c1a4143c2d8c7209711f333442}} 
+\index{cdk::postfix\_debug\_emitter@{cdk::postfix\_debug\_emitter}!FLOAT@{FLOAT}}
+\index{FLOAT@{FLOAT}!cdk::postfix\_debug\_emitter@{cdk::postfix\_debug\_emitter}}
+\doxysubsubsection{FLOAT()}
+{\footnotesize\ttfamily void cdk\+::postfix\+\_\+debug\+\_\+emitter\+::\+F\+L\+O\+AT (\begin{DoxyParamCaption}\item[{float}]{value }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [override]}, {\ttfamily [virtual]}}
+
+Pushes a single precision floating point value to the stack top.
+
+
+\begin{DoxyParams}{Parameters}
+{\em value} & is the value to be put in the stack. \\
+\hline
+\end{DoxyParams}
+
+
+Implements \textbf{ cdk\+::basic\+\_\+postfix\+\_\+emitter} \doxyref{}{p.}{classcdk_1_1basic__postfix__emitter_a74ebd6cbb6ae2f84b4903e9562f47d71}.
+
+
+
+Definition at line 146 of file postfix\+\_\+debug\+\_\+emitter.\+h.
+
+\mbox{\label{classcdk_1_1postfix__debug__emitter_a43d4d4d80600a0e4fe34853c2ed82675}} 
+\index{cdk::postfix\_debug\_emitter@{cdk::postfix\_debug\_emitter}!GE@{GE}}
+\index{GE@{GE}!cdk::postfix\_debug\_emitter@{cdk::postfix\_debug\_emitter}}
+\doxysubsubsection{GE()}
+{\footnotesize\ttfamily void cdk\+::postfix\+\_\+debug\+\_\+emitter\+::\+GE (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [override]}, {\ttfamily [virtual]}}
+
+Integer comparison instructions\+: {\itshape greater than or equal to}. 
+
+Implements \textbf{ cdk\+::basic\+\_\+postfix\+\_\+emitter} \doxyref{}{p.}{classcdk_1_1basic__postfix__emitter_a0ab3916c8b3ba97b702a0cc4cc13a28c}.
+
+
+
+Definition at line 224 of file postfix\+\_\+debug\+\_\+emitter.\+h.
+
+\mbox{\label{classcdk_1_1postfix__debug__emitter_ab49b5de156df41fe50ed00220bfc1f54}} 
+\index{cdk::postfix\_debug\_emitter@{cdk::postfix\_debug\_emitter}!GLOBAL@{GLOBAL}}
+\index{GLOBAL@{GLOBAL}!cdk::postfix\_debug\_emitter@{cdk::postfix\_debug\_emitter}}
+\doxysubsubsection{GLOBAL()\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily void cdk\+::postfix\+\_\+debug\+\_\+emitter\+::\+G\+L\+O\+B\+AL (\begin{DoxyParamCaption}\item[{const char $\ast$}]{label,  }\item[{std\+::string}]{type }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [override]}, {\ttfamily [virtual]}}
+
+Declare a name/label (first argument) with a given type (second argument; see below). Declaration of a name must preceed its definition.
+
+
+\begin{DoxyParams}{Parameters}
+{\em label} & is the name to be defined. \\
+\hline
+{\em type} & is the named object\textquotesingle{}s type. \\
+\hline
+\end{DoxyParams}
+\begin{DoxySeeAlso}{See also}
+F\+U\+NC O\+BJ N\+O\+NE 
+\end{DoxySeeAlso}
+
+
+Implements \textbf{ cdk\+::basic\+\_\+postfix\+\_\+emitter} \doxyref{}{p.}{classcdk_1_1basic__postfix__emitter_aa9bf57435ec8d5c1083e176bc37291bc}.
+
+
+
+Definition at line 67 of file postfix\+\_\+debug\+\_\+emitter.\+h.
+
+\mbox{\label{classcdk_1_1postfix__debug__emitter_a5cf7c964f02eb20b16a6f35a3f8454c6}} 
+\index{cdk::postfix\_debug\_emitter@{cdk::postfix\_debug\_emitter}!GLOBAL@{GLOBAL}}
+\index{GLOBAL@{GLOBAL}!cdk::postfix\_debug\_emitter@{cdk::postfix\_debug\_emitter}}
+\doxysubsubsection{GLOBAL()\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily void cdk\+::postfix\+\_\+debug\+\_\+emitter\+::\+G\+L\+O\+B\+AL (\begin{DoxyParamCaption}\item[{std\+::string}]{label,  }\item[{std\+::string}]{type }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [override]}, {\ttfamily [virtual]}}
+
+Declare a name/label (first argument) with a given type (second argument; see below). Declaration of a name must preceed its definition. This is the C++-\/friendly interface.
+
+
+\begin{DoxyParams}{Parameters}
+{\em label} & is the name to be defined. \\
+\hline
+{\em type} & is the named object\textquotesingle{}s type. \\
+\hline
+\end{DoxyParams}
+\begin{DoxySeeAlso}{See also}
+F\+U\+NC O\+BJ N\+O\+NE 
+\end{DoxySeeAlso}
+
+
+Implements \textbf{ cdk\+::basic\+\_\+postfix\+\_\+emitter} \doxyref{}{p.}{classcdk_1_1basic__postfix__emitter_a1da21b3612e39d3cbc2f6c9b9bd1b5ac}.
+
+
+
+Definition at line 70 of file postfix\+\_\+debug\+\_\+emitter.\+h.
+
+\mbox{\label{classcdk_1_1postfix__debug__emitter_acc7ed3c81e3e971f27610f489064e854}} 
+\index{cdk::postfix\_debug\_emitter@{cdk::postfix\_debug\_emitter}!GT@{GT}}
+\index{GT@{GT}!cdk::postfix\_debug\_emitter@{cdk::postfix\_debug\_emitter}}
+\doxysubsubsection{GT()}
+{\footnotesize\ttfamily void cdk\+::postfix\+\_\+debug\+\_\+emitter\+::\+GT (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [override]}, {\ttfamily [virtual]}}
+
+Integer comparison instructions\+: {\itshape greater than}. 
+
+Implements \textbf{ cdk\+::basic\+\_\+postfix\+\_\+emitter} \doxyref{}{p.}{classcdk_1_1basic__postfix__emitter_a6ef7f33dcbf2dea63d677688304e4eed}.
+
+
+
+Definition at line 221 of file postfix\+\_\+debug\+\_\+emitter.\+h.
+
+\mbox{\label{classcdk_1_1postfix__debug__emitter_a99f61410b4655fe6cb5b2cfc21e0f2d5}} 
+\index{cdk::postfix\_debug\_emitter@{cdk::postfix\_debug\_emitter}!I2D@{I2D}}
+\index{I2D@{I2D}!cdk::postfix\_debug\_emitter@{cdk::postfix\_debug\_emitter}}
+\doxysubsubsection{I2D()}
+{\footnotesize\ttfamily void cdk\+::postfix\+\_\+debug\+\_\+emitter\+::\+I2D (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [override]}, {\ttfamily [virtual]}}
+
+Type conversion instructions\+: converts from integer to double precision floating point. 
+
+Implements \textbf{ cdk\+::basic\+\_\+postfix\+\_\+emitter} \doxyref{}{p.}{classcdk_1_1basic__postfix__emitter_ad3e1cf8e6ff555f015bac67d8826d39e}.
+
+
+
+Definition at line 210 of file postfix\+\_\+debug\+\_\+emitter.\+h.
+
+\mbox{\label{classcdk_1_1postfix__debug__emitter_ae431d1f7b307839032ffb64c371fea5a}} 
+\index{cdk::postfix\_debug\_emitter@{cdk::postfix\_debug\_emitter}!INCR@{INCR}}
+\index{INCR@{INCR}!cdk::postfix\_debug\_emitter@{cdk::postfix\_debug\_emitter}}
+\doxysubsubsection{INCR()}
+{\footnotesize\ttfamily void cdk\+::postfix\+\_\+debug\+\_\+emitter\+::\+I\+N\+CR (\begin{DoxyParamCaption}\item[{int}]{value }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [override]}, {\ttfamily [virtual]}}
+
+Adds {\ttfamily value} to the value at the position defined by the address at the top of the stack, i.\+e. {\ttfamily [a]} becomes {\ttfamily [a]+value}.
+
+
+\begin{DoxyParams}{Parameters}
+{\em value} & is the value to be added. \\
+\hline
+\end{DoxyParams}
+
+
+Implements \textbf{ cdk\+::basic\+\_\+postfix\+\_\+emitter} \doxyref{}{p.}{classcdk_1_1basic__postfix__emitter_ae1ade11fc4736f157cbf3f9a7f905088}.
+
+
+
+Definition at line 194 of file postfix\+\_\+debug\+\_\+emitter.\+h.
+
+\mbox{\label{classcdk_1_1postfix__debug__emitter_a66596bd875a16e2e1d45b63125a605d3}} 
+\index{cdk::postfix\_debug\_emitter@{cdk::postfix\_debug\_emitter}!INT@{INT}}
+\index{INT@{INT}!cdk::postfix\_debug\_emitter@{cdk::postfix\_debug\_emitter}}
+\doxysubsubsection{INT()}
+{\footnotesize\ttfamily void cdk\+::postfix\+\_\+debug\+\_\+emitter\+::\+I\+NT (\begin{DoxyParamCaption}\item[{int}]{value }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [override]}, {\ttfamily [virtual]}}
+
+Pushes a integer value to the stack top.
+
+
+\begin{DoxyParams}{Parameters}
+{\em value} & is the value to be put in the stack. \\
+\hline
+\end{DoxyParams}
+
+
+Implements \textbf{ cdk\+::basic\+\_\+postfix\+\_\+emitter} \doxyref{}{p.}{classcdk_1_1basic__postfix__emitter_aabed3ddcbb97144f10fb9adf0cac3533}.
+
+
+
+Definition at line 143 of file postfix\+\_\+debug\+\_\+emitter.\+h.
+
+\mbox{\label{classcdk_1_1postfix__debug__emitter_a8e58857ff176060f096db9c00576240c}} 
+\index{cdk::postfix\_debug\_emitter@{cdk::postfix\_debug\_emitter}!LABEL@{LABEL}}
+\index{LABEL@{LABEL}!cdk::postfix\_debug\_emitter@{cdk::postfix\_debug\_emitter}}
+\doxysubsubsection{LABEL()}
+{\footnotesize\ttfamily void cdk\+::postfix\+\_\+debug\+\_\+emitter\+::\+L\+A\+B\+EL (\begin{DoxyParamCaption}\item[{std\+::string}]{label }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [override]}, {\ttfamily [virtual]}}
+
+Generates a new label, as indicated by the argument.
+
+
+\begin{DoxyParams}{Parameters}
+{\em label} & is the new label\textquotesingle{}s name. \\
+\hline
+\end{DoxyParams}
+
+
+Implements \textbf{ cdk\+::basic\+\_\+postfix\+\_\+emitter} \doxyref{}{p.}{classcdk_1_1basic__postfix__emitter_a72477bf642a41a0263c64dedd2415e0d}.
+
+
+
+Definition at line 61 of file postfix\+\_\+debug\+\_\+emitter.\+h.
+
+\mbox{\label{classcdk_1_1postfix__debug__emitter_a5d746c723b43332be883a325c2d18ded}} 
+\index{cdk::postfix\_debug\_emitter@{cdk::postfix\_debug\_emitter}!LDBYTE@{LDBYTE}}
+\index{LDBYTE@{LDBYTE}!cdk::postfix\_debug\_emitter@{cdk::postfix\_debug\_emitter}}
+\doxysubsubsection{LDBYTE()}
+{\footnotesize\ttfamily void cdk\+::postfix\+\_\+debug\+\_\+emitter\+::\+L\+D\+B\+Y\+TE (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [override]}, {\ttfamily [virtual]}}
+
+Load instruction\+: loads 1 byte (char). 
+
+Implements \textbf{ cdk\+::basic\+\_\+postfix\+\_\+emitter} \doxyref{}{p.}{classcdk_1_1basic__postfix__emitter_a3a1374ec00e75f242d3b407603c35277}.
+
+
+
+Definition at line 93 of file postfix\+\_\+debug\+\_\+emitter.\+h.
+
+\mbox{\label{classcdk_1_1postfix__debug__emitter_ac7ba00bffb8e8769d4ae5a7216c9cafc}} 
+\index{cdk::postfix\_debug\_emitter@{cdk::postfix\_debug\_emitter}!LDDOUBLE@{LDDOUBLE}}
+\index{LDDOUBLE@{LDDOUBLE}!cdk::postfix\_debug\_emitter@{cdk::postfix\_debug\_emitter}}
+\doxysubsubsection{LDDOUBLE()}
+{\footnotesize\ttfamily void cdk\+::postfix\+\_\+debug\+\_\+emitter\+::\+L\+D\+D\+O\+U\+B\+LE (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [override]}, {\ttfamily [virtual]}}
+
+Load instruction\+: loads a double precision floating point value. 
+
+Implements \textbf{ cdk\+::basic\+\_\+postfix\+\_\+emitter} \doxyref{}{p.}{classcdk_1_1basic__postfix__emitter_a2b40d11e62af9a372ee774f7bcf47c20}.
+
+
+
+Definition at line 105 of file postfix\+\_\+debug\+\_\+emitter.\+h.
+
+\mbox{\label{classcdk_1_1postfix__debug__emitter_aa13ae5937082a0ee6eedb094075f7ce6}} 
+\index{cdk::postfix\_debug\_emitter@{cdk::postfix\_debug\_emitter}!LDFLOAT@{LDFLOAT}}
+\index{LDFLOAT@{LDFLOAT}!cdk::postfix\_debug\_emitter@{cdk::postfix\_debug\_emitter}}
+\doxysubsubsection{LDFLOAT()}
+{\footnotesize\ttfamily void cdk\+::postfix\+\_\+debug\+\_\+emitter\+::\+L\+D\+F\+L\+O\+AT (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [override]}, {\ttfamily [virtual]}}
+
+Load instruction\+: loads a single precision floating point value. 
+
+Implements \textbf{ cdk\+::basic\+\_\+postfix\+\_\+emitter} \doxyref{}{p.}{classcdk_1_1basic__postfix__emitter_a2388fe700143ae8a3cbb53c83c7c1468}.
+
+
+
+Definition at line 102 of file postfix\+\_\+debug\+\_\+emitter.\+h.
+
+\mbox{\label{classcdk_1_1postfix__debug__emitter_a7fffce535509c9e1bb302bc66aa5c31e}} 
+\index{cdk::postfix\_debug\_emitter@{cdk::postfix\_debug\_emitter}!LDFVAL32@{LDFVAL32}}
+\index{LDFVAL32@{LDFVAL32}!cdk::postfix\_debug\_emitter@{cdk::postfix\_debug\_emitter}}
+\doxysubsubsection{LDFVAL32()}
+{\footnotesize\ttfamily void cdk\+::postfix\+\_\+debug\+\_\+emitter\+::\+L\+D\+F\+V\+A\+L32 (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [override]}, {\ttfamily [virtual]}}
+
+Function definition instructions\+: pushes the value in the accumulator register to the stack. 
+
+Implements \textbf{ cdk\+::basic\+\_\+postfix\+\_\+emitter} \doxyref{}{p.}{classcdk_1_1basic__postfix__emitter_ad8d4941a7ac5f0615d0ef6bad9cc82db}.
+
+
+
+Definition at line 307 of file postfix\+\_\+debug\+\_\+emitter.\+h.
+
+\mbox{\label{classcdk_1_1postfix__debug__emitter_abbada02b44e75863a058b66df0131e06}} 
+\index{cdk::postfix\_debug\_emitter@{cdk::postfix\_debug\_emitter}!LDFVAL64@{LDFVAL64}}
+\index{LDFVAL64@{LDFVAL64}!cdk::postfix\_debug\_emitter@{cdk::postfix\_debug\_emitter}}
+\doxysubsubsection{LDFVAL64()}
+{\footnotesize\ttfamily void cdk\+::postfix\+\_\+debug\+\_\+emitter\+::\+L\+D\+F\+V\+A\+L64 (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [override]}, {\ttfamily [virtual]}}
+
+Function definition instructions\+: pushes the value in the double precision floating point register to the stack. 
+
+Implements \textbf{ cdk\+::basic\+\_\+postfix\+\_\+emitter} \doxyref{}{p.}{classcdk_1_1basic__postfix__emitter_aff015c98f958b2a29c9c42268774c831}.
+
+
+
+Definition at line 310 of file postfix\+\_\+debug\+\_\+emitter.\+h.
+
+\mbox{\label{classcdk_1_1postfix__debug__emitter_a6ae2543d98c06db35731290d4e7b76fa}} 
+\index{cdk::postfix\_debug\_emitter@{cdk::postfix\_debug\_emitter}!LDINT@{LDINT}}
+\index{LDINT@{LDINT}!cdk::postfix\_debug\_emitter@{cdk::postfix\_debug\_emitter}}
+\doxysubsubsection{LDINT()}
+{\footnotesize\ttfamily void cdk\+::postfix\+\_\+debug\+\_\+emitter\+::\+L\+D\+I\+NT (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [override]}, {\ttfamily [virtual]}}
+
+Load instruction\+: loads 4 bytes (integer -- rvalue). 
+
+Implements \textbf{ cdk\+::basic\+\_\+postfix\+\_\+emitter} \doxyref{}{p.}{classcdk_1_1basic__postfix__emitter_aceb6564e7bcc2485bae28fd26882ebe3}.
+
+
+
+Definition at line 99 of file postfix\+\_\+debug\+\_\+emitter.\+h.
+
+\mbox{\label{classcdk_1_1postfix__debug__emitter_abfa7f7418889ebd68c8603dee66f688b}} 
+\index{cdk::postfix\_debug\_emitter@{cdk::postfix\_debug\_emitter}!LDSHORT@{LDSHORT}}
+\index{LDSHORT@{LDSHORT}!cdk::postfix\_debug\_emitter@{cdk::postfix\_debug\_emitter}}
+\doxysubsubsection{LDSHORT()}
+{\footnotesize\ttfamily void cdk\+::postfix\+\_\+debug\+\_\+emitter\+::\+L\+D\+S\+H\+O\+RT (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [override]}, {\ttfamily [virtual]}}
+
+Load instruction\+: loads 2 bytes (short). 
+
+Implements \textbf{ cdk\+::basic\+\_\+postfix\+\_\+emitter} \doxyref{}{p.}{classcdk_1_1basic__postfix__emitter_a6a0d871eb3bd94216fbad0d411fd5ceb}.
+
+
+
+Definition at line 96 of file postfix\+\_\+debug\+\_\+emitter.\+h.
+
+\mbox{\label{classcdk_1_1postfix__debug__emitter_ad2df0e86d73935a654a3d81e2113f7f2}} 
+\index{cdk::postfix\_debug\_emitter@{cdk::postfix\_debug\_emitter}!LE@{LE}}
+\index{LE@{LE}!cdk::postfix\_debug\_emitter@{cdk::postfix\_debug\_emitter}}
+\doxysubsubsection{LE()}
+{\footnotesize\ttfamily void cdk\+::postfix\+\_\+debug\+\_\+emitter\+::\+LE (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [override]}, {\ttfamily [virtual]}}
+
+Integer comparison instructions\+: {\itshape less than or equal to}. 
+
+Implements \textbf{ cdk\+::basic\+\_\+postfix\+\_\+emitter} \doxyref{}{p.}{classcdk_1_1basic__postfix__emitter_a2b70b5c039769d936f02cee4a74f3bc5}.
+
+
+
+Definition at line 227 of file postfix\+\_\+debug\+\_\+emitter.\+h.
+
+\mbox{\label{classcdk_1_1postfix__debug__emitter_adabdc962bbbab553ddf5a0c098833afb}} 
+\index{cdk::postfix\_debug\_emitter@{cdk::postfix\_debug\_emitter}!LEAVE@{LEAVE}}
+\index{LEAVE@{LEAVE}!cdk::postfix\_debug\_emitter@{cdk::postfix\_debug\_emitter}}
+\doxysubsubsection{LEAVE()}
+{\footnotesize\ttfamily void cdk\+::postfix\+\_\+debug\+\_\+emitter\+::\+L\+E\+A\+VE (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [override]}, {\ttfamily [virtual]}}
+
+Function definition instructions\+: ends a function\+: restores the frame pointer (activation register) and destroys the function-\/local stack data. 
+
+Implements \textbf{ cdk\+::basic\+\_\+postfix\+\_\+emitter} \doxyref{}{p.}{classcdk_1_1basic__postfix__emitter_a70a187783c5c3a4d72a76dc44969fc00}.
+
+
+
+Definition at line 292 of file postfix\+\_\+debug\+\_\+emitter.\+h.
+
+\mbox{\label{classcdk_1_1postfix__debug__emitter_a5a34b3d2efec66f22fbc216cd4e6aef6}} 
+\index{cdk::postfix\_debug\_emitter@{cdk::postfix\_debug\_emitter}!LOCA@{LOCA}}
+\index{LOCA@{LOCA}!cdk::postfix\_debug\_emitter@{cdk::postfix\_debug\_emitter}}
+\doxysubsubsection{LOCA()}
+{\footnotesize\ttfamily void cdk\+::postfix\+\_\+debug\+\_\+emitter\+::\+L\+O\+CA (\begin{DoxyParamCaption}\item[{int}]{offset }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [override]}, {\ttfamily [virtual]}}
+
+Relative addressing instruction\+: quick opcode\+: the same as the sequence L\+O\+C\+A\+L(offset); \doxyref{S\+T\+I\+N\+T()}{p.}{classcdk_1_1postfix__debug__emitter_a563179b02ebc5bb755c50cc4273f7ae3};
+
+
+\begin{DoxyParams}{Parameters}
+{\em offset} & from the top of the stack. \\
+\hline
+\end{DoxyParams}
+
+
+Implements \textbf{ cdk\+::basic\+\_\+postfix\+\_\+emitter} \doxyref{}{p.}{classcdk_1_1basic__postfix__emitter_a6227e33d0ac157fdabe320f3e50ee92d}.
+
+
+
+Definition at line 86 of file postfix\+\_\+debug\+\_\+emitter.\+h.
+
+\mbox{\label{classcdk_1_1postfix__debug__emitter_a4ae0097eb8ecd958f891040d21a4e0f3}} 
+\index{cdk::postfix\_debug\_emitter@{cdk::postfix\_debug\_emitter}!LOCAL@{LOCAL}}
+\index{LOCAL@{LOCAL}!cdk::postfix\_debug\_emitter@{cdk::postfix\_debug\_emitter}}
+\doxysubsubsection{LOCAL()}
+{\footnotesize\ttfamily void cdk\+::postfix\+\_\+debug\+\_\+emitter\+::\+L\+O\+C\+AL (\begin{DoxyParamCaption}\item[{int}]{offset }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [override]}, {\ttfamily [virtual]}}
+
+Relative addressing instruction\+: puts at the top of the stack the address of the local variable, obtained by computing the offset relative to the frame pointer.
+
+The value passed as argument is as follows\+: greater of equal to 8, means function arguments; equal to 4, means the function\textquotesingle{}s return address; equal to 0, means the frame pointer itself; less that -\/4, means local variables.
+
+
+\begin{DoxyParams}{Parameters}
+{\em offset} & from the top of the stack. \\
+\hline
+\end{DoxyParams}
+
+
+Implements \textbf{ cdk\+::basic\+\_\+postfix\+\_\+emitter} \doxyref{}{p.}{classcdk_1_1basic__postfix__emitter_a0c1ccb1039c9c837b26c47e70ceddbd8}.
+
+
+
+Definition at line 83 of file postfix\+\_\+debug\+\_\+emitter.\+h.
+
+\mbox{\label{classcdk_1_1postfix__debug__emitter_a662fae8a4ebdb58f965d3238a7885e96}} 
+\index{cdk::postfix\_debug\_emitter@{cdk::postfix\_debug\_emitter}!LOCV@{LOCV}}
+\index{LOCV@{LOCV}!cdk::postfix\_debug\_emitter@{cdk::postfix\_debug\_emitter}}
+\doxysubsubsection{LOCV()}
+{\footnotesize\ttfamily void cdk\+::postfix\+\_\+debug\+\_\+emitter\+::\+L\+O\+CV (\begin{DoxyParamCaption}\item[{int}]{offset }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [override]}, {\ttfamily [virtual]}}
+
+Relative addressing instruction\+: quick opcode\+: the same as the sequence A\+D\+D\+R(name); \doxyref{L\+D\+I\+N\+T()}{p.}{classcdk_1_1postfix__debug__emitter_a6ae2543d98c06db35731290d4e7b76fa};
+
+
+\begin{DoxyParams}{Parameters}
+{\em offset} & from the top of the stack. \\
+\hline
+\end{DoxyParams}
+
+
+Implements \textbf{ cdk\+::basic\+\_\+postfix\+\_\+emitter} \doxyref{}{p.}{classcdk_1_1basic__postfix__emitter_aa012f6ccb65d219308782ada1f3c4435}.
+
+
+
+Definition at line 89 of file postfix\+\_\+debug\+\_\+emitter.\+h.
+
+\mbox{\label{classcdk_1_1postfix__debug__emitter_a78bc5985f39e5a9e5ec4b11fa92afaac}} 
+\index{cdk::postfix\_debug\_emitter@{cdk::postfix\_debug\_emitter}!LT@{LT}}
+\index{LT@{LT}!cdk::postfix\_debug\_emitter@{cdk::postfix\_debug\_emitter}}
+\doxysubsubsection{LT()}
+{\footnotesize\ttfamily void cdk\+::postfix\+\_\+debug\+\_\+emitter\+::\+LT (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [override]}, {\ttfamily [virtual]}}
+
+Integer comparison instructions\+: {\itshape less than}. 
+
+Implements \textbf{ cdk\+::basic\+\_\+postfix\+\_\+emitter} \doxyref{}{p.}{classcdk_1_1basic__postfix__emitter_a98ff6d7efdc788b5e7d8d0a1ee518df6}.
+
+
+
+Definition at line 230 of file postfix\+\_\+debug\+\_\+emitter.\+h.
+
+\mbox{\label{classcdk_1_1postfix__debug__emitter_aa00ef85222d9718278711096a87109b0}} 
+\index{cdk::postfix\_debug\_emitter@{cdk::postfix\_debug\_emitter}!MOD@{MOD}}
+\index{MOD@{MOD}!cdk::postfix\_debug\_emitter@{cdk::postfix\_debug\_emitter}}
+\doxysubsubsection{MOD()}
+{\footnotesize\ttfamily void cdk\+::postfix\+\_\+debug\+\_\+emitter\+::\+M\+OD (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [override]}, {\ttfamily [virtual]}}
+
+Arithmetic instruction\+: remainder of integer division of two integer values. 
+
+Implements \textbf{ cdk\+::basic\+\_\+postfix\+\_\+emitter} \doxyref{}{p.}{classcdk_1_1basic__postfix__emitter_ab86a314f84129885462dded544acca96}.
+
+
+
+Definition at line 171 of file postfix\+\_\+debug\+\_\+emitter.\+h.
+
+\mbox{\label{classcdk_1_1postfix__debug__emitter_a6584cc249da476ec424b3318229247ad}} 
+\index{cdk::postfix\_debug\_emitter@{cdk::postfix\_debug\_emitter}!MUL@{MUL}}
+\index{MUL@{MUL}!cdk::postfix\_debug\_emitter@{cdk::postfix\_debug\_emitter}}
+\doxysubsubsection{MUL()}
+{\footnotesize\ttfamily void cdk\+::postfix\+\_\+debug\+\_\+emitter\+::\+M\+UL (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [override]}, {\ttfamily [virtual]}}
+
+Arithmetic instruction\+: integer multiplication of two integer values. 
+
+Implements \textbf{ cdk\+::basic\+\_\+postfix\+\_\+emitter} \doxyref{}{p.}{classcdk_1_1basic__postfix__emitter_a1b4edc79e9074688feb51609f1b8137b}.
+
+
+
+Definition at line 162 of file postfix\+\_\+debug\+\_\+emitter.\+h.
+
+\mbox{\label{classcdk_1_1postfix__debug__emitter_ab698c80806ea7543789385e1d1fc3e00}} 
+\index{cdk::postfix\_debug\_emitter@{cdk::postfix\_debug\_emitter}!NE@{NE}}
+\index{NE@{NE}!cdk::postfix\_debug\_emitter@{cdk::postfix\_debug\_emitter}}
+\doxysubsubsection{NE()}
+{\footnotesize\ttfamily void cdk\+::postfix\+\_\+debug\+\_\+emitter\+::\+NE (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [override]}, {\ttfamily [virtual]}}
+
+Integer comparison instructions\+: {\itshape not equal to}. 
+
+Implements \textbf{ cdk\+::basic\+\_\+postfix\+\_\+emitter} \doxyref{}{p.}{classcdk_1_1basic__postfix__emitter_a637ca16c064518be3a325abcaeadc002}.
+
+
+
+Definition at line 217 of file postfix\+\_\+debug\+\_\+emitter.\+h.
+
+\mbox{\label{classcdk_1_1postfix__debug__emitter_ae446454f2d9dea7167267105f2da79ee}} 
+\index{cdk::postfix\_debug\_emitter@{cdk::postfix\_debug\_emitter}!NEG@{NEG}}
+\index{NEG@{NEG}!cdk::postfix\_debug\_emitter@{cdk::postfix\_debug\_emitter}}
+\doxysubsubsection{NEG()}
+{\footnotesize\ttfamily void cdk\+::postfix\+\_\+debug\+\_\+emitter\+::\+N\+EG (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [override]}, {\ttfamily [virtual]}}
+
+Arithmetic instruction\+: negation (symmetric) of integer value. 
+
+Implements \textbf{ cdk\+::basic\+\_\+postfix\+\_\+emitter} \doxyref{}{p.}{classcdk_1_1basic__postfix__emitter_abcf3ea8d995b9c898e8b97920c1f3d19}.
+
+
+
+Definition at line 153 of file postfix\+\_\+debug\+\_\+emitter.\+h.
+
+\mbox{\label{classcdk_1_1postfix__debug__emitter_a3a9d1a29864fc8d841a300b64081a1d3}} 
+\index{cdk::postfix\_debug\_emitter@{cdk::postfix\_debug\_emitter}!NOT@{NOT}}
+\index{NOT@{NOT}!cdk::postfix\_debug\_emitter@{cdk::postfix\_debug\_emitter}}
+\doxysubsubsection{NOT()}
+{\footnotesize\ttfamily void cdk\+::postfix\+\_\+debug\+\_\+emitter\+::\+N\+OT (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [override]}, {\ttfamily [virtual]}}
+
+Logical instructions\+: logical negation (bitwise), i.\+e., one\textquotesingle{}s complement. 
+
+Implements \textbf{ cdk\+::basic\+\_\+postfix\+\_\+emitter} \doxyref{}{p.}{classcdk_1_1basic__postfix__emitter_a5fb1bf82c76e8b2fe3e70336801360c6}.
+
+
+
+Definition at line 251 of file postfix\+\_\+debug\+\_\+emitter.\+h.
+
+\mbox{\label{classcdk_1_1postfix__debug__emitter_ab4aca666c110064f09c3c80df87d93c8}} 
+\index{cdk::postfix\_debug\_emitter@{cdk::postfix\_debug\_emitter}!OR@{OR}}
+\index{OR@{OR}!cdk::postfix\_debug\_emitter@{cdk::postfix\_debug\_emitter}}
+\doxysubsubsection{OR()}
+{\footnotesize\ttfamily void cdk\+::postfix\+\_\+debug\+\_\+emitter\+::\+OR (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [override]}, {\ttfamily [virtual]}}
+
+Logical instructions\+: logical (bitwise) OR operation. 
+
+Implements \textbf{ cdk\+::basic\+\_\+postfix\+\_\+emitter} \doxyref{}{p.}{classcdk_1_1basic__postfix__emitter_a8bffc779f5bc6b0878adc68aa19763f8}.
+
+
+
+Definition at line 257 of file postfix\+\_\+debug\+\_\+emitter.\+h.
+
+\mbox{\label{classcdk_1_1postfix__debug__emitter_acdd282861f3e0d8a5dc298ad12cc7de6}} 
+\index{cdk::postfix\_debug\_emitter@{cdk::postfix\_debug\_emitter}!RET@{RET}}
+\index{RET@{RET}!cdk::postfix\_debug\_emitter@{cdk::postfix\_debug\_emitter}}
+\doxysubsubsection{RET()}
+{\footnotesize\ttfamily void cdk\+::postfix\+\_\+debug\+\_\+emitter\+::\+R\+ET (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [override]}, {\ttfamily [virtual]}}
+
+Function definition instructions\+: returns from a function (the stack should contain the return address). 
+
+Implements \textbf{ cdk\+::basic\+\_\+postfix\+\_\+emitter} \doxyref{}{p.}{classcdk_1_1basic__postfix__emitter_a80e164209c2b470c46040e12c8c796b2}.
+
+
+
+Definition at line 295 of file postfix\+\_\+debug\+\_\+emitter.\+h.
+
+\mbox{\label{classcdk_1_1postfix__debug__emitter_a81bf06de11a2a29af476213a98f7dd8f}} 
+\index{cdk::postfix\_debug\_emitter@{cdk::postfix\_debug\_emitter}!RETN@{RETN}}
+\index{RETN@{RETN}!cdk::postfix\_debug\_emitter@{cdk::postfix\_debug\_emitter}}
+\doxysubsubsection{RETN()}
+{\footnotesize\ttfamily void cdk\+::postfix\+\_\+debug\+\_\+emitter\+::\+R\+E\+TN (\begin{DoxyParamCaption}\item[{int}]{bytes }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [override]}, {\ttfamily [virtual]}}
+
+Function definition instructions\+: returns from a function, but removes {\ttfamily n} bytes from the stack after removing the return address. More or less the same as {\ttfamily \doxyref{R\+E\+T()}{p.}{classcdk_1_1postfix__debug__emitter_acdd282861f3e0d8a5dc298ad12cc7de6}} followed by {\ttfamily T\+R\+A\+S\+H(n)}.
+
+
+\begin{DoxyParams}{Parameters}
+{\em bytes} & the number of bytes to take from the stack. \\
+\hline
+\end{DoxyParams}
+
+
+Implements \textbf{ cdk\+::basic\+\_\+postfix\+\_\+emitter} \doxyref{}{p.}{classcdk_1_1basic__postfix__emitter_a17188d0c52725f25eb85228476ca2019}.
+
+
+
+Definition at line 298 of file postfix\+\_\+debug\+\_\+emitter.\+h.
+
+\mbox{\label{classcdk_1_1postfix__debug__emitter_a7a1eb249b1fe8b610e432143dba271c2}} 
+\index{cdk::postfix\_debug\_emitter@{cdk::postfix\_debug\_emitter}!RODATA@{RODATA}}
+\index{RODATA@{RODATA}!cdk::postfix\_debug\_emitter@{cdk::postfix\_debug\_emitter}}
+\doxysubsubsection{RODATA()}
+{\footnotesize\ttfamily void cdk\+::postfix\+\_\+debug\+\_\+emitter\+::\+R\+O\+D\+A\+TA (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [override]}, {\ttfamily [virtual]}}
+
+Starts the data segment for initialized constant values. 
+
+Implements \textbf{ cdk\+::basic\+\_\+postfix\+\_\+emitter} \doxyref{}{p.}{classcdk_1_1basic__postfix__emitter_aad22d403073ba30c7eb7055b38815944}.
+
+
+
+Definition at line 26 of file postfix\+\_\+debug\+\_\+emitter.\+h.
+
+\mbox{\label{classcdk_1_1postfix__debug__emitter_ab716bdb8f9b0befa020a19556b1658d4}} 
+\index{cdk::postfix\_debug\_emitter@{cdk::postfix\_debug\_emitter}!ROTL@{ROTL}}
+\index{ROTL@{ROTL}!cdk::postfix\_debug\_emitter@{cdk::postfix\_debug\_emitter}}
+\doxysubsubsection{ROTL()}
+{\footnotesize\ttfamily void cdk\+::postfix\+\_\+debug\+\_\+emitter\+::\+R\+O\+TL (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [override]}, {\ttfamily [virtual]}}
+
+Rotation and shift instructions\+: left rotation of stack top. 
+
+Implements \textbf{ cdk\+::basic\+\_\+postfix\+\_\+emitter} \doxyref{}{p.}{classcdk_1_1basic__postfix__emitter_a6e4d20ce59052211616410e929697ffd}.
+
+
+
+Definition at line 264 of file postfix\+\_\+debug\+\_\+emitter.\+h.
+
+\mbox{\label{classcdk_1_1postfix__debug__emitter_a705620078aef64a89f45a384a0a7cdc2}} 
+\index{cdk::postfix\_debug\_emitter@{cdk::postfix\_debug\_emitter}!ROTR@{ROTR}}
+\index{ROTR@{ROTR}!cdk::postfix\_debug\_emitter@{cdk::postfix\_debug\_emitter}}
+\doxysubsubsection{ROTR()}
+{\footnotesize\ttfamily void cdk\+::postfix\+\_\+debug\+\_\+emitter\+::\+R\+O\+TR (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [override]}, {\ttfamily [virtual]}}
+
+Rotation and shift instructions\+: right rotation of stack top. 
+
+Implements \textbf{ cdk\+::basic\+\_\+postfix\+\_\+emitter} \doxyref{}{p.}{classcdk_1_1basic__postfix__emitter_a54e6e8493861a2f2da4bfdd180f3dced}.
+
+
+
+Definition at line 267 of file postfix\+\_\+debug\+\_\+emitter.\+h.
+
+\mbox{\label{classcdk_1_1postfix__debug__emitter_a3659e36319ef8144c544d9d3551f8636}} 
+\index{cdk::postfix\_debug\_emitter@{cdk::postfix\_debug\_emitter}!SADDR@{SADDR}}
+\index{SADDR@{SADDR}!cdk::postfix\_debug\_emitter@{cdk::postfix\_debug\_emitter}}
+\doxysubsubsection{SADDR()}
+{\footnotesize\ttfamily void cdk\+::postfix\+\_\+debug\+\_\+emitter\+::\+S\+A\+D\+DR (\begin{DoxyParamCaption}\item[{std\+::string}]{label }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [override]}, {\ttfamily [virtual]}}
+
+Declares a name for an address.
+
+
+\begin{DoxyParams}{Parameters}
+{\em label} & is the name to be declared. \\
+\hline
+\end{DoxyParams}
+
+
+Implements \textbf{ cdk\+::basic\+\_\+postfix\+\_\+emitter} \doxyref{}{p.}{classcdk_1_1basic__postfix__emitter_a70fff331dd75af833e91210c158329c8}.
+
+
+
+Definition at line 54 of file postfix\+\_\+debug\+\_\+emitter.\+h.
+
+\mbox{\label{classcdk_1_1postfix__debug__emitter_a30a636fa6d4eb08b01bc95c2245df381}} 
+\index{cdk::postfix\_debug\_emitter@{cdk::postfix\_debug\_emitter}!SALLOC@{SALLOC}}
+\index{SALLOC@{SALLOC}!cdk::postfix\_debug\_emitter@{cdk::postfix\_debug\_emitter}}
+\doxysubsubsection{SALLOC()}
+{\footnotesize\ttfamily void cdk\+::postfix\+\_\+debug\+\_\+emitter\+::\+S\+A\+L\+L\+OC (\begin{DoxyParamCaption}\item[{int}]{value }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [override]}, {\ttfamily [virtual]}}
+
+Declares an uninitialized vector with the length (in bytes) given as argument.
+
+
+\begin{DoxyParams}{Parameters}
+{\em value} & is the vector\textquotesingle{}s length. \\
+\hline
+\end{DoxyParams}
+
+
+Implements \textbf{ cdk\+::basic\+\_\+postfix\+\_\+emitter} \doxyref{}{p.}{classcdk_1_1basic__postfix__emitter_a611558f51589abf6d4b25c5fc30861ea}.
+
+
+
+Definition at line 51 of file postfix\+\_\+debug\+\_\+emitter.\+h.
+
+\mbox{\label{classcdk_1_1postfix__debug__emitter_aee68544eedcf42a827413d1f6c0eb350}} 
+\index{cdk::postfix\_debug\_emitter@{cdk::postfix\_debug\_emitter}!SBYTE@{SBYTE}}
+\index{SBYTE@{SBYTE}!cdk::postfix\_debug\_emitter@{cdk::postfix\_debug\_emitter}}
+\doxysubsubsection{SBYTE()}
+{\footnotesize\ttfamily void cdk\+::postfix\+\_\+debug\+\_\+emitter\+::\+S\+B\+Y\+TE (\begin{DoxyParamCaption}\item[{char}]{value }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [override]}, {\ttfamily [virtual]}}
+
+Declares a static byte.
+
+
+\begin{DoxyParams}{Parameters}
+{\em value} & is the byte to be declared. \\
+\hline
+\end{DoxyParams}
+
+
+Implements \textbf{ cdk\+::basic\+\_\+postfix\+\_\+emitter} \doxyref{}{p.}{classcdk_1_1basic__postfix__emitter_aaf2bdfa39dccc2d043c7c7f47d7a7e7b}.
+
+
+
+Definition at line 33 of file postfix\+\_\+debug\+\_\+emitter.\+h.
+
+\mbox{\label{classcdk_1_1postfix__debug__emitter_a6b5811acb8c5ce3a7738ba3bb5055fa2}} 
+\index{cdk::postfix\_debug\_emitter@{cdk::postfix\_debug\_emitter}!SDOUBLE@{SDOUBLE}}
+\index{SDOUBLE@{SDOUBLE}!cdk::postfix\_debug\_emitter@{cdk::postfix\_debug\_emitter}}
+\doxysubsubsection{SDOUBLE()}
+{\footnotesize\ttfamily void cdk\+::postfix\+\_\+debug\+\_\+emitter\+::\+S\+D\+O\+U\+B\+LE (\begin{DoxyParamCaption}\item[{double}]{value }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [override]}, {\ttfamily [virtual]}}
+
+Declares a static double precision floating point value.
+
+
+\begin{DoxyParams}{Parameters}
+{\em value} & is the number to be declared. \\
+\hline
+\end{DoxyParams}
+
+
+Implements \textbf{ cdk\+::basic\+\_\+postfix\+\_\+emitter} \doxyref{}{p.}{classcdk_1_1basic__postfix__emitter_abb8309b75d8e67e274f682e637e5dee1}.
+
+
+
+Definition at line 45 of file postfix\+\_\+debug\+\_\+emitter.\+h.
+
+\mbox{\label{classcdk_1_1postfix__debug__emitter_a72d30ebe4679e78ec9d4cf48a3b4541b}} 
+\index{cdk::postfix\_debug\_emitter@{cdk::postfix\_debug\_emitter}!SFLOAT@{SFLOAT}}
+\index{SFLOAT@{SFLOAT}!cdk::postfix\_debug\_emitter@{cdk::postfix\_debug\_emitter}}
+\doxysubsubsection{SFLOAT()}
+{\footnotesize\ttfamily void cdk\+::postfix\+\_\+debug\+\_\+emitter\+::\+S\+F\+L\+O\+AT (\begin{DoxyParamCaption}\item[{float}]{value }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [override]}, {\ttfamily [virtual]}}
+
+Declares a static simple precision floating point value.
+
+
+\begin{DoxyParams}{Parameters}
+{\em value} & is the number to be declared. \\
+\hline
+\end{DoxyParams}
+
+
+Implements \textbf{ cdk\+::basic\+\_\+postfix\+\_\+emitter} \doxyref{}{p.}{classcdk_1_1basic__postfix__emitter_a04c2ddaa1ff2bf758a7b38ecde35d160}.
+
+
+
+Definition at line 42 of file postfix\+\_\+debug\+\_\+emitter.\+h.
+
+\mbox{\label{classcdk_1_1postfix__debug__emitter_abc5502dfdff9f04fb812e92672e2329f}} 
+\index{cdk::postfix\_debug\_emitter@{cdk::postfix\_debug\_emitter}!SHTL@{SHTL}}
+\index{SHTL@{SHTL}!cdk::postfix\_debug\_emitter@{cdk::postfix\_debug\_emitter}}
+\doxysubsubsection{SHTL()}
+{\footnotesize\ttfamily void cdk\+::postfix\+\_\+debug\+\_\+emitter\+::\+S\+H\+TL (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [override]}, {\ttfamily [virtual]}}
+
+Rotation and shift instructions\+: left shift of stack top. 
+
+Implements \textbf{ cdk\+::basic\+\_\+postfix\+\_\+emitter} \doxyref{}{p.}{classcdk_1_1basic__postfix__emitter_a62f615b5d860576987a6401889556bfd}.
+
+
+
+Definition at line 270 of file postfix\+\_\+debug\+\_\+emitter.\+h.
+
+\mbox{\label{classcdk_1_1postfix__debug__emitter_ab49c2c34bf2b1864592ce9e8bd827708}} 
+\index{cdk::postfix\_debug\_emitter@{cdk::postfix\_debug\_emitter}!SHTRS@{SHTRS}}
+\index{SHTRS@{SHTRS}!cdk::postfix\_debug\_emitter@{cdk::postfix\_debug\_emitter}}
+\doxysubsubsection{SHTRS()}
+{\footnotesize\ttfamily void cdk\+::postfix\+\_\+debug\+\_\+emitter\+::\+S\+H\+T\+RS (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [override]}, {\ttfamily [virtual]}}
+
+Rotation and shift instructions\+: right shift of stack top (signed). 
+
+Implements \textbf{ cdk\+::basic\+\_\+postfix\+\_\+emitter} \doxyref{}{p.}{classcdk_1_1basic__postfix__emitter_a25ec4db891244342635c5bba9d7a94ae}.
+
+
+
+Definition at line 276 of file postfix\+\_\+debug\+\_\+emitter.\+h.
+
+\mbox{\label{classcdk_1_1postfix__debug__emitter_ad736a23d8341e31e8d7799f51e4b78a9}} 
+\index{cdk::postfix\_debug\_emitter@{cdk::postfix\_debug\_emitter}!SHTRU@{SHTRU}}
+\index{SHTRU@{SHTRU}!cdk::postfix\_debug\_emitter@{cdk::postfix\_debug\_emitter}}
+\doxysubsubsection{SHTRU()}
+{\footnotesize\ttfamily void cdk\+::postfix\+\_\+debug\+\_\+emitter\+::\+S\+H\+T\+RU (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [override]}, {\ttfamily [virtual]}}
+
+Rotation and shift instructions\+: right shift of stack top (unsigned). 
+
+Implements \textbf{ cdk\+::basic\+\_\+postfix\+\_\+emitter} \doxyref{}{p.}{classcdk_1_1basic__postfix__emitter_aaec5bdbfb55cfd1a3a52d8ffecfb534b}.
+
+
+
+Definition at line 273 of file postfix\+\_\+debug\+\_\+emitter.\+h.
+
+\mbox{\label{classcdk_1_1postfix__debug__emitter_aadfba8031252fc10c6f246038a9e4a35}} 
+\index{cdk::postfix\_debug\_emitter@{cdk::postfix\_debug\_emitter}!SINT@{SINT}}
+\index{SINT@{SINT}!cdk::postfix\_debug\_emitter@{cdk::postfix\_debug\_emitter}}
+\doxysubsubsection{SINT()}
+{\footnotesize\ttfamily void cdk\+::postfix\+\_\+debug\+\_\+emitter\+::\+S\+I\+NT (\begin{DoxyParamCaption}\item[{int}]{value }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [override]}, {\ttfamily [virtual]}}
+
+Declares a static integer value.
+
+
+\begin{DoxyParams}{Parameters}
+{\em value} & is the number to be declared. \\
+\hline
+\end{DoxyParams}
+
+
+Implements \textbf{ cdk\+::basic\+\_\+postfix\+\_\+emitter} \doxyref{}{p.}{classcdk_1_1basic__postfix__emitter_a99bc6cc14ffa9ab9b98b3b50d59da6f7}.
+
+
+
+Definition at line 39 of file postfix\+\_\+debug\+\_\+emitter.\+h.
+
+\mbox{\label{classcdk_1_1postfix__debug__emitter_a36d7a7c9e1c3d98aa1980f9bd401fbe1}} 
+\index{cdk::postfix\_debug\_emitter@{cdk::postfix\_debug\_emitter}!SP@{SP}}
+\index{SP@{SP}!cdk::postfix\_debug\_emitter@{cdk::postfix\_debug\_emitter}}
+\doxysubsubsection{SP()}
+{\footnotesize\ttfamily void cdk\+::postfix\+\_\+debug\+\_\+emitter\+::\+SP (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [override]}, {\ttfamily [virtual]}}
+
+Pushes to the stack the value of the stack pointer. 
+
+Implements \textbf{ cdk\+::basic\+\_\+postfix\+\_\+emitter} \doxyref{}{p.}{classcdk_1_1basic__postfix__emitter_a07c906a4f9a80503cde526cf45599eef}.
+
+
+
+Definition at line 125 of file postfix\+\_\+debug\+\_\+emitter.\+h.
+
+\mbox{\label{classcdk_1_1postfix__debug__emitter_a206a94e80d7f4ad82a08c21050554433}} 
+\index{cdk::postfix\_debug\_emitter@{cdk::postfix\_debug\_emitter}!SSHORT@{SSHORT}}
+\index{SSHORT@{SSHORT}!cdk::postfix\_debug\_emitter@{cdk::postfix\_debug\_emitter}}
+\doxysubsubsection{SSHORT()}
+{\footnotesize\ttfamily void cdk\+::postfix\+\_\+debug\+\_\+emitter\+::\+S\+S\+H\+O\+RT (\begin{DoxyParamCaption}\item[{short}]{value }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [override]}, {\ttfamily [virtual]}}
+
+Declares a static word.
+
+
+\begin{DoxyParams}{Parameters}
+{\em value} & is the word to be declared. \\
+\hline
+\end{DoxyParams}
+
+
+Implements \textbf{ cdk\+::basic\+\_\+postfix\+\_\+emitter} \doxyref{}{p.}{classcdk_1_1basic__postfix__emitter_aa7b8c4dc17aa09285cc1aee7c4881894}.
+
+
+
+Definition at line 36 of file postfix\+\_\+debug\+\_\+emitter.\+h.
+
+\mbox{\label{classcdk_1_1postfix__debug__emitter_aa2dd8f1d6e939c0692baeff9b4186fb5}} 
+\index{cdk::postfix\_debug\_emitter@{cdk::postfix\_debug\_emitter}!SSTRING@{SSTRING}}
+\index{SSTRING@{SSTRING}!cdk::postfix\_debug\_emitter@{cdk::postfix\_debug\_emitter}}
+\doxysubsubsection{SSTRING()}
+{\footnotesize\ttfamily void cdk\+::postfix\+\_\+debug\+\_\+emitter\+::\+S\+S\+T\+R\+I\+NG (\begin{DoxyParamCaption}\item[{std\+::string}]{value }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [override]}, {\ttfamily [virtual]}}
+
+Declares a static character string (no special characters are allowed in {\ttfamily value}).
+
+
+\begin{DoxyParams}{Parameters}
+{\em value} & is the string to be declared. \\
+\hline
+\end{DoxyParams}
+
+
+Implements \textbf{ cdk\+::basic\+\_\+postfix\+\_\+emitter} \doxyref{}{p.}{classcdk_1_1basic__postfix__emitter_ad78bc72060085d1c0d9931d263738758}.
+
+
+
+Definition at line 48 of file postfix\+\_\+debug\+\_\+emitter.\+h.
+
+\mbox{\label{classcdk_1_1postfix__debug__emitter_aaf8138764fc69246672e9285f681e891}} 
+\index{cdk::postfix\_debug\_emitter@{cdk::postfix\_debug\_emitter}!START@{START}}
+\index{START@{START}!cdk::postfix\_debug\_emitter@{cdk::postfix\_debug\_emitter}}
+\doxysubsubsection{START()}
+{\footnotesize\ttfamily void cdk\+::postfix\+\_\+debug\+\_\+emitter\+::\+S\+T\+A\+RT (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [override]}, {\ttfamily [virtual]}}
+
+Function definition instructions\+: equivalent to {\ttfamily E\+N\+T\+E\+R(0)}. 
+
+Implements \textbf{ cdk\+::basic\+\_\+postfix\+\_\+emitter} \doxyref{}{p.}{classcdk_1_1basic__postfix__emitter_a1a2a79a195500e00d725120527400b3a}.
+
+
+
+Definition at line 283 of file postfix\+\_\+debug\+\_\+emitter.\+h.
+
+\mbox{\label{classcdk_1_1postfix__debug__emitter_a47a049b70ad4b4bac9b3af835090b1e3}} 
+\index{cdk::postfix\_debug\_emitter@{cdk::postfix\_debug\_emitter}!STBYTE@{STBYTE}}
+\index{STBYTE@{STBYTE}!cdk::postfix\_debug\_emitter@{cdk::postfix\_debug\_emitter}}
+\doxysubsubsection{STBYTE()}
+{\footnotesize\ttfamily void cdk\+::postfix\+\_\+debug\+\_\+emitter\+::\+S\+T\+B\+Y\+TE (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [override]}, {\ttfamily [virtual]}}
+
+Store instruction\+: stores 1 byte (char). 
+
+Implements \textbf{ cdk\+::basic\+\_\+postfix\+\_\+emitter} \doxyref{}{p.}{classcdk_1_1basic__postfix__emitter_a0884e44f36faa9a2687f48f5fe817456}.
+
+
+
+Definition at line 109 of file postfix\+\_\+debug\+\_\+emitter.\+h.
+
+\mbox{\label{classcdk_1_1postfix__debug__emitter_a8201c44f690d7d8a6dbaba2e183efc28}} 
+\index{cdk::postfix\_debug\_emitter@{cdk::postfix\_debug\_emitter}!STDOUBLE@{STDOUBLE}}
+\index{STDOUBLE@{STDOUBLE}!cdk::postfix\_debug\_emitter@{cdk::postfix\_debug\_emitter}}
+\doxysubsubsection{STDOUBLE()}
+{\footnotesize\ttfamily void cdk\+::postfix\+\_\+debug\+\_\+emitter\+::\+S\+T\+D\+O\+U\+B\+LE (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [override]}, {\ttfamily [virtual]}}
+
+Store instruction\+: stores a double precision floating point value. 
+
+Implements \textbf{ cdk\+::basic\+\_\+postfix\+\_\+emitter} \doxyref{}{p.}{classcdk_1_1basic__postfix__emitter_a7225e937e2d28e6fc16e6c0386a088e5}.
+
+
+
+Definition at line 121 of file postfix\+\_\+debug\+\_\+emitter.\+h.
+
+\mbox{\label{classcdk_1_1postfix__debug__emitter_a78daaaef8edf2d5ef6d10814bd6acb5c}} 
+\index{cdk::postfix\_debug\_emitter@{cdk::postfix\_debug\_emitter}!STFLOAT@{STFLOAT}}
+\index{STFLOAT@{STFLOAT}!cdk::postfix\_debug\_emitter@{cdk::postfix\_debug\_emitter}}
+\doxysubsubsection{STFLOAT()}
+{\footnotesize\ttfamily void cdk\+::postfix\+\_\+debug\+\_\+emitter\+::\+S\+T\+F\+L\+O\+AT (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [override]}, {\ttfamily [virtual]}}
+
+Store instruction\+: stores a single precision floating point value. 
+
+Implements \textbf{ cdk\+::basic\+\_\+postfix\+\_\+emitter} \doxyref{}{p.}{classcdk_1_1basic__postfix__emitter_aa2f78f5386e748bf9f48d6f6e8e167a4}.
+
+
+
+Definition at line 118 of file postfix\+\_\+debug\+\_\+emitter.\+h.
+
+\mbox{\label{classcdk_1_1postfix__debug__emitter_ab312aa3806784a047444ae098213c63e}} 
+\index{cdk::postfix\_debug\_emitter@{cdk::postfix\_debug\_emitter}!STFVAL32@{STFVAL32}}
+\index{STFVAL32@{STFVAL32}!cdk::postfix\_debug\_emitter@{cdk::postfix\_debug\_emitter}}
+\doxysubsubsection{STFVAL32()}
+{\footnotesize\ttfamily void cdk\+::postfix\+\_\+debug\+\_\+emitter\+::\+S\+T\+F\+V\+A\+L32 (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [override]}, {\ttfamily [virtual]}}
+
+Function definition instructions\+: removes a value from the stack (to the accumulator register). 
+
+Implements \textbf{ cdk\+::basic\+\_\+postfix\+\_\+emitter} \doxyref{}{p.}{classcdk_1_1basic__postfix__emitter_abcc1ff4ee1208f448a5d7bb07cd8344d}.
+
+
+
+Definition at line 286 of file postfix\+\_\+debug\+\_\+emitter.\+h.
+
+\mbox{\label{classcdk_1_1postfix__debug__emitter_a317d2fc117a3d80a39591eb526453eb7}} 
+\index{cdk::postfix\_debug\_emitter@{cdk::postfix\_debug\_emitter}!STFVAL64@{STFVAL64}}
+\index{STFVAL64@{STFVAL64}!cdk::postfix\_debug\_emitter@{cdk::postfix\_debug\_emitter}}
+\doxysubsubsection{STFVAL64()}
+{\footnotesize\ttfamily void cdk\+::postfix\+\_\+debug\+\_\+emitter\+::\+S\+T\+F\+V\+A\+L64 (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [override]}, {\ttfamily [virtual]}}
+
+Function definition instructions\+: removes a double precision floating point value from the stack (to a double prevision floating point register). 
+
+Implements \textbf{ cdk\+::basic\+\_\+postfix\+\_\+emitter} \doxyref{}{p.}{classcdk_1_1basic__postfix__emitter_afebd67c27947e9dc32a0e42f95c8ec73}.
+
+
+
+Definition at line 289 of file postfix\+\_\+debug\+\_\+emitter.\+h.
+
+\mbox{\label{classcdk_1_1postfix__debug__emitter_a563179b02ebc5bb755c50cc4273f7ae3}} 
+\index{cdk::postfix\_debug\_emitter@{cdk::postfix\_debug\_emitter}!STINT@{STINT}}
+\index{STINT@{STINT}!cdk::postfix\_debug\_emitter@{cdk::postfix\_debug\_emitter}}
+\doxysubsubsection{STINT()}
+{\footnotesize\ttfamily void cdk\+::postfix\+\_\+debug\+\_\+emitter\+::\+S\+T\+I\+NT (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [override]}, {\ttfamily [virtual]}}
+
+Store instruction\+: stores 4 bytes (integer). 
+
+Implements \textbf{ cdk\+::basic\+\_\+postfix\+\_\+emitter} \doxyref{}{p.}{classcdk_1_1basic__postfix__emitter_aca97a9eff694c6912653ecd6accf7d24}.
+
+
+
+Definition at line 115 of file postfix\+\_\+debug\+\_\+emitter.\+h.
+
+\mbox{\label{classcdk_1_1postfix__debug__emitter_a60e105f2d99cb69285901882635dbe8c}} 
+\index{cdk::postfix\_debug\_emitter@{cdk::postfix\_debug\_emitter}!STSHORT@{STSHORT}}
+\index{STSHORT@{STSHORT}!cdk::postfix\_debug\_emitter@{cdk::postfix\_debug\_emitter}}
+\doxysubsubsection{STSHORT()}
+{\footnotesize\ttfamily void cdk\+::postfix\+\_\+debug\+\_\+emitter\+::\+S\+T\+S\+H\+O\+RT (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [override]}, {\ttfamily [virtual]}}
+
+Store instruction\+: stores 2 bytes (short). 
+
+Implements \textbf{ cdk\+::basic\+\_\+postfix\+\_\+emitter} \doxyref{}{p.}{classcdk_1_1basic__postfix__emitter_aeafb5c9923a1597ea17912e579ad0d48}.
+
+
+
+Definition at line 112 of file postfix\+\_\+debug\+\_\+emitter.\+h.
+
+\mbox{\label{classcdk_1_1postfix__debug__emitter_a137d5f030c1f0b5547b6b604a3685461}} 
+\index{cdk::postfix\_debug\_emitter@{cdk::postfix\_debug\_emitter}!SUB@{SUB}}
+\index{SUB@{SUB}!cdk::postfix\_debug\_emitter@{cdk::postfix\_debug\_emitter}}
+\doxysubsubsection{SUB()}
+{\footnotesize\ttfamily void cdk\+::postfix\+\_\+debug\+\_\+emitter\+::\+S\+UB (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [override]}, {\ttfamily [virtual]}}
+
+Arithmetic instruction\+: integer subtraction of two integer values. 
+
+Implements \textbf{ cdk\+::basic\+\_\+postfix\+\_\+emitter} \doxyref{}{p.}{classcdk_1_1basic__postfix__emitter_af396160c6fe8d66e96244b825e0a6243}.
+
+
+
+Definition at line 159 of file postfix\+\_\+debug\+\_\+emitter.\+h.
+
+\mbox{\label{classcdk_1_1postfix__debug__emitter_a20afde4779867a006f958a87473208a4}} 
+\index{cdk::postfix\_debug\_emitter@{cdk::postfix\_debug\_emitter}!SWAP32@{SWAP32}}
+\index{SWAP32@{SWAP32}!cdk::postfix\_debug\_emitter@{cdk::postfix\_debug\_emitter}}
+\doxysubsubsection{SWAP32()}
+{\footnotesize\ttfamily void cdk\+::postfix\+\_\+debug\+\_\+emitter\+::\+S\+W\+A\+P32 (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [override]}, {\ttfamily [virtual]}}
+
+Exchanges the two elements at the top of the stack. 
+
+Implements \textbf{ cdk\+::basic\+\_\+postfix\+\_\+emitter} \doxyref{}{p.}{classcdk_1_1basic__postfix__emitter_a4f337dcc224658964389f6a59c1e0dfa}.
+
+
+
+Definition at line 137 of file postfix\+\_\+debug\+\_\+emitter.\+h.
+
+\mbox{\label{classcdk_1_1postfix__debug__emitter_ae580589846a59126053c3bb06a617041}} 
+\index{cdk::postfix\_debug\_emitter@{cdk::postfix\_debug\_emitter}!SWAP64@{SWAP64}}
+\index{SWAP64@{SWAP64}!cdk::postfix\_debug\_emitter@{cdk::postfix\_debug\_emitter}}
+\doxysubsubsection{SWAP64()}
+{\footnotesize\ttfamily void cdk\+::postfix\+\_\+debug\+\_\+emitter\+::\+S\+W\+A\+P64 (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [override]}, {\ttfamily [virtual]}}
+
+Exchanges the two elements at the top of the stack. 
+
+Implements \textbf{ cdk\+::basic\+\_\+postfix\+\_\+emitter} \doxyref{}{p.}{classcdk_1_1basic__postfix__emitter_a4f4dcb8136740ab58ab865e7ad8dd470}.
+
+
+
+Definition at line 140 of file postfix\+\_\+debug\+\_\+emitter.\+h.
+
+\mbox{\label{classcdk_1_1postfix__debug__emitter_ab7256dad01787e2d791cd76661a054df}} 
+\index{cdk::postfix\_debug\_emitter@{cdk::postfix\_debug\_emitter}!TEXT@{TEXT}}
+\index{TEXT@{TEXT}!cdk::postfix\_debug\_emitter@{cdk::postfix\_debug\_emitter}}
+\doxysubsubsection{TEXT()}
+{\footnotesize\ttfamily void cdk\+::postfix\+\_\+debug\+\_\+emitter\+::\+T\+E\+XT (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [override]}, {\ttfamily [virtual]}}
+
+Starts the text (code) segment. 
+
+Implements \textbf{ cdk\+::basic\+\_\+postfix\+\_\+emitter} \doxyref{}{p.}{classcdk_1_1basic__postfix__emitter_a99fda78119f52470bd76acbbec8c7867}.
+
+
+
+Definition at line 29 of file postfix\+\_\+debug\+\_\+emitter.\+h.
+
+\mbox{\label{classcdk_1_1postfix__debug__emitter_a4fbdb973e4a5e1338ce95a62daa7b3df}} 
+\index{cdk::postfix\_debug\_emitter@{cdk::postfix\_debug\_emitter}!TRASH@{TRASH}}
+\index{TRASH@{TRASH}!cdk::postfix\_debug\_emitter@{cdk::postfix\_debug\_emitter}}
+\doxysubsubsection{TRASH()}
+{\footnotesize\ttfamily void cdk\+::postfix\+\_\+debug\+\_\+emitter\+::\+T\+R\+A\+SH (\begin{DoxyParamCaption}\item[{int}]{bytes }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [override]}, {\ttfamily [virtual]}}
+
+Function definition instructions\+: removes {\ttfamily n} bytes from the stack.
+
+
+\begin{DoxyParams}{Parameters}
+{\em bytes} & the number of bytes to take from the stack. \\
+\hline
+\end{DoxyParams}
+
+
+Implements \textbf{ cdk\+::basic\+\_\+postfix\+\_\+emitter} \doxyref{}{p.}{classcdk_1_1basic__postfix__emitter_a1a732aac17812ab0bcbd95fbbaa5e928}.
+
+
+
+Definition at line 304 of file postfix\+\_\+debug\+\_\+emitter.\+h.
+
+\mbox{\label{classcdk_1_1postfix__debug__emitter_a5f24161412b57e1ecec4650c32b5fa39}} 
+\index{cdk::postfix\_debug\_emitter@{cdk::postfix\_debug\_emitter}!UDIV@{UDIV}}
+\index{UDIV@{UDIV}!cdk::postfix\_debug\_emitter@{cdk::postfix\_debug\_emitter}}
+\doxysubsubsection{UDIV()}
+{\footnotesize\ttfamily void cdk\+::postfix\+\_\+debug\+\_\+emitter\+::\+U\+D\+IV (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [override]}, {\ttfamily [virtual]}}
+
+Arithmetic instruction\+: integer division of two natural (integer) values. 
+
+Implements \textbf{ cdk\+::basic\+\_\+postfix\+\_\+emitter} \doxyref{}{p.}{classcdk_1_1basic__postfix__emitter_a7b96db554e23ffa3f41ec656565881fe}.
+
+
+
+Definition at line 168 of file postfix\+\_\+debug\+\_\+emitter.\+h.
+
+\mbox{\label{classcdk_1_1postfix__debug__emitter_a1977332601589fa8e777e3dec51d4397}} 
+\index{cdk::postfix\_debug\_emitter@{cdk::postfix\_debug\_emitter}!UGE@{UGE}}
+\index{UGE@{UGE}!cdk::postfix\_debug\_emitter@{cdk::postfix\_debug\_emitter}}
+\doxysubsubsection{UGE()}
+{\footnotesize\ttfamily void cdk\+::postfix\+\_\+debug\+\_\+emitter\+::\+U\+GE (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [override]}, {\ttfamily [virtual]}}
+
+Integer comparison instructions\+: {\itshape greater than or equal to} for natural numbers (unsigned integers). 
+
+Implements \textbf{ cdk\+::basic\+\_\+postfix\+\_\+emitter} \doxyref{}{p.}{classcdk_1_1basic__postfix__emitter_ac135b891e27d4d325c7f93e66dcf0b10}.
+
+
+
+Definition at line 237 of file postfix\+\_\+debug\+\_\+emitter.\+h.
+
+\mbox{\label{classcdk_1_1postfix__debug__emitter_a6897c752d4732a2f83634bb3fa906e72}} 
+\index{cdk::postfix\_debug\_emitter@{cdk::postfix\_debug\_emitter}!UGT@{UGT}}
+\index{UGT@{UGT}!cdk::postfix\_debug\_emitter@{cdk::postfix\_debug\_emitter}}
+\doxysubsubsection{UGT()}
+{\footnotesize\ttfamily void cdk\+::postfix\+\_\+debug\+\_\+emitter\+::\+U\+GT (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [override]}, {\ttfamily [virtual]}}
+
+Integer comparison instructions\+: {\itshape greater than} for natural numbers (unsigned integers). 
+
+Implements \textbf{ cdk\+::basic\+\_\+postfix\+\_\+emitter} \doxyref{}{p.}{classcdk_1_1basic__postfix__emitter_a4359d21ca75b88e80e8172039dfcab64}.
+
+
+
+Definition at line 234 of file postfix\+\_\+debug\+\_\+emitter.\+h.
+
+\mbox{\label{classcdk_1_1postfix__debug__emitter_a07c141fdb4efd90bd875d8a5ad9217fe}} 
+\index{cdk::postfix\_debug\_emitter@{cdk::postfix\_debug\_emitter}!ULE@{ULE}}
+\index{ULE@{ULE}!cdk::postfix\_debug\_emitter@{cdk::postfix\_debug\_emitter}}
+\doxysubsubsection{ULE()}
+{\footnotesize\ttfamily void cdk\+::postfix\+\_\+debug\+\_\+emitter\+::\+U\+LE (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [override]}, {\ttfamily [virtual]}}
+
+Integer comparison instructions\+: {\itshape less than or equal to} for natural numbers (unsigned integers). 
+
+Implements \textbf{ cdk\+::basic\+\_\+postfix\+\_\+emitter} \doxyref{}{p.}{classcdk_1_1basic__postfix__emitter_a5656a7c26a2432fe487db34ed4b708c9}.
+
+
+
+Definition at line 240 of file postfix\+\_\+debug\+\_\+emitter.\+h.
+
+\mbox{\label{classcdk_1_1postfix__debug__emitter_a0104898dac6fbc7d59fa2487e21cd064}} 
+\index{cdk::postfix\_debug\_emitter@{cdk::postfix\_debug\_emitter}!ULT@{ULT}}
+\index{ULT@{ULT}!cdk::postfix\_debug\_emitter@{cdk::postfix\_debug\_emitter}}
+\doxysubsubsection{ULT()}
+{\footnotesize\ttfamily void cdk\+::postfix\+\_\+debug\+\_\+emitter\+::\+U\+LT (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [override]}, {\ttfamily [virtual]}}
+
+Integer comparison instructions\+: {\itshape less than} for natural numbers (unsigned integers). 
+
+Implements \textbf{ cdk\+::basic\+\_\+postfix\+\_\+emitter} \doxyref{}{p.}{classcdk_1_1basic__postfix__emitter_ad1c7876ae12d72ed090b3df4b1cab00c}.
+
+
+
+Definition at line 243 of file postfix\+\_\+debug\+\_\+emitter.\+h.
+
+\mbox{\label{classcdk_1_1postfix__debug__emitter_af31198fd234bdde4f5e0863ce4d67722}} 
+\index{cdk::postfix\_debug\_emitter@{cdk::postfix\_debug\_emitter}!UMOD@{UMOD}}
+\index{UMOD@{UMOD}!cdk::postfix\_debug\_emitter@{cdk::postfix\_debug\_emitter}}
+\doxysubsubsection{UMOD()}
+{\footnotesize\ttfamily void cdk\+::postfix\+\_\+debug\+\_\+emitter\+::\+U\+M\+OD (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [override]}, {\ttfamily [virtual]}}
+
+Arithmetic instruction\+: remainder of integer division of two natural (integer) values. 
+
+Implements \textbf{ cdk\+::basic\+\_\+postfix\+\_\+emitter} \doxyref{}{p.}{classcdk_1_1basic__postfix__emitter_a5904e18fb66734f455c2b15188546658}.
+
+
+
+Definition at line 174 of file postfix\+\_\+debug\+\_\+emitter.\+h.
+
+\mbox{\label{classcdk_1_1postfix__debug__emitter_af131d9af88d9853c9d62b1f522409b86}} 
+\index{cdk::postfix\_debug\_emitter@{cdk::postfix\_debug\_emitter}!XOR@{XOR}}
+\index{XOR@{XOR}!cdk::postfix\_debug\_emitter@{cdk::postfix\_debug\_emitter}}
+\doxysubsubsection{XOR()}
+{\footnotesize\ttfamily void cdk\+::postfix\+\_\+debug\+\_\+emitter\+::\+X\+OR (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [override]}, {\ttfamily [virtual]}}
+
+Logical instructions\+: logical (bitwise) X\+OR operation. 
+
+Implements \textbf{ cdk\+::basic\+\_\+postfix\+\_\+emitter} \doxyref{}{p.}{classcdk_1_1basic__postfix__emitter_a4f81d834e05b994699cffbee1f3e3aad}.
+
+
+
+Definition at line 260 of file postfix\+\_\+debug\+\_\+emitter.\+h.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+cdk/emitters/postfix\+\_\+debug\+\_\+emitter.\+h\end{DoxyCompactItemize}

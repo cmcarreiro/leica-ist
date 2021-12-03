@@ -1,0 +1,11 @@
+digraph "cdk::compiler"
+{
+ // LATEX_PDF_SIZE
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  Node1 [label="{cdk::compiler\n|# _scanner\l# _parser\l# _evaluators\l|+ compiler()\l+ ~compiler()\l+ name()\l+ name()\l+ extension()\l+ extension()\l+ ifile()\l+ ifile()\l+ ofile()\l+ ofile()\land 15 more...\l+ create()\l}",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black",tooltip=" "];
+  Node2 -> Node1 [dir="back",color="midnightblue",fontsize="10",style="solid",arrowtail="onormal",fontname="Helvetica"];
+  Node2 [label="{std::enable_shared\l_from_this\< compiler \>\n||}",height=0.2,width=0.4,color="grey75", fillcolor="white", style="filled",tooltip=" "];
+  Node3 -> Node1 [color="grey25",fontsize="10",style="solid",label=" #_ast" ,arrowhead="odiamond",fontname="Helvetica"];
+  Node3 [label="{cdk::basic_node\n||+ ~basic_node()\l+ lineno()\l+ label()\l+ accept()\l# basic_node()\l}",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classcdk_1_1basic__node.html",tooltip=" "];
+}

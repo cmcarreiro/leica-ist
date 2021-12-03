@@ -1,0 +1,9 @@
+digraph "cdk::basic_scanner"
+{
+ // LATEX_PDF_SIZE
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  Node1 [label="{cdk::basic_scanner\n|# _language\l# _compiler\l# _istream\l# _ostream\l# _estream\l|+ ~basic_scanner()\l+ input_stream()\l+ input_stream()\l+ input_stream()\l+ output_stream()\l+ output_stream()\l+ output_stream()\l+ error_stream()\l+ error_stream()\l+ error_stream()\land 6 more...\l# basic_scanner()\l}",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black",tooltip=" "];
+  Node1 -> Node2 [dir="back",color="midnightblue",fontsize="10",style="solid",arrowtail="onormal"];
+  Node2 [label="{cdk::yy_scanner\< LexerType \>\n||+ yy_scanner()\l+ lexer()\l+ lexer()\l+ switch_streams()\l+ scan()\l+ lineno()\l}",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classcdk_1_1yy__scanner.html",tooltip=" "];
+}

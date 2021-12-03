@@ -1,0 +1,60 @@
+//
+// Protocol buffers definition
+//
+syntax = "proto3";
+package pt.tecnico.rec.grpc;
+
+message ReadRequest {
+	string name = 1;
+}
+
+message ReadResponse {
+	int32 val = 1;
+}
+
+message ReadAuxRequest {
+	string name = 1;
+}
+
+message ReadAuxResponse {
+	int32 val = 1;
+	int32 seq = 2;
+}
+
+message WriteRequest {
+	string name = 1;
+	int32 val = 2;
+}
+
+message WriteResponse {}
+
+message WriteAuxRequest {
+	string name = 1;
+	int32 val = 2;
+	int32 seq = 3;
+}
+
+message WriteAuxResponse {}
+
+message PingRecRequest {}
+
+message PingRecResponse {
+	string path = 1;
+}
+
+message RecsStatusRequest {}
+
+message RecsStatusResponse {
+  repeated RecStatus recsStatus = 1;
+}
+  
+message RecStatus {
+  string path = 1;
+  string status = 2;
+}
+  
+service RecService {
+	rpc readAux(ReadAuxRequest) returns (ReadAuxResponse);
+	rpc writeAux(WriteAuxRequest) returns (WriteAuxResponse);
+	rpc ping(PingRecRequest) returns (PingRecResponse);
+}

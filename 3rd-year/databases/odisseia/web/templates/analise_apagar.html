@@ -1,0 +1,9 @@
+<html>
+    <body>
+        <h3>Queres apagar a analise com numero {{ params.get("num_analise") }}?</h3>
+        <form action="analise_apagar_ok" method="post">
+            <p><input type="hidden" name="num_analise" value="{{ params.get('num_analise') }}"/></p>
+            <p><input type="submit" value="Sim"/></p>
+        </form>
+    </body>
+</html>

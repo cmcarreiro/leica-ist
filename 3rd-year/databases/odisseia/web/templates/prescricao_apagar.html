@@ -1,0 +1,12 @@
+<html>
+    <body>
+        <h3>Queres apagar a prescricao com numero de cedula {{ params.get("num_cedula") }}, numero de doente {{ params.get("num_doente") }}, data {{ params.get("data") }} e substancia {{ params.get("substancia") }}?</h3>
+        <form action="prescricao_apagar_ok" method="post">
+            <p><input type="hidden" name="num_cedula" value="{{ params.get('num_cedula') }}"/></p>
+            <p><input type="hidden" name="num_doente" value="{{ params.get('num_doente') }}"/></p>
+            <p><input type="hidden" name="data" value="{{ params.get('data') }}"/></p>
+            <p><input type="hidden" name="substancia" value="{{ params.get('substancia') }}"/></p>
+            <p><input type="submit" value="Sim"/></p>
+        </form>
+    </body>
+</html>

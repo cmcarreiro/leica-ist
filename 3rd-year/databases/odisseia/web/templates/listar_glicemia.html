@@ -1,0 +1,29 @@
+<doctype html>
+    <title>Listar glicemia - Flask</title>
+    <body style="padding:20px">
+      {% if cursor %}
+        <table border="2px">
+          <thead>
+            <tr>
+              <th>Numero de doente</th>
+              <th>Valor da glicemia</th>
+              <th>Numero de regiao</th>
+              <th>Numero de concelho</th>
+            </tr>
+          </thead>
+          <tbody>      
+            {% for record in cursor %}
+              <tr>
+                <td>{{ record[0] }}</td>
+                <td>{{ record[1] }}</td>
+                <td>{{ record[2] }}</td>
+                <td>{{ record[3] }}</td>
+              </tr>
+            {% endfor %}
+          </tbody>
+        </table>
+      {% else %}
+        <p> Error: failed to retreive data from database!</p>
+      {% endif %}
+    </body>
+    </doctype>

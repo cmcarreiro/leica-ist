@@ -1,0 +1,108 @@
+;Teoria da Computacao 2019/20
+;Grupo 47
+;Catarina Carreiro
+;Cristiano Clemente
+;Vasco Rocha
+
+inicio ___ ___ *** halt-accept
+inicio Q__ Q__ r** contaKs
+inicio *** *** *** halt-reject
+
+contaKs 0__ 0K_ rl* contaKs
+contaKs 1__ 1K_ rl* contaKs
+contaKs 2__ 2K_ rl* contaKs
+contaKs 3__ 3K_ rl* contaKs
+contaKs 4__ 4K_ rl* contaKs
+contaKs 5__ 5K_ rl* contaKs
+contaKs 6__ 6K_ rl* contaKs
+contaKs 7__ 7K_ rl* contaKs
+contaKs 8__ 8K_ rl* contaKs
+contaKs 9__ 9K_ rl* contaKs
+contaKs A__ A__ rr* contaTs
+contaKs *** *** *** halt-reject
+
+contaTs 0K_ 0KT r*l contaTs
+contaTs 1K_ 1KT r*l contaTs
+contaTs 2K_ 2KT r*l contaTs
+contaTs 3K_ 3KT r*l contaTs
+contaTs 4K_ 4KT r*l contaTs
+contaTs 5K_ 5KT r*l contaTs
+contaTs 6K_ 6KT r*l contaTs
+contaTs 7K_ 7KT r*l contaTs
+contaTs 8K_ 8KT r*l contaTs
+contaTs 9K_ 9KT r*l contaTs
+contaTs QK_ QK_ r*r leKnumsDir
+contaTs YK_ YK_ r*r leKYs
+contaTs NK_ NK_ r*r leKNs
+contaTs *** *** *** halt-reject
+
+leKnumsDir 0KT 0KT rr* leKnumsDir
+leKnumsDir 1KT 1KT rr* leKnumsDir
+leKnumsDir 2KT 2KT rr* leKnumsDir
+leKnumsDir 3KT 3KT rr* leKnumsDir
+leKnumsDir 4KT 4KT rr* leKnumsDir
+leKnumsDir 5KT 5KT rr* leKnumsDir
+leKnumsDir 6KT 6KT rr* leKnumsDir
+leKnumsDir 7KT 7KT rr* leKnumsDir
+leKnumsDir 8KT 8KT rr* leKnumsDir
+leKnumsDir 9KT 9KT rr* leKnumsDir
+leKnumsDir A_T A_T rl* leTnumsDir
+leKnumsDir *** *** *** halt-reject
+
+leKYs YKT YKT rr* leKYs
+leKYs A_T A_T rl* leTnumsDir
+leKYs *** *** *** halt-reject
+
+leKNs NKT NKT rr* leKNs
+leKNs A_T A_T rl* leTnumsDir
+leKNs *** *** *** halt-reject
+
+leTnumsDir 0KT 0KT r*r leTnumsDir
+leTnumsDir 1KT 1KT r*r leTnumsDir
+leTnumsDir 2KT 2KT r*r leTnumsDir
+leTnumsDir 3KT 3KT r*r leTnumsDir
+leTnumsDir 4KT 4KT r*r leTnumsDir
+leTnumsDir 5KT 5KT r*r leTnumsDir
+leTnumsDir 6KT 6KT r*r leTnumsDir
+leTnumsDir 7KT 7KT r*r leTnumsDir
+leTnumsDir 8KT 8KT r*r leTnumsDir
+leTnumsDir 9KT 9KT r*r leTnumsDir
+leTnumsDir LK_ LK_ r*l limbo
+leTnumsDir RK_ RK_ r*l limbo
+leTnumsDir SK_ SK_ r*l limbo
+leTnumsDir *** *** *** halt-reject
+
+limbo _KT _KT *** halt-accept
+limbo ;KT ;KT r** novaPlvr
+limbo *** *** *** halt-reject
+
+novaPlvr QKT QKT r** leKnumsEsq
+novaPlvr *** *** *** halt-reject
+
+leKnumsEsq 0KT 0KT rl* leKnumsEsq
+leKnumsEsq 1KT 1KT rl* leKnumsEsq
+leKnumsEsq 2KT 2KT rl* leKnumsEsq
+leKnumsEsq 3KT 3KT rl* leKnumsEsq
+leKnumsEsq 4KT 4KT rl* leKnumsEsq
+leKnumsEsq 5KT 5KT rl* leKnumsEsq
+leKnumsEsq 6KT 6KT rl* leKnumsEsq
+leKnumsEsq 7KT 7KT rl* leKnumsEsq
+leKnumsEsq 8KT 8KT rl* leKnumsEsq
+leKnumsEsq 9KT 9KT rl* leKnumsEsq
+leKnumsEsq A_T A_T rr* leTnumsEsq
+leKnumsEsq *** *** *** halt-reject
+
+leTnumsEsq 0KT 0KT r*l leTnumsEsq
+leTnumsEsq 1KT 1KT r*l leTnumsEsq
+leTnumsEsq 2KT 2KT r*l leTnumsEsq
+leTnumsEsq 3KT 3KT r*l leTnumsEsq
+leTnumsEsq 4KT 4KT r*l leTnumsEsq
+leTnumsEsq 5KT 5KT r*l leTnumsEsq
+leTnumsEsq 6KT 6KT r*l leTnumsEsq
+leTnumsEsq 7KT 7KT r*l leTnumsEsq
+leTnumsEsq 8KT 8KT r*l leTnumsEsq
+leTnumsEsq 9KT 9KT r*l leTnumsEsq
+leTnumsEsq QK_ QK_ r*r leKnumsDir
+leTnumsEsq YK_ YK_ r*r leKYs
+leTnumsEsq NK_ NK_ r*r leKNs
+leTnumsEsq *** *** *** halt-reject

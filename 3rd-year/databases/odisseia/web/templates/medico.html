@@ -1,0 +1,31 @@
+<doctype html>
+    <title>List Medico - Flask</title>
+    <body style="padding:20px">
+      {% if cursor %}
+        <table border="2px">
+          <thead>
+            <tr>
+              <th>num_cedula</th>
+              <th>nome</th>
+              <th>especialidade</th>
+            </tr>
+          </thead>
+          <tbody>      
+            {% for record in cursor %}
+              <tr>
+                <td>{{ record[0] }}</td>
+                <td>{{ record[1] }}</td>
+                <td>{{ record[2] }}</td>
+                <td><a href="medico_editar?num_cedula={{ record[0] }}">Editar</a></td>
+                <td><a href="medico_apagar?num_cedula={{ record[0] }}">Apagar</a></td>
+              </tr>
+            {% endfor %}
+          </tbody>
+        </table>
+        <a href="medico_inserir">Inserir</a>
+      {% else %}
+        <p> Error: failed to retreive data from database!</p>
+      {% endif %}
+    </body>
+    </doctype>
+    

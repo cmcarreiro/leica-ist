@@ -1,0 +1,43 @@
+<doctype html>
+    <title>List Analise - Flask</title>
+    <body style="padding:20px">
+      {% if cursor %}
+        <table border="2px">
+          <thead>
+            <tr>
+              <th>num_analise</th>
+              <th>especialidade</th>
+              <th>num_cedula</th>
+              <th>num_doente</th>
+              <th>data</th>
+              <th>data_registo</th>
+              <th>nome</th>
+              <th>quant</th>
+              <th>inst</th>
+            </tr>
+          </thead>
+          <tbody>      
+            {% for record in cursor %}
+              <tr>
+                <td>{{ record[0] }}</td>
+                <td>{{ record[1] }}</td>
+                <td>{{ record[2] }}</td>
+                <td>{{ record[3] }}</td>
+                <td>{{ record[4] }}</td>
+                <td>{{ record[5] }}</td>
+                <td>{{ record[6] }}</td>
+                <td>{{ record[7] }}</td>
+                <td>{{ record[8] }}</td>
+                <td><a href="analise_editar?num_analise={{ record[0] }}">Editar</a></td>
+                <td><a href="analise_apagar?num_analise={{ record[0] }}">Apagar</a></td>
+              </tr>
+            {% endfor %}
+          </tbody>
+        </table>
+        <a href="analise_inserir">Inserir</a>
+      {% else %}
+        <p> Error: failed to retreive data from database!</p>
+      {% endif %}
+    </body>
+    </doctype>
+    

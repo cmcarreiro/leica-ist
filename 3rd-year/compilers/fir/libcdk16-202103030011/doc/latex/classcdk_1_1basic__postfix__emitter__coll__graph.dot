@@ -1,0 +1,7 @@
+digraph "cdk::basic_postfix_emitter"
+{
+ // LATEX_PDF_SIZE
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  Node1 [label="{cdk::basic_postfix\l_emitter\n||+ ~basic_postfix_emitter()\l+ BSS()\l+ DATA()\l+ RODATA()\l+ TEXT()\l+ SBYTE()\l+ SSHORT()\l+ SINT()\l+ SFLOAT()\l+ SDOUBLE()\land 103 more...\l# basic_postfix_emitter()\l# os()\l# debug()\l}",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black",tooltip=" "];
+}

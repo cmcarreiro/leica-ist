@@ -1,0 +1,12 @@
+# Extension-less files
+*
+!*/
+!*.*
+!Makefile
+
+*.o
+*.exe
+.vscode/**
+USERS_AS/**
+USERS_FS/**
+*.log

@@ -1,0 +1,12 @@
+<html>
+    <body>
+        <h3>Editar instituicao com nome {{ params.get("nome") }}</h3>
+        <form action="instituicao_editar_ok" method="post">
+            <p><input type="hidden" name="nome" value="{{ params.get('nome') }}"/></p>
+            <p>Novo tipo: <input type="text" name="tipo"/></p>
+            <p>Novo num_regiao: <input type="text" name="num_regiao"/></p>
+            <p>Novo num_concelho: <input type="text" name="num_concelho"/></p>
+            <p><input type="submit" value="Submit"/></p>
+        </form>
+    </body>
+</html>

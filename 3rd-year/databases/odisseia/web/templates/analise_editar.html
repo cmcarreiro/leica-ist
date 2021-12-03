@@ -1,0 +1,17 @@
+<html>
+    <body>
+        <h3>Editar analise com numero {{ params.get("num_analise") }}</h3>
+        <form action="analise_editar_ok" method="post">
+            <p><input type="hidden" name="num_analise" value="{{ params.get('num_analise') }}"/></p>
+            <p>Nova especialidade: <input type="text" name="especialidade"/></p>
+            <p>Novo num_cedula: <input type="number" name="num_cedula"/></p>
+            <p>Novo num_doente: <input type="number" name="num_doente"/></p>
+            <p>Nova data: <input type="text" name="data"/></p>
+            <p>Nova data de registo: <input type="text" name="data_registo"/></p>
+            <p>Novo nome: <input type="text" name="nome"/></p>
+            <p>Nova quantidade: <input type="number" name="quant"/></p>
+            <p>Nova instituicao: <input type="text" name="inst"/></p>
+            <p><input type="submit" value="Submit"/></p>
+        </form>
+    </body>
+</html>

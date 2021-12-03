@@ -1,0 +1,33 @@
+<doctype html>
+    <title>List Instituicao - Flask</title>
+    <body style="padding:20px">
+      {% if cursor %}
+        <table border="2px">
+          <thead>
+            <tr>
+              <th>nome</th>
+              <th>tipo</th>
+              <th>num_regiao</th>
+              <th>num_concelho</th>
+            </tr>
+          </thead>
+          <tbody>      
+            {% for record in cursor %}
+              <tr>
+                <td>{{ record[0] }}</td>
+                <td>{{ record[1] }}</td>
+                <td>{{ record[2] }}</td>
+                <td>{{ record[3] }}</td>
+                <td><a href="instituicao_editar?nome={{ record[0] }}">Editar</a></td>
+                <td><a href="instituicao_apagar?nome={{ record[0] }}">Apagar</a></td>
+              </tr>
+            {% endfor %}
+          </tbody>
+        </table>
+        <a href="instituicao_inserir">Inserir</a>
+      {% else %}
+        <p> Error: failed to retreive data from database!</p>
+      {% endif %}
+    </body>
+    </doctype>
+    

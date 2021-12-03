@@ -1,0 +1,33 @@
+<doctype html>
+    <title>Selecionar Prescricao - Flask</title>
+    <body style="padding:20px">
+      {% if cursor %}
+        <table border="2px">
+          <thead>
+            <tr>
+              <th>num_cedula</th>
+              <th>num_doente</th>
+              <th>data</th>
+              <th>substancia</th>
+              <th>quant</th>
+            </tr>
+          </thead>
+          <tbody>      
+            {% for record in cursor %}
+              <tr>
+                <td>{{ record[0] }}</td>
+                <td>{{ record[1] }}</td>
+                <td>{{ record[2] }}</td>
+                <td>{{ record[3] }}</td>
+                <td>{{ record[4] }}</td>
+                <td><a href="venda_com_prescricao?num_cedula={{ record[0] }}&num_doente={{ record[1] }}&data={{ record[2] }}&substancia={{ record[3] }}">Selecionar</a></td>
+              </tr>
+            {% endfor %}
+          </tbody>
+        </table>
+      {% else %}
+        <p> Error: failed to retreive data from database!</p>
+      {% endif %}
+    </body>
+    </doctype>
+    

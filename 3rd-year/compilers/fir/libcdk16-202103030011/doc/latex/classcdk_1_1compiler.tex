@@ -1,0 +1,136 @@
+\doxysection{cdk\+::compiler Class Reference}
+\label{classcdk_1_1compiler}\index{cdk::compiler@{cdk::compiler}}
+
+
+Inheritance diagram for cdk\+::compiler\+:
+% FIG 0
+
+
+Collaboration diagram for cdk\+::compiler\+:
+% FIG 1
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\label{classcdk_1_1compiler_a0718890212e30c490d31158ea8d75f73}} 
+{\bfseries compiler} (const std\+::string \&language, std\+::shared\+\_\+ptr$<$ \textbf{ basic\+\_\+scanner} $>$ scanner, std\+::shared\+\_\+ptr$<$ \textbf{ basic\+\_\+parser} $>$ parser)
+\item 
+\mbox{\label{classcdk_1_1compiler_a0a383085bcd220ffb5ced68463754dcb}} 
+const std\+::string \& {\bfseries name} () const
+\item 
+\mbox{\label{classcdk_1_1compiler_a933cbe2e866df6bcf976f3b2bca53873}} 
+void {\bfseries name} (const std\+::string \&name)
+\item 
+\mbox{\label{classcdk_1_1compiler_a555e4bbb1dbac31eaff757d66615e97c}} 
+const std\+::string \& {\bfseries extension} () const
+\item 
+\mbox{\label{classcdk_1_1compiler_a944e52a202d89b3ba19988eacdc617b2}} 
+void {\bfseries extension} (const std\+::string \&extension)
+\item 
+\mbox{\label{classcdk_1_1compiler_a16f6a81921fc6aab73e7fefa44b3683e}} 
+const std\+::string \& {\bfseries ifile} () const
+\item 
+\mbox{\label{classcdk_1_1compiler_ac7a952f66fed4125e3054b5c7592ddb1}} 
+void {\bfseries ifile} (const std\+::string \&ifile)
+\item 
+\mbox{\label{classcdk_1_1compiler_a248dc1890a92c5f68aaba29dc1ffca14}} 
+const std\+::string \& {\bfseries ofile} () const
+\item 
+\mbox{\label{classcdk_1_1compiler_a2077beaf9b1bc9d087830d609a397de5}} 
+void {\bfseries ofile} (const std\+::string \&ofile)
+\item 
+\mbox{\label{classcdk_1_1compiler_ae7cf9a49176b0ab9239f0c4d2e5b1668}} 
+std\+::shared\+\_\+ptr$<$ std\+::istream $>$ {\bfseries istream} ()
+\item 
+\mbox{\label{classcdk_1_1compiler_a36a108cb45b06e37eca6dfc4075784fa}} 
+std\+::shared\+\_\+ptr$<$ std\+::ostream $>$ {\bfseries ostream} ()
+\item 
+\mbox{\label{classcdk_1_1compiler_ae95606d4deb9e5be056685b1f634d10f}} 
+\textbf{ basic\+\_\+node} $\ast$ {\bfseries ast} ()
+\item 
+\mbox{\label{classcdk_1_1compiler_a841837c96b96d9c59532e57982011dc0}} 
+void {\bfseries ast} (\textbf{ basic\+\_\+node} $\ast$ast)
+\item 
+\mbox{\label{classcdk_1_1compiler_a90355b497c4f388de287df55ae238729}} 
+std\+::shared\+\_\+ptr$<$ \textbf{ basic\+\_\+scanner} $>$ {\bfseries scanner} ()
+\item 
+\mbox{\label{classcdk_1_1compiler_a4ee8a64e131f0fd1d179e8be8d88e654}} 
+void {\bfseries scanner} (std\+::shared\+\_\+ptr$<$ \textbf{ basic\+\_\+scanner} $>$ scanner)
+\item 
+\mbox{\label{classcdk_1_1compiler_a6f0655bd13e3f9bf375fcdb73f68cf17}} 
+std\+::shared\+\_\+ptr$<$ \textbf{ basic\+\_\+parser} $>$ {\bfseries parser} ()
+\item 
+\mbox{\label{classcdk_1_1compiler_a52a6e6b5cfa7361ceb0372ef6b4a9f73}} 
+void {\bfseries parser} (std\+::shared\+\_\+ptr$<$ \textbf{ basic\+\_\+parser} $>$ parser)
+\item 
+\mbox{\label{classcdk_1_1compiler_a23a67b0daf438a0ac90413825341ff6b}} 
+bool {\bfseries optimize} () const
+\item 
+\mbox{\label{classcdk_1_1compiler_afd34aede83f1a60e8f2685b7a9e31ffe}} 
+void {\bfseries optimize} (bool optimize)
+\item 
+\mbox{\label{classcdk_1_1compiler_ac7f77a847c841602342caf5b0e43c2a5}} 
+bool {\bfseries debug} () const
+\item 
+\mbox{\label{classcdk_1_1compiler_a672a0cd7f68b61956fdbd541b21445a1}} 
+void {\bfseries debug} (bool debug)
+\item 
+\mbox{\label{classcdk_1_1compiler_aa72626ba181a0ec880abb18def9804fd}} 
+int {\bfseries errors} () const
+\item 
+\mbox{\label{classcdk_1_1compiler_a1f39738f2142ebdabfc2122b635fa9d7}} 
+int {\bfseries parse} ()
+\item 
+bool \textbf{ evaluate} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\label{classcdk_1_1compiler_a0e14073a550646ab3ffeb20ec2c31691}} 
+static std\+::shared\+\_\+ptr$<$ \textbf{ compiler} $>$ {\bfseries create} (const std\+::string \&language, std\+::shared\+\_\+ptr$<$ \textbf{ basic\+\_\+scanner} $>$ scanner, std\+::shared\+\_\+ptr$<$ \textbf{ basic\+\_\+parser} $>$ parser)
+\end{DoxyCompactItemize}
+\doxysubsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\label{classcdk_1_1compiler_aae1fd7a956e254db62736223f36abfe1}} 
+std\+::shared\+\_\+ptr$<$ \textbf{ basic\+\_\+scanner} $>$ {\bfseries \+\_\+scanner} = nullptr
+\item 
+\mbox{\label{classcdk_1_1compiler_a4cf06cfabdd2a17f1f00c875cf67f27a}} 
+std\+::shared\+\_\+ptr$<$ \textbf{ basic\+\_\+parser} $>$ {\bfseries \+\_\+parser} = nullptr
+\item 
+\mbox{\label{classcdk_1_1compiler_a1effd69d16b8b813ee1abfa47a9152cb}} 
+std\+::vector$<$ std\+::shared\+\_\+ptr$<$ \textbf{ basic\+\_\+target} $>$ $>$ {\bfseries \+\_\+evaluators}
+\item 
+\mbox{\label{classcdk_1_1compiler_a9d9ee8c3f17a0c87ba64f3e86aa7e52f}} 
+\textbf{ basic\+\_\+node} $\ast$ {\bfseries \+\_\+ast}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+
+
+Definition at line 18 of file compiler.\+h.
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\label{classcdk_1_1compiler_a0c0d48f8b1101bb17bd1908785d62eff}} 
+\index{cdk::compiler@{cdk::compiler}!evaluate@{evaluate}}
+\index{evaluate@{evaluate}!cdk::compiler@{cdk::compiler}}
+\doxysubsubsection{evaluate()}
+{\footnotesize\ttfamily bool cdk\+::compiler\+::evaluate (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Processes the A\+ST and produces the output file. The specific processing strategy is provided independently by each back-\/end implementation (evaluator subclasses). 
+
+Definition at line 187 of file compiler.\+h.
+
+
+
+References cdk\+::basic\+\_\+target\+::evaluate(), and cdk\+::basic\+\_\+target\+::get\+\_\+target\+\_\+for().
+
+Here is the call graph for this function\+:
+% FIG 2
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+cdk/compiler.\+h\end{DoxyCompactItemize}

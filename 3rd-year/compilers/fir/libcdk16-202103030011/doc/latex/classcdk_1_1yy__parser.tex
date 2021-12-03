@@ -1,0 +1,82 @@
+\doxysection{cdk\+::yy\+\_\+parser$<$ Lexer\+Type $>$ Class Template Reference}
+\label{classcdk_1_1yy__parser}\index{cdk::yy\_parser$<$ LexerType $>$@{cdk::yy\_parser$<$ LexerType $>$}}
+
+
+{\ttfamily \#include $<$yy\+\_\+parser.\+h$>$}
+
+
+
+Inheritance diagram for cdk\+::yy\+\_\+parser$<$ Lexer\+Type $>$\+:
+% FIG 0
+
+
+Collaboration diagram for cdk\+::yy\+\_\+parser$<$ Lexer\+Type $>$\+:
+% FIG 1
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\textbf{ yy\+\_\+parser} (const std\+::string \&language)
+\item 
+int \textbf{ parse} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{Additional Inherited Members}
+
+
+\doxysubsection{Detailed Description}
+\subsubsection*{template$<$typename Lexer\+Type$>$\newline
+class cdk\+::yy\+\_\+parser$<$ Lexer\+Type $>$}
+
+This class corresponds to the parser as implemented by a tool such as byacc. 
+
+Definition at line 20 of file yy\+\_\+parser.\+h.
+
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\label{classcdk_1_1yy__parser_a03b8b5287fbc172a80751390a7f7936d}} 
+\index{cdk::yy\_parser$<$ LexerType $>$@{cdk::yy\_parser$<$ LexerType $>$}!yy\_parser@{yy\_parser}}
+\index{yy\_parser@{yy\_parser}!cdk::yy\_parser$<$ LexerType $>$@{cdk::yy\_parser$<$ LexerType $>$}}
+\doxysubsubsection{yy\_parser()}
+{\footnotesize\ttfamily template$<$typename Lexer\+Type $>$ \\
+\textbf{ cdk\+::yy\+\_\+parser}$<$ Lexer\+Type $>$\+::\textbf{ yy\+\_\+parser} (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{language }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+\begin{DoxyParams}{Parameters}
+{\em language} & is the name of the parsed language. \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 24 of file yy\+\_\+parser.\+h.
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\label{classcdk_1_1yy__parser_a998a98a7b38a6772fb24ae0eeb87ef17}} 
+\index{cdk::yy\_parser$<$ LexerType $>$@{cdk::yy\_parser$<$ LexerType $>$}!parse@{parse}}
+\index{parse@{parse}!cdk::yy\_parser$<$ LexerType $>$@{cdk::yy\_parser$<$ LexerType $>$}}
+\doxysubsubsection{parse()}
+{\footnotesize\ttfamily template$<$typename Lexer\+Type $>$ \\
+int \textbf{ cdk\+::yy\+\_\+parser}$<$ Lexer\+Type $>$\+::parse (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+Parse algorithm\+: the compiler object stores the result. 
+\begin{DoxyParams}{Parameters}
+{\em compiler} & the compiler object this parser belongs to. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true if the operation is successful 
+\end{DoxyReturn}
+
+
+Implements \textbf{ cdk\+::basic\+\_\+parser} \doxyref{}{p.}{classcdk_1_1basic__parser_a974c94ef048509a80bd042ee9c783513}.
+
+
+
+Definition at line 28 of file yy\+\_\+parser.\+h.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+cdk/yy\+\_\+parser.\+h\end{DoxyCompactItemize}
